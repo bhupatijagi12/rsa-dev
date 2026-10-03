@@ -1,0 +1,236 @@
+CRITICAL - 2026-10-02 03:30:53 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: onboarding/download-agreement]
+in APPPATH\Controllers\OnboardingController.php on line 166.
+ 1 APPPATH\Controllers\OnboardingController.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->downloadAgreement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 03:48:34 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(72): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:11:08 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(72): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:11:31 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(72): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:13:02 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(72): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:13:53 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(73): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:14:28 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(73): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:15:33 --> ErrorException: Undefined variable $dompdf
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 74.
+ 1 APPPATH\Controllers\PolicyController.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dompdf', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:16:13 --> ErrorException: Undefined variable $html
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 78.
+ 1 APPPATH\Controllers\PolicyController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:16:22 --> ErrorException: Undefined variable $html
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 78.
+ 1 APPPATH\Controllers\PolicyController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:16:56 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(73): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:18:48 --> ErrorException: Undefined variable $email
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 178.
+ 1 APPPATH\Views\pdf\policy_pdf.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(77): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:21:48 --> ErrorException: Undefined variable $email
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 178.
+ 1 APPPATH\Views\pdf\policy_pdf.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(78): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:22:45 --> ErrorException: Undefined variable $email
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 178.
+ 1 APPPATH\Views\pdf\policy_pdf.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(77): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:23:46 --> ErrorException: Undefined variable $email
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 178.
+ 1 APPPATH\Views\pdf\policy_pdf.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(77): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:28:59 --> ErrorException: Undefined variable $email
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 178.
+ 1 APPPATH\Views\pdf\policy_pdf.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(78): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:29:17 --> ErrorException: Undefined variable $email
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 178.
+ 1 APPPATH\Views\pdf\policy_pdf.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(78): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-02 04:37:56 --> ErrorException: Undefined variable $email
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 178.
+ 1 APPPATH\Views\pdf\policy_pdf.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 178)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(78): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

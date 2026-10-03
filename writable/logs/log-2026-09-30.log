@@ -1,0 +1,1388 @@
+CRITICAL - 2026-09-30 06:49:07 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:49:11 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:49:43 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:49:44 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:49:44 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:50:38 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:50:40 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:50:40 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:50:54 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:51:55 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:51:56 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 06:53:32 --> Error: Undefined constant "base_url"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 10.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 08:37:22 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: dealer/send-otp]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DealerAuth.php(78): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 09:32:14 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: dealer/send-otp]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DealerAuth.php(78): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 09:33:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "otp_verification.php"
+[Method: GET, Route: otp-verification]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('otp_verification.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('otp_verification', [], true)
+ 3 APPPATH\Controllers\DealerAuth.php(143): view('otp_verification', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->otpVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 09:34:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "otp_verification.php"
+[Method: GET, Route: otp-verification]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('otp_verification.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('otp_verification', [], true)
+ 3 APPPATH\Controllers\DealerAuth.php(143): view('otp_verification', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->otpVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 09:34:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "otp_verification.php"
+[Method: GET, Route: otp-verification]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('otp_verification.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('otp_verification', [], true)
+ 3 APPPATH\Controllers\DealerAuth.php(143): view('otp_verification', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->otpVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 09:34:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "otp_verification.php"
+[Method: GET, Route: otp-verification]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('otp_verification.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('otp_verification', [], true)
+ 3 APPPATH\Controllers\DealerAuth.php(143): view('otp_verification', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->otpVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 09:35:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "otp_verification.php"
+[Method: GET, Route: otp-verification]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('otp_verification.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('otp_verification', [], true)
+ 3 APPPATH\Controllers\DealerAuth.php(102): view('otp_verification', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->otpVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 09:38:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "otp_verification.php"
+[Method: GET, Route: otp-verification]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('otp_verification.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('otp_verification', [], true)
+ 3 APPPATH\Controllers\DealerAuth.php(102): view('otp_verification', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->otpVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:28:28 --> ErrorException: Undefined variable $data
+[Method: GET, Route: onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 11.
+ 1 APPPATH\Controllers\OnboardingController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->onboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:28:49 --> ErrorException: Undefined variable $data
+[Method: GET, Route: onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 11.
+ 1 APPPATH\Controllers\OnboardingController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->onboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:38:43 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: onboarding]
+in APPPATH\Views\onboarding.php on line 15.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('onboarding', [], true)
+ 3 APPPATH\Controllers\OnboardingController.php(11): view('onboarding')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:48:06 --> Error: Undefined constant "App\Controllers\session"
+[Method: GET, Route: session]
+in APPPATH\Controllers\OnboardingController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->session()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:48:15 --> Error: Undefined constant "App\Controllers\session"
+[Method: GET, Route: session]
+in APPPATH\Controllers\OnboardingController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->session()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:48:29 --> Error: Undefined constant "App\Controllers\session"
+[Method: GET, Route: session]
+in APPPATH\Controllers\OnboardingController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->session()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:48:29 --> Error: Undefined constant "App\Controllers\session"
+[Method: GET, Route: session]
+in APPPATH\Controllers\OnboardingController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->session()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:48:29 --> Error: Undefined constant "App\Controllers\session"
+[Method: GET, Route: session]
+in APPPATH\Controllers\OnboardingController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->session()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 14:48:29 --> Error: Undefined constant "App\Controllers\session"
+[Method: GET, Route: session]
+in APPPATH\Controllers\OnboardingController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->session()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:00:28 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:00:42 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:00:42 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:00:43 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:01:00 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:01:17 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:01:17 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:01:17 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:01:18 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:01:40 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:10 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:11 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:11 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:18 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:29 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:29 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:30 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:02:30 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 15:08:09 --> ErrorException: Undefined variable $gst_number
+[Method: GET, Route: onboarding]
+in APPPATH\Views\onboarding.php on line 50.
+ 1 APPPATH\Views\onboarding.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gst_number', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\onboarding.php', 50)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\onboarding.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('onboarding', [], true)
+ 5 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 16:13:43 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 16:13:47 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OnboardingController.php on line 16
+[Method: GET, Route: onboarding]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OnboardingController.php(16): view('onboarding', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:42:34 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:42:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:42:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:42:34 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790154_1790790154_825c21777be0c554df68.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:43:17 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:43:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:43:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:43:17 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790197_1790790197_b86133d48eb112747606.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:43:46 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:43:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:43:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:43:46 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790226_1790790226_99a3dd8129150f56da13.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:52:30 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:52:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:52:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:52:30 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790750_1790790750_7f9d4d83ab87a07a9606.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:55:31 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:55:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:55:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:55:31 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790931_1790790931_dfe0bea5e2de2116bde3.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:56:35 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:56:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:56:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:56:35 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790790995_1790790995_5114ce44c43e00ca6960.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:57:15 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:57:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:57:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:57:15 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791035_1790791035_39c782a2b6613dfecf56.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:58:01 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(103): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:58:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:58:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(103): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:58:01 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791081_1790791081_0f536c37bcb6c501f800.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(103): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:59:01 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:59:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:59:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:59:01 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791141_1790791141_f8248de70815ddfc03a1.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 17:59:50 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:59:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:59:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 17:59:50 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791190_1790791190_4c94f5322aa4abae4d2d.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 18:01:20 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:01:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:01:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:01:20 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791280_1790791280_b504b9624a37f1c47950.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-30 18:01:44 --> Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:01:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:01:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:01:44 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealer_doc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (\'1\', \'1790791304_1790791304_ba882cf1c3a5d781281f.png\', NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dealer_doc` (`dealer_id`, `agreement`, `pan`, `msme`, `gst`, `cancelled_cheque`) VALUES (:dealer_id:, :agreement:, :pan:, :msme:, :gst:, :cancelled_cheque:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OnboardingController.php(104): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:42:23 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 186.
+ 1 APPPATH\Controllers\OnboardingController.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:42:50 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 186.
+ 1 APPPATH\Controllers\OnboardingController.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:47:02 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 186.
+ 1 APPPATH\Controllers\OnboardingController.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 18:47:24 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 186.
+ 1 APPPATH\Controllers\OnboardingController.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:01:30 --> ParseError: syntax error, unexpected token "`", expecting "function"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 50.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\DashboardController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DashboardController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DashboardController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\DashboardController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('dashboard')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:02:27 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 247.
+ 1 APPPATH\Views\dashboard.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php', 247)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:03:01 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 247.
+ 1 APPPATH\Views\dashboard.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php', 247)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:03:02 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 247.
+ 1 APPPATH\Views\dashboard.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php', 247)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:03:02 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 247.
+ 1 APPPATH\Views\dashboard.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php', 247)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:03:02 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 247.
+ 1 APPPATH\Views\dashboard.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php', 247)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:04:13 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 247.
+ 1 APPPATH\Views\dashboard.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php', 247)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-30 19:07:21 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 247.
+ 1 APPPATH\Views\dashboard.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php', 247)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(12): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,235 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Models\DealerModel;
+use App\Models\DealerDocsModel;
+
+class OnboardingController extends BaseController
+{
+	public function index() 
+	{
+	   $dealerModel = new \App\Models\DealerModel();
+		$dealer = $dealerModel
+                    ->where('dealer_code', session('dealer_code'))
+                    ->first();
+
+		 return view('onboarding', $dealer);
+	}
+
+	public function session()
+	{
+		echo '<pre>';
+		print_r(session()->get());
+		echo '</pre>';	
+	}
+
+	public function saveOnboarding()
+	{
+	    $data = [
+	        //'gst_number' => $this->request->getPost('gst_number'),
+	        'pan_number' => $this->request->getPost('pan_number'),
+	        'address' => $this->request->getPost('address'),
+	        'contact_person' => $this->request->getPost('contact_person'),
+	        'mobile' => $this->request->getPost('mobile'),
+	        'rm_name' => $this->request->getPost('rm_name'),
+	        'referred_by' => $this->request->getPost('referred_by'),
+	        'account_holder_name' => $this->request->getPost('account_holder_name'),
+	        'account_number' => $this->request->getPost('account_number'),
+	        'ifsc_code' => $this->request->getPost('ifsc_code'),
+	        'bank_name' => $this->request->getPost('bank_name')
+	    ];
+
+	    $dealerModel = new DealerModel();
+	    $dealerModel->update(session('dealer_id'), $data);
+
+	    return $this->response->setJSON([
+	        'status' => 'success',
+	        'message' => 'Dealer onboarding saved successfully.',
+	        //'redirect_url' => base_url('dashboard')
+	    ]);
+	}
+
+	public function upload() 
+	{
+	   $dealerModel = new \App\Models\DealerModel();
+		$dealer = $dealerModel
+                    ->where('dealer_code', session('dealer_code'))
+                    ->first();
+
+		 return view('upload-documents', $dealer);
+	}
+
+	public function uploadDocuments()
+	{
+	    $dealerId = session('dealer_id'); 
+
+	    $uploadPath = FCPATH . 'uploads/documents/';
+
+	    if (!is_dir($uploadPath)) {
+	        mkdir($uploadPath, 0777, true);
+	    }
+
+	    $documents = [];
+	   
+	    $fileFields = [
+	        'agreement',
+	        'pan',
+	        'msme',
+	        'gst',
+	        'cancelled_cheque'
+	    ];
+
+	    foreach ($fileFields as $field)
+	    {
+	        $file = $this->request->getFile($field);
+
+	        if ($file && $file->isValid())
+	        {
+	            $newName = time().'_'.$file->getRandomName();
+
+	            $file->move($uploadPath, $newName);
+
+	            $documents[$field] = $newName;
+	        }
+	        else
+	        {
+	            $documents[$field] = null;
+	        }
+	    }
+
+	    //$db = \Config\Database::connect();
+	    $dealerDocsModel = new DealerDocsModel();
+
+	    $dealer = $dealerDocsModel
+                    ->where('dealer_id', session('dealer_id'))
+                    ->first();
+        if ($dealer != null) {
+
+				$updateData = [];
+				
+				if (!empty($documents['agreement'])) {
+					$updateData['agreement'] = $documents['agreement'];
+				}
+				
+				if (!empty($documents['pan'])) {
+					$updateData['pan'] = $documents['pan'];
+				}
+		
+				if (!empty($documents['msme'])) {
+					$updateData['msme'] = $documents['msme'];
+				}
+			
+				if (!empty($documents['gst'])) {
+					$updateData['gst'] = $documents['gst'];
+				}
+				
+				if (!empty($documents['cancelled_cheque'])) {
+					$updateData['cancelled_cheque'] = $documents['cancelled_cheque'];
+				}
+
+				if (!empty($updateData)) {
+					$dealerDocsModel->update(
+					session('dealer_id'),
+					$updateData
+					);
+				}
+
+        } else {
+        	$dealerDocsModel->insert([
+	        'dealer_id'         => $dealerId,
+	        'agreement'         => $documents['agreement'],
+	        'pan'               => $documents['pan'],
+	        'msme'              => $documents['msme'],
+	        'gst'               => $documents['gst'],
+	        'cancelled_cheque'  => $documents['cancelled_cheque']
+	    ]);
+        }
+
+
+	    
+	    return $this->response->setJSON([
+	        'status' => 'success',
+	        'message' => 'Documents uploaded successfully.'
+	    ]);
+	}
+
+
+	public function downloadAgreement()
+	{
+	    $dealerId = session('dealer_id');
+
+	    $dealerDocsModel = new \App\Models\DealerDocsModel();
+
+	    $dealer = $dealerDocsModel->find($dealerId);
+
+	    $filePath = FCPATH . 'uploads/documents/' . $dealer['agreement'];
+
+	    if (!file_exists($filePath))
+	    {
+	        return redirect()->back()->with(
+	            'error',
+	            'Agreement file not found.'
+	        );
+	    }
+
+	    return $this->response->download(
+	        $filePath,
+	        null
+	    );
+	}
+
+
+
+	public function submitOnboarding()
+	{
+	    $dealerDocsModel = new \App\Models\DealerDocsModel();
+
+	    $dealer = $dealerDocsModel
+	        ->where('dealer_id', session('dealer_id'))
+	        ->first();
+
+	    $missingDocs = [];
+
+	    if (empty($dealer['gst'])) {
+	        $missingDocs[] = 'GST';
+	    }
+
+	    if (empty($dealer['agreement'])) {
+	        $missingDocs[] = 'Agreement';
+	    }
+
+	    if (empty($dealer['msme'])) {
+	        $missingDocs[] = 'MSME';
+	    }
+
+	    if (empty($dealer['pan'])) {
+	        $missingDocs[] = 'PAN';
+	    }
+
+	    if (empty($dealer['cancelled_cheque'])) {
+	        $missingDocs[] = 'Cancelled Cheque';
+	    }
+
+	    if (!empty($missingDocs)) {
+
+	        return $this->response->setJSON([
+	            'status'  => 'error',
+	            'message' => implode(', ', $missingDocs) .
+	                         ' documents not uploaded yet. Please upload.'
+	        ]);
+	    }
+
+	    $dealerModel = new DealerModel();
+	     $data = [
+	        'status' => 4,
+	    ];
+	    $dealerModel->update(session('dealer_id'), $data);
+
+	    return $this->response->setJSON([
+	        'status'  => 'success',
+	        'message' => 'Your Application submitted successfully. Our Team will get back to you with 1-2 hours.'
+	    ]);
+	}
+}
+?>

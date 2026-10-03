@@ -1,0 +1,235 @@
+CRITICAL - 2026-10-01 16:31:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bank-transaction.php"
+[Method: GET, Route: bank]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bank-transaction.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('bank-transaction', [], true)
+ 3 APPPATH\Controllers\BankController.php(9): view('bank-transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BankController->bank()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BankController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:32:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bank-transaction.php"
+[Method: GET, Route: bank]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bank-transaction.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('bank-transaction', [], true)
+ 3 APPPATH\Controllers\BankController.php(9): view('bank-transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BankController->bank()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BankController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:32:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bank-transaction.php"
+[Method: GET, Route: bank]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bank-transaction.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('bank-transaction', [], true)
+ 3 APPPATH\Controllers\BankController.php(9): view('bank-transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BankController->bank()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BankController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:12 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: bank]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:31 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: bank]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:31 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: bank]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:32 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: bank]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:43 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:44 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:46 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 16:45:46 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:01:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gst-transaction.php"
+[Method: GET, Route: gst-transaction]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gst-transaction.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('gst-transaction', [], true)
+ 3 APPPATH\Controllers\PolicyController.php(36): view('gst-transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->gsttransaction()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:35:48 --> ParseError: syntax error, unexpected token "*", expecting ";"
+[Method: GET, Route: policy]
+in APPPATH\Views\generate-policy.php on line 75.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('generate-policy', [], true)
+ 3 APPPATH\Controllers\PolicyController.php(15): view('generate-policy', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:35:59 --> Error: Undefined constant "s"
+[Method: GET, Route: policy]
+in APPPATH\Views\generate-policy.php on line 70.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('generate-policy', [], true)
+ 4 APPPATH\Controllers\PolicyController.php(15): view('generate-policy', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 18:24:47 --> ErrorException: Undefined variable $vehicleModel
+[Method: GET, Route: policy]
+in APPPATH\Controllers\PolicyController.php on line 16.
+ 1 APPPATH\Controllers\PolicyController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vehicleModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 18:25:35 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\VehicleModel::getVehicleVariants
+[Method: GET, Route: policy]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\PolicyController.php(16): CodeIgniter\Model->__call('getVehicleVariants', [])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 18:30:25 --> ErrorException: Array to string conversion
+[Method: GET, Route: policy]
+in APPPATH\Views\generate-policy.php on line 43.
+ 1 APPPATH\Views\generate-policy.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\generate-policy.php', 43)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\generate-policy.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('generate-policy', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(18): view('generate-policy', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 18:30:58 --> ErrorException: Undefined array key "make"
+[Method: GET, Route: policy]
+in APPPATH\Views\generate-policy.php on line 43.
+ 1 APPPATH\Views\generate-policy.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "make"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\generate-policy.php', 43)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\generate-policy.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('generate-policy', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(18): view('generate-policy', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 19:19:07 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(71): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 19:20:14 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(72): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 19:20:30 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Views\pdf\policy_pdf.php on line 142.
+ 1 APPPATH\Views\pdf\policy_pdf.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php', 142)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\policy_pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/policy_pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(72): view('pdf/policy_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatePolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
