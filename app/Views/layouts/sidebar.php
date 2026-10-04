@@ -1,7 +1,7 @@
 <aside class="sidebar">
     <div class="brand"><img src="<?= base_url('public/assets/logo.png'); ?>" alt="GlobalAid"><span class="hamb">☰</span></div>
     <nav class="nav">
-     <?php if(session('dealer_status') != 2): ?>
+     <?php if(session('dealer_status') == 5): ?>
       <div class="nav-item" onclick="location.href='<?= base_url('dashboard') ?>'"><span class="ic">▦</span> Dealer Dashboard</div>
      <!--  <div class="nav-item parent"><span class="row"><span class="ic">🎫</span> Ticketing</span><span class="caret">›</span></div>
       <div class="nav-sub">

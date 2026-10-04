@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\DealerModel;
+use App\Libraries\Mailer;
+
 
 class DealerAuth extends BaseController
 {
@@ -47,31 +49,27 @@ class DealerAuth extends BaseController
             'otp_time' => time(),
             'dealer_status' => $dealer['status'],
             'dealer_code' => $dealer['dealer_code'],
-            'name' => $dealer['name']
+            'name' => $dealer['name'],
+            'logged_in' => true
         ]);
 
-        $email = \Config\Services::email();
+        $data = [
+        'dealer_name' => $dealer['name'],
+        'otp' => $otp
+        ];
 
-        $email->setFrom('noreply@globalaidassurance.com', 'Global Aid Assurance');
-        $email->setTo($dealer['email']);
-        $email->setSubject('Dealer Login OTP');
+        $mailSent = Mailer::send(
+            $dealer['email'],
+            'Dealer Login OTP',
+            'emails/otp',
+            $data,
+            [
+            'info@globalaidassurance.com',
+            'bhupati.jagi@globalaidassurance.com'
+            ]
+        );
 
-        $message = "
-        Dear {$dealer['name']},
-
-        Your OTP for Dealer Portal Login is:
-
-        {$otp}
-
-        OTP is valid for 10 minutes.
-
-        Regards,
-        Global Aid Assurance
-        ";
-
-        $email->setMessage($message);
-
-        if ($email->send()) {
+        if ($mailSent) {
 
             return $this->response->setJSON([
                 'status' => 'success',
@@ -122,7 +120,7 @@ class DealerAuth extends BaseController
         {
             session()->set('logged_in', true);
 
-            if (session('first_logged_in') && session('dealer_status') == 2) 
+            if (session('first_logged_in') && ( session('dealer_status') == 2 || session('dealer_status') == 4)) 
             {
                 return $this->response->setJSON([
                     'status' => 'success',

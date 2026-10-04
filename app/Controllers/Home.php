@@ -9,6 +9,11 @@ class Home extends BaseController
         return view('index');
     }
 
+    public function opsLogin(): string
+    {
+        return view('ops-login');
+    }
+
      public function about(): string
     {
         return view('welcome_message');

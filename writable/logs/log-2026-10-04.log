@@ -1,0 +1,1335 @@
+ERROR - 2026-10-04 09:20:33 --> Table 'rsa.dealers' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = :dealer_code:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\DealerAuth.php(19): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 09:20:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealers' doesn't exist in engine
+[Method: POST, Route: dealer/send-otp]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = :dealer_code:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\DealerAuth.php(19): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 09:20:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa.dealers' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = :dealer_code:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\DealerAuth.php(19): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 09:20:33 --> [Caused by] mysqli_sql_exception: Table 'rsa.dealers' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = \'GAA-2\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dealers`
+WHERE `dealer_code` = :dealer_code:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\DealerAuth.php(19): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-04 10:45:04 --> Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'otp_expiry' in 'field list'
+[Method: POST, Route: dealer/send-otp]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:04 --> [Caused by] mysqli_sql_exception: Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 985042, `otp_expiry` = \'2026-10-04 10:55:04\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-04 10:45:16 --> Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'otp_expiry' in 'field list'
+[Method: POST, Route: dealer/send-otp]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:16 --> [Caused by] mysqli_sql_exception: Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 382431, `otp_expiry` = \'2026-10-04 10:55:16\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-04 10:45:32 --> Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'otp_expiry' in 'field list'
+[Method: POST, Route: dealer/send-otp]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 10:45:32 --> [Caused by] mysqli_sql_exception: Unknown column 'otp_expiry' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dealers` SET `otp` = 620369, `otp_expiry` = \'2026-10-04 10:55:32\'
+WHERE `dealers`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2531): CodeIgniter\Database\BaseConnection->query('UPDATE `dealers` SET `otp` = :otp:, `otp_expiry` = :otp_expiry:
+WHERE `dealers`.`id` IN :dealers.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\DealerAuth.php(37): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DealerAuth->sendOtp()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DealerAuth))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 11:02:03 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\HTTP\Files\UploadedFile given
+[Method: POST, Route: onboarding/upload-documents]
+in APPPATH\Controllers\OnboardingController.php on line 100.
+ 1 APPPATH\Controllers\OnboardingController.php(100): count(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 11:02:19 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\HTTP\Files\UploadedFile given
+[Method: POST, Route: onboarding/upload-documents]
+in APPPATH\Controllers\OnboardingController.php on line 100.
+ 1 APPPATH\Controllers\OnboardingController.php(100): count(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 14:52:06 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\OnboardingController.php(139): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 14:52:30 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\OnboardingController.php(139): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 14:53:14 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\OnboardingController.php(139): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 14:54:21 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\OnboardingController.php(139): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:29:14 --> ParseError: syntax error, unexpected token "use"
+[Method: GET, Route: onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 241.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\OnboardingController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\OnboardingController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\OnboardingController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('onboarding')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:30:03 --> ErrorException: Undefined array key "dealer_name"
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 244.
+ 1 APPPATH\Controllers\OnboardingController.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 244)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:30:23 --> ErrorException: Undefined array key "dealer_name"
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 244.
+ 1 APPPATH\Controllers\OnboardingController.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 244)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:33:27 --> ErrorException: Undefined array key "dealer_name"
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 244.
+ 1 APPPATH\Controllers\OnboardingController.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 244)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:34:37 --> ErrorException: Undefined array key "dealer_name"
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 243.
+ 1 APPPATH\Controllers\OnboardingController.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:35:01 --> ErrorException: Undefined array key "dealer_name"
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 243.
+ 1 APPPATH\Controllers\OnboardingController.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:36:38 --> ErrorException: Undefined array key "dealer_name"
+[Method: GET, Route: onboarding/submit-onboarding]
+in APPPATH\Controllers\OnboardingController.php on line 243.
+ 1 APPPATH\Controllers\OnboardingController.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->submitOnboarding()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:42:49 --> ErrorException: Undefined variable $comments
+[Method: GET, Route: upload-document]
+in APPPATH\Views\upload-documents.php on line 74.
+ 1 APPPATH\Views\upload-documents.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\upload-documents.php', 74)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\upload-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('upload-documents', [], true)
+ 5 APPPATH\Controllers\OnboardingController.php(61): view('upload-documents', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:46:01 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:46:23 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:46:25 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:46:40 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:47:28 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:47:28 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:48:11 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 15:48:17 --> ErrorException: Undefined variable $dealerDocsModel
+[Method: GET, Route: upload-document]
+in APPPATH\Controllers\OnboardingController.php on line 61.
+ 1 APPPATH\Controllers\OnboardingController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerDocsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:00:06 --> ParseError: syntax error, unexpected token ":", expecting "," or ";"
+[Method: GET, Route: onboarding]
+in APPPATH\Views\onboarding.php on line 63.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('onboarding', [], true)
+ 3 APPPATH\Controllers\OnboardingController.php(18): view('onboarding', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:01:08 --> ParseError: syntax error, unexpected token ":", expecting "," or ";"
+[Method: GET, Route: onboarding]
+in APPPATH\Views\onboarding.php on line 63.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('onboarding', [], true)
+ 3 APPPATH\Controllers\OnboardingController.php(18): view('onboarding', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:01:58 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: onboarding]
+in APPPATH\Views\onboarding.php on line 63.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('onboarding', [], true)
+ 3 APPPATH\Controllers\OnboardingController.php(18): view('onboarding', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:12:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ops-login.php"
+[Method: GET, Route: ops-login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ops-login.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops-login', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(11): view('ops-login')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->opsLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:13:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ops/ops-login.php"
+[Method: GET, Route: ops-login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ops/ops-login.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/ops-login', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(11): view('ops/ops-login')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->opsLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:13:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ops/ops-login.php"
+[Method: GET, Route: ops-login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ops/ops-login.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/ops-login', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(11): view('ops/ops-login')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->opsLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:13:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ops/ops-login.php"
+[Method: GET, Route: ops-login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ops/ops-login.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/ops-login', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(11): view('ops/ops-login')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->opsLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 16:13:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ops/ops-login.php"
+[Method: GET, Route: ops-login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ops/ops-login.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/ops-login', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(10): view('ops/ops-login')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->opsLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 17:59:56 --> Error: Class "App\Models\userModel" not found
+[Method: POST, Route: ops/validate-login]
+in APPPATH\Controllers\OperationsAuth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsAuth->validateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsAuth))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:03:35 --> Error: Class "App\Models\userModel" not found
+[Method: POST, Route: ops/validate-login]
+in APPPATH\Controllers\OperationsAuth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsAuth->validateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsAuth))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:04:04 --> Error: Class "App\Models\userModel" not found
+[Method: POST, Route: ops/validate-login]
+in APPPATH\Controllers\OperationsAuth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsAuth->validateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsAuth))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:05:14 --> Error: Class "App\Models\userModel" not found
+[Method: POST, Route: ops/validate-login]
+in APPPATH\Controllers\OperationsAuth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsAuth->validateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsAuth))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:05:28 --> Error: Class "App\Models\userModel" not found
+[Method: POST, Route: ops/validate-login]
+in APPPATH\Controllers\OperationsAuth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsAuth->validateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsAuth))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:06:02 --> Error: Class "App\Models\userModel" not found
+[Method: POST, Route: ops/validate-login]
+in APPPATH\Controllers\OperationsAuth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsAuth->validateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsAuth))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:13:16 --> ErrorException: Undefined variable $forcePasswordChange
+[Method: GET, Route: ops/dashboard]
+in APPPATH\Views\ops\dashboard.php on line 205.
+ 1 APPPATH\Views\ops\dashboard.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forcePasswordChange', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\dashboard.php', 205)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/dashboard', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(10): view('ops/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:15:06 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: ops/dashboard]
+in APPPATH\Views\ops\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/dashboard', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(10): view('ops/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:15:28 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: ops/dashboard]
+in APPPATH\Views\ops\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/dashboard', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(10): view('ops/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:18:46 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: ops/dashboard]
+in APPPATH\Views\ops\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/dashboard', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(10): view('ops/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:18:54 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: ops/dashboard]
+in APPPATH\Views\ops\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/dashboard', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(10): view('ops/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:37:12 --> ErrorException: Undefined variable $vehicles
+[Method: GET, Route: ops/dealers]
+in APPPATH\Views\ops\dealers-list.php on line 47.
+ 1 APPPATH\Views\ops\dealers-list.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vehicles', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\dealers-list.php', 47)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\dealers-list.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/dealers-list', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(23): view('ops/dealers-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dealers()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:47:07 --> ParseError: syntax error, unexpected token "*"
+[Method: GET, Route: ops/dealers]
+in APPPATH\Controllers\OperationsController.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OperationsController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\OperationsController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\OperationsController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\OperationsController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/dealers')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 18:55:39 --> ErrorException: Undefined variable $comments
+[Method: GET, Route: ops/view-documents]
+in APPPATH\Views\ops\view-documents.php on line 74.
+ 1 APPPATH\Views\ops\view-documents.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 74)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(34): view('ops/view-documents')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:03:58 --> ErrorException: Undefined variable $comments
+[Method: GET, Route: ops/view-documents]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:04:18 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: ops/view-documents]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:04:19 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: ops/view-documents]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:04:32 --> ErrorException: Undefined variable $docs
+[Method: GET, Route: ops/view-documents]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docs', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:05:19 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OperationsController.php on line 40
+[Method: GET, Route: ops/view-documents]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:05:26 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OperationsController.php on line 40
+[Method: GET, Route: ops/view-documents]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:06:58 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\OperationsController.php on line 40
+[Method: GET, Route: ops/view-documents/1]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:07:07 --> ErrorException: Undefined variable $comments
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:07:26 --> ErrorException: Undefined variable $comments
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:07:44 --> ErrorException: Undefined variable $comments
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:08:35 --> ErrorException: Undefined variable $comments
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 68.
+ 1 APPPATH\Views\ops\view-documents.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 68)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:10:10 --> ErrorException: Undefined array key "agreement"
+[Method: GET, Route: onboarding/download-agreement]
+in APPPATH\Controllers\OnboardingController.php on line 179.
+ 1 APPPATH\Controllers\OnboardingController.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agreement"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OnboardingController.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->downloadAgreement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:17:16 --> ErrorException: Undefined variable $dealerId
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 29.
+ 1 APPPATH\Views\ops\view-documents.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealerId', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php', 29)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\ops\\view-documents.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:20:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Model.php on line 403.
+ 1 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\OnboardingController.php(144): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->uploadDocuments()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:32:29 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:32:30 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:32:48 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:33:13 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:33:43 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:33:47 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 114.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:33:49 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 114.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:33:49 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 114.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:34:35 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:35:05 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(39): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:37:08 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:37:47 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:37:59 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:37:59 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:38:13 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:39:03 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 115.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:39:33 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 116.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:39:51 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 116.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:39:51 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 116.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:40:20 --> ParseError: syntax error, unexpected token "class", expecting ")"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 132.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:40:21 --> ParseError: syntax error, unexpected token "class", expecting ")"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 132.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:40:22 --> ParseError: syntax error, unexpected token "class", expecting ")"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 132.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 3 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:40:40 --> Error: Undefined constant "dealer_id"
+[Method: GET, Route: ops/view-documents/1]
+in APPPATH\Views\ops\view-documents.php on line 116.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('ops/view-documents', [], true)
+ 4 APPPATH\Controllers\OperationsController.php(40): view('ops/view-documents', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewDocuments('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:43:05 --> ErrorException: Undefined variable $statusId
+[Method: POST, Route: ops/verify-docs]
+in APPPATH\Controllers\OperationsController.php on line 95.
+ 1 APPPATH\Controllers\OperationsController.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $statusId', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OperationsController.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:43:34 --> ErrorException: Undefined variable $statusId
+[Method: POST, Route: ops/verify-docs]
+in APPPATH\Controllers\OperationsController.php on line 95.
+ 1 APPPATH\Controllers\OperationsController.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $statusId', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OperationsController.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:44:46 --> TypeError: CodeIgniter\BaseModel::timeToString(): Argument #1 ($properties) must be of type array, int given, called in C:\xampp\htdocs\rsa-dev\system\BaseModel.php on line 1918
+[Method: POST, Route: ops/verify-docs]
+in SYSTEMPATH\BaseModel.php on line 1805.
+ 1 SYSTEMPATH\BaseModel.php(1918): CodeIgniter\BaseModel->timeToString(1)
+ 2 SYSTEMPATH\BaseModel.php(1043): CodeIgniter\BaseModel->transformDataToArray(1, 'update')
+ 3 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], 1)
+ 4 APPPATH\Controllers\OperationsController.php(95): CodeIgniter\Model->update('status', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->verify()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:49:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "emails/ops/document_status.php"
+[Method: POST, Route: ops/verify-docs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('emails/ops/document_status.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('emails/ops/document_status', [], true)
+ 3 APPPATH\Libraries\Mailer.php(33): view('emails/ops/document_status', [...])
+ 4 APPPATH\Controllers\OperationsController.php(105): App\Libraries\Mailer::send('bhupati.jagi@gmail.com', 'RSA Dealer Onboarding Documents Approved', 'emails/ops/document_status', [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->verify()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-04 19:49:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "emails/ops/document_status.php"
+[Method: POST, Route: ops/verify-docs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('emails/ops/document_status.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('emails/ops/document_status', [], true)
+ 3 APPPATH\Libraries\Mailer.php(33): view('emails/ops/document_status', [...])
+ 4 APPPATH\Controllers\OperationsController.php(105): App\Libraries\Mailer::send('bhupati.jagi@gmail.com', 'RSA Dealer Onboarding Documents Approved', 'emails/ops/document_status', [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->verify()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

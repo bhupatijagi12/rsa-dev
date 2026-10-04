@@ -38,7 +38,7 @@
             </div>
             <div class="form-row two">
               <div class="form-field"><label>GST number <span class="req"></span></label><input name="gst_number" value="<?= $gst_number;?>" disabled></div>
-              <div class="form-field"><label>PAN number <span class="req"></span></label><input name="pan_number" placeholder="10-character PAN"></div>
+              <div class="form-field"><label>PAN number <span class="req"></span></label><input name="pan_number" placeholder="10-character PAN" value="<?= $pan_number;?>"></div>
             </div>
             <div class="form-field" style="margin-bottom:16px;"><label>Registered address <span class="req"></span></label><input name="address" placeholder="Street, city, state, pincode" value="<?= $address;?>"></div>
             <div class="form-row two">
@@ -52,10 +52,37 @@
 
           <div class="step">
             <div class="num">2</div>
-            <h3>Bank details</h3>
+            <h3>Payment details</h3>
           </div>
           <div class="step-body">
             <p class="desc">Used to settle commission payouts to your main wallet.</p>
+            <div class="form-row two">
+              <div class="form-field"><label>Dealer Payment <span class="req"></span></label>
+               <select name="dealer_payment">
+                   <option value="">Select</option>
+                   <option value="cut_n_pay" <?= ($dealer_payment == 'cut_n_pay') ? 'selected' : ''; ?>>
+Cut &amp; Pay
+</option>
+                   <option value="monthly" <?= ($dealer_payment == 'monthly') ? 'selected': ''; ?>>Monthly</option>
+               </select> 
+           </div>
+               
+              <div class="form-field"><label>Payment Mode <span class="req"></span></label>
+ <select name="payment_mode">
+                   <option value="">Select</option>
+                   <option value="Advance" <?= ($payment_mode == 'Advance') ? 'selected' : ''; ?>>Advance</option>
+                   <option value="credit" <?= ($payment_mode == 'credit') ? 'selected' : ''; ?>>Credit</option>
+               </select>          
+           </div>
+          </div>
+
+      </div>
+
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Bank details</h3>
+          </div>
+          <div class="step-body">
             <div class="form-row two">
               <div class="form-field"><label>Account holder name <span class="req"></span></label><input name="account_holder_name" placeholder="As per bank records" value="<?= $account_holder_name;?>"></div>
               <div class="form-field"><label>Account number <span class="req"></span></label><input name="account_number" placeholder="Bank account number" value="<?= $account_number;?>"></div>

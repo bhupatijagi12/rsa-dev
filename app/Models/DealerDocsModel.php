@@ -16,6 +16,7 @@ class DealerDocsModel extends Model
         'pan',
         'msme',
         'gst',
-        'cancelled_cheque'
+        'cancelled_cheque',
+        'comments'
     ];
 }

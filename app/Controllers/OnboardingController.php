@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\DealerModel;
 use App\Models\DealerDocsModel;
+use App\Libraries\Mailer;
 
 class OnboardingController extends BaseController
 {
@@ -27,8 +28,8 @@ class OnboardingController extends BaseController
 	public function saveOnboarding()
 	{
 	    $data = [
-	        //'gst_number' => $this->request->getPost('gst_number'),
-	        'pan_number' => $this->request->getPost('pan_number'),
+	        'dealer_payment' => $this->request->getPost('dealer_payment'),
+	        'payment_mode' => $this->request->getPost('payment_mode'),
 	        'address' => $this->request->getPost('address'),
 	        'contact_person' => $this->request->getPost('contact_person'),
 	        'mobile' => $this->request->getPost('mobile'),
@@ -53,11 +54,15 @@ class OnboardingController extends BaseController
 	public function upload() 
 	{
 	   $dealerModel = new \App\Models\DealerModel();
-		$dealer = $dealerModel
+	    $dealerDocsModel = new \App\Models\DealerDocsModel();
+	   $dealer = $dealerModel
                     ->where('dealer_code', session('dealer_code'))
                     ->first();
-
-		 return view('upload-documents', $dealer);
+       $dealerDoc = $dealerDocsModel
+                    ->where('dealer_id', session('dealer_id'))
+                    ->first();
+         
+	   return view('upload-documents', $dealerDoc);
 	}
 
 	public function uploadDocuments()
@@ -97,6 +102,12 @@ class OnboardingController extends BaseController
 	            $documents[$field] = null;
 	        }
 	    }
+	    if (count($documents) == 0) {
+	    	  return $this->response->setJSON([
+	        'status' => 'error',
+	        'message' => 'Please upload atlease any one image'
+	    ]);
+	    }
 
 	    //$db = \Config\Database::connect();
 	    $dealerDocsModel = new DealerDocsModel();
@@ -104,10 +115,11 @@ class OnboardingController extends BaseController
 	    $dealer = $dealerDocsModel
                     ->where('dealer_id', session('dealer_id'))
                     ->first();
+
         if ($dealer != null) {
 
 				$updateData = [];
-				
+				$updateData["comments"] = $this->request->getPost("comments");
 				if (!empty($documents['agreement'])) {
 					$updateData['agreement'] = $documents['agreement'];
 				}
@@ -142,7 +154,8 @@ class OnboardingController extends BaseController
 	        'pan'               => $documents['pan'],
 	        'msme'              => $documents['msme'],
 	        'gst'               => $documents['gst'],
-	        'cancelled_cheque'  => $documents['cancelled_cheque']
+	        'cancelled_cheque'  => $documents['cancelled_cheque'],
+	        'comments'          => $this->request->getPost("comments")
 	    ]);
         }
 
@@ -221,15 +234,47 @@ class OnboardingController extends BaseController
 	    }
 
 	    $dealerModel = new DealerModel();
-	     $data = [
+	     $statusData = [
 	        'status' => 4,
 	    ];
-	    $dealerModel->update(session('dealer_id'), $data);
+	    $dealerModel->update(session('dealer_id'), $statusData);
 
-	    return $this->response->setJSON([
-	        'status'  => 'success',
-	        'message' => 'Your Application submitted successfully. Our Team will get back to you with 1-2 hours.'
-	    ]);
+	    $dealer = $dealerModel
+                    ->where('dealer_code', session('dealer_code'))
+                    ->first();
+ 
+		$data = [
+		'dealer_name' => $dealer['name'],
+		'dealer_code' => $dealer['dealer_code']
+		];
+		$mailSent = Mailer::send(
+			$dealer['email'],
+			'RSA Dealer Onboarding Documents Submitted Successfully',
+			'emails/onboarding_success',
+			$data,
+			[
+			'info@globalaidassurance.com',
+			'bhupati.jagi@globalaidassurance.com'
+			]
+		);
+
+
+		if ($mailSent) {
+
+		return $this->response->setJSON([
+		'status'  => 'success',
+		'message' => 'Your application has been submitted successfully. Our team will review your documents and contact you shortly.'
+		]);
+
+		} else {
+
+		return $this->response->setJSON([
+		'status'  => 'error',
+		'message' => 'Unable to send confirmation email.'
+		]);
+
+		}
+
 	}
 }
 ?>

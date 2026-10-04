@@ -27,7 +27,9 @@ class DealerModel extends Model
         'account_number',
         'ifsc_code',
         'bank_name',
-        'contact_person'
+        'contact_person',
+        'payment_mode',
+        'dealer_payment'
 
     ];
 }

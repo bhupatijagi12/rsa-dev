@@ -10,7 +10,21 @@ $routes->get('otp-verification', 'DealerAuth::otpVerification');
 $routes->post('dealer/verify-otp', 'DealerAuth::verifyOtp');
 $routes->post('dealer/change-password', 'DealerAuth::changePassword');
 
-$routes->get('logout', 'DealerAuth::logout');
+
+##for Operations Page
+$routes->get('/ops/login', 'OperationsAuth::opsLogin');
+$routes->post('/ops/validate-login', 'OperationsAuth::validateLogin');
+
+$routes->group('', ['filter' => 'auth'], function($routes) {
+$routes->get('/ops/dashboard', 'OperationsController::dashboard');
+$routes->get('/ops/dealers', 'OperationsController::dealers');
+$routes->get('/ops/view-documents/(:num)', 'OperationsController::viewDocuments/$1');
+$routes->get('/ops/download/(:num)/(:any)', 'OperationsController::download/$1/$2');
+$routes->post('/ops/verify-docs', 'OperationsController::verify');
+
+});
+
+## FOr Dealer Page
 
 $routes->group('', ['filter' => 'auth'], function($routes) {
 
@@ -37,3 +51,6 @@ $routes->get('gst-transaction', 'PolicyController::gsttransaction');
 $routes->post('generate-policy', 'PolicyController::generatePolicy');
 
 });
+
+
+$routes->get('logout', 'DealerAuth::logout');
