@@ -8,6 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?= base_url('public/assets/style.css'); ?>">
+    
+    <!-- jQuery library -->
+   
+
 </head>
 <body>
 
@@ -19,7 +23,7 @@
     <?= $this->include('layouts/header'); ?>
 
     <div class="content">
-      <form method="post" action="<?= base_url('generate-policy')?>">
+      <form method="post" action="<?= base_url('generate-policy')?>" id ="policyForm">
       <div class="grid" style="grid-template-columns:1.7fr .9fr; gap:20px;">
         <div>
           <div class="step">
@@ -29,16 +33,16 @@
           <div class="step-body">
             <p class="desc">Identify the vehicle being covered by this policy.</p>
             <div class="form-row two">
-              <div class="form-field"><label>Engine number <span class="req">*</span></label><input required placeholder="e.g. BK2BT3204079" name="engine_no"></div>
-              <div class="form-field"><label>Chassis number <span class="req">*</span></label><input required placeholder="e.g. MD625BK29T3804344" name="chassis_no"></div>
+              <div class="form-field"><label>Engine number <span class="req">*</span></label><input placeholder="e.g. BK2BT3204079" name="engine_no" id="engine_no"></div>
+              <div class="form-field"><label>Chassis number <span class="req">*</span></label><input  placeholder="e.g. MD625BK29T3804344" name="chassis_no"></div>
             </div>
             <div class="form-row two">
               <div class="form-field"><label>Vehicle type <span class="req">*</span></label>
                 <select name="vehicle_type"><option>New</option><option>Used</option></select>
               </div>
-              <div class="form-field"><label>Model <span class="req">*</span></label>
+              <div class="form-field"><label>Select Vehicle <span class="req">*</span></label>
 
-                <select required name="vehicle_model">
+                <select  name="vehicle_model">
                   <option>Select Model</option>
                    <?php foreach ($vehicles as $vehicle) : ?>
                   <option><?= $vehicle['make_name'] ?> <?= $vehicle['model_name'] ?> <?= $vehicle['variant_name'] ?> <?= $vehicle['fuel_type'] ?></option>
@@ -55,27 +59,65 @@
           </div>
           <div class="step-body">
             <p class="desc">Personal and contact information for the policy holder.</p>
-            <div class="form-row two">
-              <div class="form-field"><label>Policy holder name <span class="req">*</span></label><input placeholder="Full name" required name="customer_name"></div>
-              <div class="form-field"><label>Mobile number <span class="req">*</span></label><input placeholder="10-digit mobile number" required name="mobile"></div>
+            <div class="form-row three">
+              <div class="form-field"><label>First name <span class="req">*</span></label><input placeholder="Full name"  name="customer_name"></div>
+               <div class="form-field"><label>Middle name <span class="req"></span></label><input placeholder="Middle name"  name="middle_name"></div>
+               <div class="form-field"><label>Last name <span class="req">*</span></label><input placeholder="Last name"  name="last_name"></div>
+              
             </div>
-            <div class="form-row two">
-              <div class="form-field"><label>Email address<span class="req">*</span></label><input required placeholder="name@example.com" name="email"></div>
-              <div class="form-field"><label>Pincode <span class="req">*</span></label><input placeholder="6-digit pincode" name="pincode"></div>
+             <div class="form-row three">
+            
+               
+               <div class="form-field"><label>Gender <span class="req">*</span></label>
+                 <select id="gender" name="gender" >
+                  <option>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+               </div>
+              
+           
+              <div class="form-field"><label>Email address<span class="req">*</span></label><input  placeholder="name@example.com" name="email"></div>
+              <div class="form-field"><label>Mobile number <span class="req">*</span></label><input placeholder="10-digit mobile number"  name="mobile"></div>
+
+              
             </div>
-             <div class="form-row two">
-              <div class="form-field"><label>Emergency Contact </label><input placeholder="Emergency Contact"></div>
+            <div class="form-row three">
+              <div class="form-field"><label>Address<span class="req">*</span></label>
+                <textarea rows="3"></textarea>
+              </div>
+              <div class="form-field"><label>State<span class="req">*</span></label>
+                <select id="state" name="state" >
+                  <option>Select State</option>
+                   <?php foreach ($states as $state) : ?>
+                  <option value="<?= $state['state_name']; ?>"><?= $state['state_name']; ?></option>
+                   <?php endforeach; ?>
+                </select>
+              </div>
+              
+              <div class="form-field"><label>City <span class="req">*</span></label><input placeholder="Enter city" name="city"></div>
+               
+            </div>
+             <div class="form-row three">
+             <div class="form-field"><label>Pincode<span class="req">*</span></label><input  placeholder="Enter pincode" name="pincode"></div>
+              <div class="form-field"><label>Date Of Birth <span class="req">*</span></label><input  type="date" name="dob"></div>
+               <div class="form-field"><label>Occupation <span class="req">*</span></label><input placeholder="Enter occupation" type="text" name="occupation"></div>
+            </div>
+             <div class="form-row three">
+             
+              <div class="form-field"><label>Emergency Contact<span class="req">*</span> </label><input placeholder="Emergency Contact"></div>
+             
             </div>
           </div>
 
-          <div class="step">
+         <!--  <div class="step">
             <div class="num">3</div>
             <h3>Plan Type</h3>
           </div>
            <div class="step-body">
-            <div class="form-row two">
+            <div class="form-row three">
               <div class="form-field"><label>Policy Type <span class="req">*</span></label>
-                <select id="select_plan_type" name="select_plan_type" required>
+                <select id="select_plan_type" name="select_plan_type" >
                   <option>Select Plan type</option>
                   <option value="Fixed">Fixed</option>
                   <option value="Flexi">Flexi</option>
@@ -83,7 +125,36 @@
               </div>
                </div>
           </div>
+ -->
 
+  <div class="step">
+            <div class="num">3</div>
+            <h3>Nominee Details</h3>
+          </div>
+           <div class="step-body">
+            <div class="form-row three">
+              <div class="form-field"><label>First Name <span class="req">*</span></label>
+               <input  type="text" name="nominee_fname">
+              </div>
+              <div class="form-field"><label>Middle Name <span class="req"></span></label>
+               <input  type="text" name="middle_lname"> </div>
+              <div class="form-field"><label>Last Name <span class="req">*</span></label>
+               <input  type="text" name="nominee_lname">
+              </div>
+               </div>
+               <div class="form-row three">
+              <div class="form-field"><label>Gender<span class="req">*</span></label>
+               <input  type="text" name="nominee_gender">
+              </div>
+              <div class="form-field"><label>Date of Birth <span class="req">*</span></label>
+               <input  type="text" name="nominee_dob"> </div>
+
+              <div class="form-field"><label>Mobile Number<span class="req">*</span></label>
+               <input  type="text" name="nominee_mobile"> </div>     
+                 <div class="form-field"><label>Relationship<span class="req">*</span></label>
+               <input  type="text" name="relationship"> </div>                     
+               </div>
+          </div>
 
           <div class="step">
             <div class="num">4</div>
@@ -133,7 +204,7 @@ value="<?= date('Y-m-d');?>" style="display:none">
 
           <div style="display:flex;gap:10px;">
             <button class="btn btn-ghost">Reset</button>
-            <button class="btn btn-nav">Generate policy</button>
+            <button class="btn btn-nav" type="submit">Generate policy</button>
           </div>
         </div>
 
@@ -157,8 +228,17 @@ value="<?= date('Y-m-d');?>" style="display:none">
 </div>
 
 <script src="<?= base_url('public/assets/app.js'); ?>"></script>
-<script src="https://cdn.jsdelivr.trap@5.3.3/dist/js/bootstrap.bundle.min.js"/></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"/></script>
+ <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <!-- Popper JS -->
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    </script>
+    <!-- Latest compiled JavaScript -->
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
 <script>
   $(document).ready(function(){
     function updateSummary()
@@ -207,7 +287,7 @@ value="<?= date('Y-m-d');?>" style="display:none">
 });
 
 
-    $("#select_plan_type").change(function(){
+    /*$("#select_plan_type").change(function(){
       let plan_type = $("#select_plan_type option:selected").text();
       $("#plan_type").text(plan_type);
       if(plan_type == "Fixed")
@@ -221,9 +301,37 @@ value="<?= date('Y-m-d');?>" style="display:none">
         $("#fixed").hide();
       }
 
-     }); 
+     }); */
 
 });
+
+
+  $(document).ready(function () {
+alert("dsd");
+    $("#policyForm").validate({
+        rules: {
+            engine_no: {
+                : true,
+               
+            }
+        },
+
+        messages: {
+            engine_no: {
+                : "Please enter name",
+               
+            }
+        },
+
+        errorClass: "text-danger",
+
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
+});
+``
 
 </script>
 </body>

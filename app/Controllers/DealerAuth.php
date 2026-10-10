@@ -126,7 +126,13 @@ class DealerAuth extends BaseController
                     'status' => 'success',
                     'redirect_url' => site_url('onboarding')
                 ]);
-            } 
+            } else if (session('dealer_status') == 1) 
+            {
+                return $this->response->setJSON([
+                    'status' => 'success',
+                    'redirect_url' => site_url('dashboard')
+                ]);
+            }
             else 
             {
                 return $this->response->setJSON([

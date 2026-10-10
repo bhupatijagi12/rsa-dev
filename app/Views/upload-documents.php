@@ -71,7 +71,7 @@
              <tr data-doc="Dealer Comments">
               <td>Dealer Comments <span class="req" style="color:var(--red);">*</span></td>
               <td></td>
-              <td class="file-label" style="color:var(--ink-soft);"><textarea name="comments" rows="5" cols="20"><?= $comments; ?></textarea></td>
+              <td class="file-label" style="color:var(--ink-soft);"><textarea name="comments" rows="5" cols="20"><?= esc($comments ?? ''); ?></textarea></td>
              <!--  <td style="text-align:right;">
                 <label class="btn btn-ghost" style="cursor:pointer;padding:6px 12px;">⬆<input type="file" style="display:none;" data-upload-row accept=".pdf,.jpg,.jpeg,.png" name="cancelled_cheque"></label>
               </td> -->

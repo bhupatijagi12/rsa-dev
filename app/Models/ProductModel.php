@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class ProductModel extends Model
 {
-    protected $table = 'rsa_products';
+    protected $table = 'gaa_product_plans';
 
     protected $primaryKey = 'id';
 
@@ -19,6 +19,7 @@ class ProductModel extends Model
         'gst_amount',
         'premium_inc_gst',
         'description',
+        'plan_category',
         'status'
     ];
 }

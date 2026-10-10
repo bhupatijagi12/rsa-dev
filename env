@@ -14,7 +14,7 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+ CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
@@ -72,7 +72,6 @@
 
 email.fromEmail = "info@globalaidassurance.com"
 email.fromName = "Global Aid Assurance"
- 
 email.protocol = smtp
 email.SMTPHost = smtp.gmail.com
 email.SMTPUser = bhupati.jagi@gmail.com

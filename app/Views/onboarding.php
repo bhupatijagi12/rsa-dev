@@ -107,7 +107,22 @@ Cut &amp; Pay
 
           <div style="display:flex;gap:10px;">
             <button type="submit" id="saveButton" class="btn btn-ghost">Save as draft</button>
+            <?php if(session('dealer_status') == 2) { ?>
             <button type="button" id="submitButton" class="btn btn-nav">Submit application</button>
+
+            <?php } ?>
+             <?php if(session('dealer_status') == 1) { ?>
+            <p class="btn btn-nav btn-green">Already Approved</p>
+
+            <?php } ?>
+             <?php if(session('dealer_status') == 3) { ?>
+            <p class="btn btn-nav btn-red">Rejected</p>
+
+            <?php } ?>
+            <?php if(session('dealer_status') == 2) { ?>
+            <p class="btn btn-nav btn-yellow">Pending</p>
+
+            <?php } ?>
           </div>
           <div style="color: red;" id="msg"></div>
 
@@ -127,10 +142,10 @@ Cut &amp; Pay
   </div>
 </div>
 
-<link rel="stylesheet" href="<?= base_url('public/assets/app.js'); ?>">
 
 <script src="https://cdn.jsdelivr.trap@5.3.3/dist/js/bootstrap.bundle.min.js"/></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"/></script>
+<link rel="stylesheet" href="<?= base_url('public/assets/app.js'); ?>">
 
 <script>
 $(document).ready(function () {

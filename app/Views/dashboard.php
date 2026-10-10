@@ -284,6 +284,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <script src="https://cdn.jsdelivr.trap@5.3.3/dist/js/bootstrap.bundle.min.js"/></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"/></script>
 <script>
+  $(document).ready(function () {
   $("#changePasswordForm").submit(function(e){
 
     e.preventDefault();
@@ -324,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
+  });
 </script>
 </body>
 </html>

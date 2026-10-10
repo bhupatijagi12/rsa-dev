@@ -1,0 +1,44 @@
+CRITICAL - 2026-10-05 04:39:32 --> ParseError: syntax error, unexpected token "if"
+[Method: GET, Route: onboarding]
+in APPPATH\Views\onboarding.php on line 110.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('onboarding', [], true)
+ 3 APPPATH\Controllers\OnboardingController.php(18): view('onboarding', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-05 04:43:04 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: onboarding]
+in APPPATH\Views\onboarding.php on line 15.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('onboarding', [], true)
+ 3 APPPATH\Controllers\OnboardingController.php(18): view('onboarding', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OnboardingController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OnboardingController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-05 04:47:11 --> ErrorException: Undefined variable $db
+[Method: GET, Route: ops/dashboard]
+in APPPATH\Controllers\OperationsController.php on line 14.
+ 1 APPPATH\Controllers\OperationsController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OperationsController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-05 04:47:19 --> ErrorException: Undefined variable $db
+[Method: GET, Route: ops/dashboard]
+in APPPATH\Controllers\OperationsController.php on line 14.
+ 1 APPPATH\Controllers\OperationsController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\OperationsController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

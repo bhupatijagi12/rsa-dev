@@ -42,7 +42,7 @@
       </div>
       <div class="product-card">
         <div class="art">🚚</div>
-        <h3>Customize My Plan</h3>
+        <h3>Make My Plan</h3>
         <a href="<?= base_url('dashboard') ?>">Click here →</a>
       </div>
     </div>

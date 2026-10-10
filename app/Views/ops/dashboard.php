@@ -68,18 +68,24 @@
       <div class="grid grid-3" style="margin-bottom:16px;">
         <div class="card stat-card">
           <div class="lbl">Total Dealers</div>
-          <div class="num">434</div>
+          <div class="num"><?= $totalDealers; ?></div>
           <div class="bar"><span style="width:22%"></span></div>
 <!--           <div class="foot">Funds roughly 288 more policies at ₹11.39 avg premium</div>
  -->        </div>
         <div class="card stat-card">
           <div class="lbl">Active Dealers</div>
-          <div class="num">230</div>
+          <div class="num"><?= $approvedDealers; ?></div>
 <!--           <div class="foot">Earned and held — moves to main wallet once an invoice covering it is approved</div>
  -->        </div>
         <div class="card stat-card">
           <div class="lbl">Rejected Dealers</div>
-          <div class="num">4</div>
+          <div class="num"><?= $rejectedDealers; ?></div>
+          <!-- <div class="sub">99.3% share of commission earned</div>
+          <div class="foot">From 73 approved invoices this financial year</div> -->
+        </div>
+         <div class="card stat-card">
+          <div class="lbl">Pending Dealers</div>
+          <div class="num"><?= $pendingDealers; ?></div>
           <!-- <div class="sub">99.3% share of commission earned</div>
           <div class="foot">From 73 approved invoices this financial year</div> -->
         </div>

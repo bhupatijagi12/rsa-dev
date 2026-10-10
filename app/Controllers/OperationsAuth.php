@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\DealerModel;
+use App\Libraries\Mailer;
+
 class OperationsAuth extends BaseController
 {
   
@@ -15,7 +18,7 @@ class OperationsAuth extends BaseController
     	$username = $this->request->getPost('ops_code');
         $password   = $this->request->getPost('password');
 
-        $userModel = new \App\Models\userModel();
+        $userModel = new \App\Models\UserModel();
 
         $user = $userModel
                 ->where('user', $username)

@@ -11,7 +11,28 @@ class OperationsController extends BaseController
   
     public function dashboard()
     {
-        return view('ops/dashboard');
+    	$db = \Config\Database::connect();
+    	$totalDealers = $db->table('dealers')
+		->countAllResults();
+		
+		$approvedDealers = $db->table('dealers')
+		->where('status', 1)
+		->countAllResults();
+		
+		$rejectedDealers = $db->table('dealers')
+		->where('status', 3)
+		->countAllResults();
+		
+		$pendingDealers = $db->table('dealers')
+		->where('status', 2)
+		->countAllResults();
+		$data = [
+		'totalDealers' => $totalDealers,
+		'approvedDealers' => $approvedDealers,
+		'rejectedDealers' => $rejectedDealers,
+		'pendingDealers' => $pendingDealers,
+		];
+        return view('ops/dashboard', $data);
     }
 
       public function dealers()

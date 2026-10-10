@@ -58,11 +58,14 @@ class OnboardingController extends BaseController
 	   $dealer = $dealerModel
                     ->where('dealer_code', session('dealer_code'))
                     ->first();
-       $dealerDoc = $dealerDocsModel
+        $data = $dealerDocsModel
                     ->where('dealer_id', session('dealer_id'))
                     ->first();
-         
-	   return view('upload-documents', $dealerDoc);
+      if (empty($data['comments'])) {
+         $data['comments'] = "";
+        }
+        
+        return view('upload-documents', $data);
 	}
 
 	public function uploadDocuments()
