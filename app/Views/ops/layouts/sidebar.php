@@ -14,7 +14,7 @@
         <div class="nav-item">Transaction Requests</div>
         <div class="nav-item" onclick="location.href='<?= base_url('bank-statement') ?>'">Transaction Statement</div>
       </div> -->
-      <div class="nav-item parent"><span class="row"><span class="ic">📄</span> Dealers</span><span class="caret">›</span></div>
+     <!--  <div class="nav-item parent"><span class="row"><span class="ic">📄</span> Dealers</span><span class="caret">›</span></div> -->
       <div class="nav-sub">
         <div class="nav-item" onclick="location.href='<?= base_url('ops/dealers') ?>'">List</div>
         <!--div class="nav-item" onclick="location.href='generate-policy-sales.html'">Generate Policy – Sales</div>

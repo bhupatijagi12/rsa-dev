@@ -43,6 +43,7 @@ class DealerAuth extends BaseController
 
         session()->set([
             'dealer_id' => $dealer['id'],
+            'login_type' => 1,
             'dealer_email' => $dealer['email'],
             'dealer_otp' => $otp,
             'first_logged_in' => $dealer['is_first_logged_in'],
@@ -52,6 +53,15 @@ class DealerAuth extends BaseController
             'name' => $dealer['name'],
             'logged_in' => true
         ]);
+
+        if ($dealer['status'] == 1) 
+        {
+             return $this->response->setJSON([
+                'status' => 'success',
+                'message' => 'Login successful.',
+                'redirect_url' => site_url('dashboard')
+            ]);
+        }
 
         $data = [
         'dealer_name' => $dealer['name'],

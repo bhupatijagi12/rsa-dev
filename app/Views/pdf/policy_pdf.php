@@ -112,7 +112,7 @@ table{
             </div>
 
             <div class="policy-title">
-                POLICY CERTIFICATE
+                CERTIFICATE
             </div>
         </td>
 
@@ -140,11 +140,18 @@ table{
 <table class="info-table">
 
     <tr>
-        <td class="label">Policy Number</td>
+        <td class="label">Certificate Number</td>
         <td><?= $policy_no ?></td>
 
         <td class="label">Issue Date</td>
-        <td><?= date('d-m-Y') ?></td>
+        <td><?= $certificate_issue_datetime ?></td>
+    </tr>
+     <tr>
+        <td class="label">Certificate Start Date</td>
+        <td><?= $start_date ?></td>
+
+        <td class="label">Certificate End Date</td>
+        <td><?= $expiry_date ?></td>
     </tr>
 
     <tr>
@@ -166,10 +173,22 @@ table{
 <table class="details-table">
 
     <tr>
-        <td class="label">Customer Name</td>
-        <td><?= $customer_name ?></td>
+        <td class="label">First Name</td>
+        <td><?= $firstname ?></td>
+    </tr>
+      <tr>
+        <td class="label">Middle Name</td>
+        <td><?= $middlename ?></td>
     </tr>
 
+    <tr>
+        <td class="label">Last Name</td>
+        <td><?= $lastname ?></td>
+    </tr>
+     <tr>
+        <td class="label">Gender</td>
+        <td><?= $gender ?></td>
+    </tr>
     <tr>
         <td class="label">Mobile Number</td>
         <td><?= $mobile ?></td>
@@ -178,6 +197,20 @@ table{
     <tr>
         <td class="label">Email Address</td>
         <td><?= $email ?></td>
+    </tr>
+
+      <tr>
+        <td class="label">state</td>
+        <td><?= $state ?></td>
+    </tr>
+
+     <tr>
+        <td class="label">city</td>
+        <td><?= $city ?></td>
+    </tr>
+     <tr>
+        <td class="label">address</td>
+        <td><?= $address ?></td>
     </tr>
 
     <tr>
@@ -226,11 +259,6 @@ table{
 <table class="details-table">
 
     <tr>
-        <td class="label">Product</td>
-        <td>RSA Rider</td>
-    </tr>
-
-    <tr>
         <td class="label">Plan</td>
         <td><?= $plan ?></td>
     </tr>
@@ -242,7 +270,7 @@ table{
 
     <tr>
         <td class="label">Start Date</td>
-        <td><?= date('d-m-Y') ?></td>
+        <td><?= $start_date ?></td>
     </tr>
 
     <tr>
@@ -261,9 +289,21 @@ table{
 <table class="details-table">
 
     <tr>
+        <td class="label">Premium Amount without GST</td>
+        <td>
+            ₹ <?= $premium_ex_gst ?>
+        </td>
+    </tr>
+    <tr>
+        <td class="label">GST Amount</td>
+        <td>
+            ₹ <?= $gst ?>
+        </td>
+    </tr>
+    <tr>
         <td class="label">Premium Amount</td>
         <td>
-            ₹ <?= number_format($premium,2) ?>
+            ₹ <?= $premium ?>
         </td>
     </tr>
 

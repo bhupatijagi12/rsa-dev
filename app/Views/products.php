@@ -20,7 +20,7 @@
   <div class="picker-main">
     <div class="topbar-simple">
       <div class="left">
-        <img src="<?= base_url('public/assets/logo.png'); ?>" alt="GlobalAid Assurance" style="height:26px;">
+        <img src="<?= base_url('public/assets/logo.png'); ?>" alt="GlobalAid Assurance" style="height:76px;">
         <span class="datetime" data-clock-simple></span>
       </div>
             <div class="user">Welcome &middot; <?= session('dealer_code');?><div class="avatar">👤</div></div>
@@ -30,12 +30,14 @@
     <div class="hero-gradient"></div>
 
     <div class="product-grid">
+      <?php foreach($products as $product) : ?>
       <div class="product-card">
         <div class="art">🛡️</div>
-        <h3>Extended Warranty</h3>
-        <a href="<?= base_url('coming-soon') ?>">Click here →</a>
+        <h3><?= $product['product_name'];?></h3>
+        <a href="<?= base_url('policy/'.$product['id']) ?>">Click here →</a>
       </div>
-      <div class="product-card">
+      <?php endforeach; ?>
+     <!--  <div class="product-card">
         <div class="art">🚚</div>
         <h3>Road Side Assistance</h3>
         <a href="<?= base_url('dashboard') ?>">Click here →</a>
@@ -44,7 +46,7 @@
         <div class="art">🚚</div>
         <h3>Make My Plan</h3>
         <a href="<?= base_url('dashboard') ?>">Click here →</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

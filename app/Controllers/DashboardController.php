@@ -3,10 +3,17 @@
 namespace App\Controllers;
 
 use App\Models\DealerModel;
+use App\Models\GAAProductsModel;
 
 class DashboardController extends BaseController
 {
     public function index() 
+    {
+        $data['forcePasswordChange'] = true;
+        //return view('dashboard', $data);
+        return view("dealer/index", $data);
+    }
+      public function indexold() 
     {
         $data['forcePasswordChange'] = true;
         return view('dashboard', $data);
@@ -55,7 +62,13 @@ class DashboardController extends BaseController
 
     public function products()
     {
-        return view('products');
+        $gAAProductsModel = new \App\Models\GAAProductsModel();
+        $loginType = session('login_type');
+        $data['products'] = $gAAProductsModel->
+        where("FIND_IN_SET($loginType, login_type) !=", 0)
+        ->findAll();
+
+        return view('products', $data);
     }
     public function comingsoon()
     {

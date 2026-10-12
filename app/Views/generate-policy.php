@@ -306,32 +306,7 @@ value="<?= date('Y-m-d');?>" style="display:none">
 });
 
 
-  $(document).ready(function () {
-alert("dsd");
-    $("#policyForm").validate({
-        rules: {
-            engine_no: {
-                : true,
-               
-            }
-        },
-
-        messages: {
-            engine_no: {
-                : "Please enter name",
-               
-            }
-        },
-
-        errorClass: "text-danger",
-
-        submitHandler: function(form) {
-            form.submit();
-        }
-    });
-
-});
-``
+  
 
 </script>
 </body>
