@@ -12,6 +12,7 @@ use App\Models\GAAProductsModel;
 use App\Models\GAAProductPlanModel;
 use App\Models\CustomizedDealerPlanModel;
 use App\Models\DealerModel;
+use App\Models\Policy\WalletModel;
 
 
 use Dompdf\Dompdf;
@@ -28,7 +29,13 @@ class PolicyController extends BaseController
 		$gAAProductsModel = new \App\Models\GAAProductsModel();
 		$gAAProductPlanModel = new \App\Models\GAAProductPlanModel();
 		$customizedDealerPlanModel = new \App\Models\CustomizedDealerPlanModel();
-
+        $walletModel = new \App\Models\Policy\WalletModel();
+        $wallet = $walletModel
+        ->where('dealer_id', session('dealer_id'))
+        ->where('status', 'Approved')
+        ->selectSum('amount')
+        ->first();
+        $data['totalWallet'] = $wallet ?? 0;
 
 		$data['products'] = $productModel
 					->where('status', 1)

@@ -69,7 +69,7 @@
 						</a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('products');?>">Generate Policy</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-projects">Download Policy</a></li>
+							<!-- <li class="sidebar-item"><a class="sidebar-link" href="pages-projects">Download Policy</a></li> -->
 							<!-- <li class="sidebar-item"><a class="sidebar-link" href="pages-clients">Clients <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-orders">Orders <span

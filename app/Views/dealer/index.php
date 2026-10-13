@@ -83,11 +83,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="h1 mt-1 mb-3">2.382</div>
-												<div class="mb-0">
+												<div class="h1 mt-1 mb-3">Rs <?= $totalWallet['amount']; ?></div>
+												<!-- <div class="mb-0">
 													<span class="badge badge-primary-light">-3.65%</span>
 													<span class="text-muted">Since last week</span>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="card">
@@ -104,10 +104,10 @@
 													</div>
 												</div>
 												<div class="h1 mt-1 mb-3">14.212</div>
-												<div class="mb-0">
+												<!-- <div class="mb-0">
 													<span class="badge badge-success-light">5.25%</span>
 													<span class="text-muted">Since last week</span>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
@@ -126,10 +126,10 @@
 													</div>
 												</div>
 												<div class="h1 mt-1 mb-3">$21.300</div>
-												<div class="mb-0">
+												<!-- <div class="mb-0">
 													<span class="badge badge-success-light">6.65%</span>
 													<span class="text-muted">Since last week</span>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="card">
@@ -146,10 +146,10 @@
 													</div>
 												</div>
 												<div class="h1 mt-1 mb-3">64</div>
-												<div class="mb-0">
+												<!-- <div class="mb-0">
 													<span class="badge badge-danger-light">-2.25%</span>
 													<span class="text-muted">Since last week</span>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>

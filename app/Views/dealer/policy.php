@@ -32,6 +32,12 @@
 		body {
 			opacity: 0;
 		}
+		.heading-line
+		{
+			float: left;
+	    color: white;
+	    font-size: 20px;
+		}
 	</style>
 	<!-- END SETTINGS -->
 </head>
@@ -57,7 +63,9 @@
 					<div class="mb-3">
 						<h1 class="h3 d-inline align-middle"><?php echo $plan['product_name'];?></h1><a class="badge bg-primary ms-2" href="<?= base_url('products')?>"
 							>Go to Products<i class="fas fa-fw fa-external-link-alt"></i></a>
+							<h3 style="float: right;">Available Balance : <b>Rs <?= $totalWallet['amount']; ?></b></h3>
 					</div>
+
 	 		<?php if (session()->getFlashdata('success')) : ?>
 	 		<p style="color:green"><?= session()->getFlashdata('success'); ?></p>
 	 		<?php endif; ?>
@@ -67,10 +75,10 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="card">
-								<div class="btn btn-outline-primary">
-									<h5 class="card-title">Vehicle details</h5>
-									<h5 class="card-subtitle text-muted">Identify the vehicle being covered by this policy.</h5>
-								</div>
+								<div class="btn btn-primary">
+									<h5 class="card-title heading-line" style="float:left;">Vehicle details</h5>
+<!-- 									<h5 class="card-subtitle text-muted">Identify the vehicle being covered by this policy.</h5>
+ -->								</div>
 								<div class="card-body">
 									<form class="row needs-validation" novalidate method="post" id="policyForm" action="<?= base_url('generate-policy') ?>" >
 										<div class="col-md-4">
@@ -110,13 +118,18 @@
 											<div class="invalid-feedback">
 												Please select Model.
 											</div>
+											<br>
 										</div>
-										<div class="btn btn-outline-primary">
-									<h5 class="card-title">Owner Details</h5>
-									<h5 class="card-subtitle text-muted">Please enter your details
-										properly</h5>
+
+										<div class="btn btn-primary">
+
+									<h5 class="card-title heading-line">Owner Details</h5>
+								<!-- 	<h5 class="card-subtitle text-muted">Please enter your details
+										properly</h5> -->
 									</div>
+	<br>
 										<div class="col-md-4">
+										
 											<label for="firstname" class="form-label">First name*</label>
 											<input type="text" class="form-control" id="firstname" name="firstname" value="" required>
 											<div class="valid-feedback">
@@ -209,13 +222,16 @@
 											<div class="invalid-feedback">
 												Please provide a Occupation.
 											</div>
+											<br>
 										</div>
-										<div class="btn btn-outline-primary">
-									<h5 class="card-title">Nominee Details</h5>
-									<h5 class="card-subtitle text-muted">Please enter Nominee details
-										properly</h5>
+										<div class="btn btn-primary">
+									<h5 class="card-title heading-line">Nominee Details</h5>
+									<!-- <h5 class="card-subtitle text-muted">Please enter Nominee details
+										properly</h5> -->
 									</div>
+									<br>
 									<div class="col-md-4">
+
 											<label for="nominee_fname" class="form-label">Firstname *</label>
 											<input type="text" class="form-control" id="nominee_fname" required name="nominee_firstname">
 											<div class="invalid-feedback">
@@ -277,12 +293,16 @@
 											<div class="invalid-feedback">
 												Please provide Emergency Contact.
 											</div>
+											<br>
 										</div>
-										<div class="btn btn-outline-primary">
-									<h5 class="card-title">Plan Details</h5>
-									<h5 class="card-subtitle text-muted">Please select plan details properly</h5>
-									</div>
+										<div class="btn btn-primary">
+
+									<h5 class="card-title heading-line">Plan Details</h5>
+<!-- 									<h5 class="card-subtitle text-muted">Please select plan details properly</h5>
+ -->									</div>
+ <br>
 									<div class="col-md-4">
+
 											<label for="validationCustom04" class="form-label">Select Plan</label>
 											<select class="form-select" id="validationCustom04" required name="product_name">
 												<option selected disabled value="">Choose...</option>
@@ -348,7 +368,9 @@
 												</div>
 											</div>
 										</div>
+
 										<div class="col-12">
+												<br>
 											<button class="btn btn-primary btn-generate" type="submit">Generate</button>
 										</div>
 									</form>

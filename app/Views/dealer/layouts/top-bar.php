@@ -232,8 +232,10 @@
 							<a class="nav-icon js-fullscreen d-none d-lg-block" href="#">
 								<div class="position-relative">
 									<i class="align-middle" data-feather="maximize"></i>
+
 								</div>
 							</a>
+							
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">

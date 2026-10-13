@@ -13,6 +13,7 @@ class WalletModel extends Model
     protected $allowedFields = [
         'amount',
         'dealer_id',
+        'amount',
         'transaction_no',
         'file_upload',
         'transaction_type',

@@ -4,13 +4,20 @@ namespace App\Controllers;
 
 use App\Models\DealerModel;
 use App\Models\GAAProductsModel;
+use App\Models\Policy\WalletModel;
 
 class DashboardController extends BaseController
 {
     public function index() 
     {
+        $walletModel = new \App\Models\Policy\WalletModel();
         $data['forcePasswordChange'] = true;
-        //return view('dashboard', $data);
+        $wallet = $walletModel
+        ->where('dealer_id', session('dealer_id'))
+        ->where('status', 'Approved')
+        ->selectSum('amount')
+        ->first();
+        $data['totalWallet'] = $wallet ?? 0;
         return view("dealer/index", $data);
     }
       public function indexold() 
