@@ -11,7 +11,7 @@ class WalletController extends BaseController
 	public function wallettransaction()
 	{
 		$walletModel = new \App\Models\Policy\WalletModel();
-		$data['transactions'] = $walletModel->findAll();
+		$data['transactions'] = $walletModel->where('dealer_id', session('dealer_id'))->findAll();
 		return view('dealer/wallet-transaction', $data);
 	}
 

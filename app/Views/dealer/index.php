@@ -83,7 +83,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="h1 mt-1 mb-3">Rs <?= $totalWallet['amount']; ?></div>
+												<div class="h1 mt-1 mb-3">Rs <?= $totalWallet['amount'] ?? 0; ?></div>
 												<!-- <div class="mb-0">
 													<span class="badge badge-primary-light">-3.65%</span>
 													<span class="text-muted">Since last week</span>
@@ -234,7 +234,7 @@
 						
 					</div>
 
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-3">
 							<div class="card flex-fill w-100">
 								<div class="card-header">
@@ -598,7 +598,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 				</div>
 			</main>
