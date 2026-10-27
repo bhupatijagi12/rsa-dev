@@ -1,0 +1,785 @@
+CRITICAL - 2026-10-27 04:11:21 --> ErrorException: file_get_contents(http://127.0.0.1:8000/api/getcoidata): Failed to open stream: No connection could be made because the target machine actively refused it
+[Method: GET, Route: callapi]
+in APPPATH\Models\Policy\PolicyModel.php on line 104.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://127.0.0.1:8000/api/getcoidata): Failed to open stream: No connection could be made because the target machine actively refused it', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Policy\\PolicyModel.php', 104)
+ 2 APPPATH\Models\Policy\PolicyModel.php(104): file_get_contents('http://127.0.0.1:8000/api/getcoidata', false, resource (stream-context))
+ 3 APPPATH\Controllers\PolicyController.php(197): App\Models\Policy\PolicyModel->sendCOIApi([...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->callapi()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 04:22:04 --> ErrorException: file_get_contents(http://127.0.0.1:8000/api/getcoidata): Failed to open stream: No connection could be made because the target machine actively refused it
+[Method: GET, Route: callapi]
+in APPPATH\Models\Policy\PolicyModel.php on line 104.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://127.0.0.1:8000/api/getcoidata): Failed to open stream: No connection could be made because the target machine actively refused it', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Policy\\PolicyModel.php', 104)
+ 2 APPPATH\Models\Policy\PolicyModel.php(104): file_get_contents('http://127.0.0.1:8000/api/getcoidata', false, resource (stream-context))
+ 3 APPPATH\Controllers\PolicyController.php(197): App\Models\Policy\PolicyModel->sendCOIApi([...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->callapi()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 04:50:22 --> ParseError: syntax error, unexpected token ":", expecting "]"
+[Method: GET, Route: callapi]
+in APPPATH\Controllers\PolicyController.php on line 194.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PolicyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PolicyController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\PolicyController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('callapi')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-27 06:49:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `d...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = :login_id:', [...], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(401): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-27', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 06:49:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `d...' at line 1
+[Method: POST, Route: download-mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = :login_id:', [...], false)
+ 2 APPPATH\Models\Misreport\MisModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OperationsController.php(401): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-27', '2026-10-01')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 06:49:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `d...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = :login_id:', [...], false)
+ 4 APPPATH\Models\Misreport\MisModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OperationsController.php(401): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-27', '2026-10-01')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 06:49:09 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `d...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `pd`.`created` as `policy_issue_date`, `pd`.`premium_ex_gst` as `premium_exclusive_gst po`.*, `pn`.*, `pv`.*, `d`.*, `d`.`mobile` as `dealer_mobile`, `d`.`email` as `dealer_email`, `d`.`name` as `dealername`, `d`.`id` as `dealer_id`, `vv`.`variant_name`, `vm`.*, `vmo`.*, `cm`.*, `s`.*, `cs`.*, `tds`.*
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_makes` `vm` ON `pv`.`make_id` = `vm`.`id`
+LEFT JOIN `vehicle_models` `vmo` ON `pv`.`model_id` = `vmo`.`id`
+LEFT JOIN `vehicle_variants` `vv` ON `pv`.`variant_id`=`vv`.`id`
+LEFT JOIN `dealers` `d` ON `pd`.`login_id` = `d`.`id`
+LEFT JOIN `states` `s` ON `po`.`state` = `s`.`id`
+LEFT JOIN `city_master` `cm` ON `po`.`city` = `cm`.`id`
+JOIN `certificate_status` `cs` ON `pd`.`status` = `cs`.`id`
+JOIN `tds_calculation` `tds` ON `pd`.`id` = `tds`.`policy_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-27\'
+AND `login_id` = :login_id:', [...], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(401): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-27', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-27 07:11:36 --> Table 'rsa_portal.mis_reports' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 07:11:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.mis_reports' doesn't exist
+[Method: GET, Route: mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 2 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 07:11:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.mis_reports' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 4 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 07:11:36 --> [Caused by] mysqli_sql_exception: Table 'rsa_portal.mis_reports' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-27 07:12:11 --> Table 'rsa_portal.mis_reports' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 07:12:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.mis_reports' doesn't exist
+[Method: GET, Route: mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 2 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 07:12:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.mis_reports' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 4 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 07:12:11 --> [Caused by] mysqli_sql_exception: Table 'rsa_portal.mis_reports' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `mr`.*, `d`.`name`
+FROM (`mis_report`, `mis_reports` `mr`)
+LEFT JOIN `dealers` `d` ON `d`.`id` = `mr`.`download_by`
+WHERE `mr`.`download_by` = :mr.download_by:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\OperationsController.php(389): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 07:57:47 --> ErrorException: Undefined array key "statusid"
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 197.
+ 1 APPPATH\Models\Misreport\MisModel.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "statusid"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php', 197)
+ 2 APPPATH\Controllers\OperationsController.php(418): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-28', '2026-10-01')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:08:52 --> ParseError: syntax error, unexpected token "return"
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 107.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ApiModel')
+ 3 APPPATH\Controllers\PolicyController.php(223): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ApiModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:09:16 --> ErrorException: Cannot redeclare App\Models\ApiModel::getApiCall()
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-10-27 10:09:59 --> Unknown column 'master_plan_code' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = :master_plan_code:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ApiModel.php(33): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 17)
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:09:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'master_plan_code' in 'where clause'
+[Method: POST, Route: generate-policy]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = :master_plan_code:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ApiModel.php(33): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 17)
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:09:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'master_plan_code' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = :master_plan_code:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\ApiModel.php(33): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 17)
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:09:59 --> [Caused by] mysqli_sql_exception: Unknown column 'master_plan_code' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = \'GLA-NB-PA5L\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `gaa_product_plans`
+WHERE `master_plan_code` = :master_plan_code:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ApiModel.php(33): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 17)
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:10:50 --> ErrorException: Undefined array key "city_name"
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 78.
+ 1 APPPATH\Models\ApiModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 78)
+ 2 APPPATH\Models\ApiModel.php(34): App\Models\ApiModel->getApiCallFunc(18, '500000', 'GLA-NB-PA5L')
+ 3 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 18)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:11:15 --> ErrorException: Undefined array key "dealer_code"
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 91.
+ 1 APPPATH\Models\ApiModel.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_code"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 91)
+ 2 APPPATH\Models\ApiModel.php(34): App\Models\ApiModel->getApiCallFunc(19, '500000', 'GLA-NB-PA5L')
+ 3 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 19)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:13:39 --> Error: Cannot use object of type App\Models\DealerModel as array
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 93.
+ 1 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(20, '500000', 'GLA-NB-PA5L')
+ 2 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 20)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:14:00 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 93.
+ 1 APPPATH\Models\ApiModel.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 93)
+ 2 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(21, '500000', 'GLA-NB-PA5L')
+ 3 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 21)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:14:43 --> ErrorException: Undefined array key "dealer_id"
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 57.
+ 1 APPPATH\Models\ApiModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_id"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 57)
+ 2 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(22, '500000', 'GLA-NB-PA5L')
+ 3 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 22)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:15:11 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 102.
+ 1 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(23, '500000', 'GLA-NB-PA5L')
+ 2 APPPATH\Controllers\PolicyController.php(271): App\Models\ApiModel->getApiCall('3', '1', 23)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:15:32 --> ErrorException: Array to string conversion
+[Method: GET, Route: policy/3]
+in APPPATH\Views\dealer\policy.php on line 73.
+ 1 APPPATH\Views\dealer\policy.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php', 73)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/policy', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(75): view('dealer/policy', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy('3')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:39:45 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 67.
+ 1 APPPATH\Models\ApiModel.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 67)
+ 2 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(26, '500000', 'GLA-NB-PA5L')
+ 3 APPPATH\Controllers\PolicyController.php(244): App\Models\ApiModel->getApiCall('3', '1', 26)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:42:23 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 67.
+ 1 APPPATH\Models\ApiModel.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 67)
+ 2 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(27, '500000', 'GLA-NB-PA5L')
+ 3 APPPATH\Controllers\PolicyController.php(244): App\Models\ApiModel->getApiCall('3', '1', 27)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 10:43:34 --> Error: Call to undefined function App\Models\print_t()
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 57.
+ 1 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(28, '500000', 'GLA-NB-PA5L')
+ 2 APPPATH\Controllers\PolicyController.php(244): App\Models\ApiModel->getApiCall('3', '1', 28)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 11:12:18 --> ErrorException: Undefined variable $payload
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 62.
+ 1 APPPATH\Models\ApiModel.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $payload', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 62)
+ 2 APPPATH\Models\ApiModel.php(35): App\Models\ApiModel->getApiCallFunc(33, '500000', 'PACB4567')
+ 3 APPPATH\Controllers\PolicyController.php(277): App\Models\ApiModel->getApiCall('3', '2', 33)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 11:17:40 --> ErrorException: Undefined array key "dealer_id"
+[Method: POST, Route: generate-policy]
+in APPPATH\Models\ApiModel.php on line 78.
+ 1 APPPATH\Models\ApiModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_id"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\ApiModel.php', 78)
+ 2 APPPATH\Models\ApiModel.php(36): App\Models\ApiModel->getApiCallFunc(35, '500000', 'PACB4567')
+ 3 APPPATH\Controllers\PolicyController.php(277): App\Models\ApiModel->getApiCall('3', '1', 35)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 12:19:40 --> ErrorException: Undefined variable $explodes
+[Method: GET, Route: download-policy/36]
+in APPPATH\Controllers\PolicyController.php on line 533.
+ 1 APPPATH\Controllers\PolicyController.php(533): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $explodes', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 533)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->downloadpolicypdf('36')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 12:20:04 --> ParseError: syntax error, unexpected token "foreach"
+[Method: GET, Route: download-policy/36]
+in APPPATH\Views\pdf\certificate-pdf.php on line 286.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/certificate-pdf', [], true)
+ 3 APPPATH\Controllers\PolicyController.php(586): view('pdf/certificate-pdf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->downloadpolicypdf('36')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 12:21:25 --> ParseError: syntax error, unexpected token "foreach"
+[Method: GET, Route: download-policy/36]
+in APPPATH\Views\pdf\certificate-pdf.php on line 286.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/certificate-pdf', [], true)
+ 3 APPPATH\Controllers\PolicyController.php(586): view('pdf/certificate-pdf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->downloadpolicypdf('36')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 12:22:12 --> ErrorException: Undefined variable $planRemarks
+[Method: GET, Route: download-policy/36]
+in APPPATH\Views\pdf\certificate-pdf.php on line 286.
+ 1 APPPATH\Views\pdf\certificate-pdf.php(286): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $planRemarks', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\certificate-pdf.php', 286)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\pdf\\certificate-pdf.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('pdf/certificate-pdf', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(586): view('pdf/certificate-pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->downloadpolicypdf('36')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 14:07:56 --> ParseError: syntax error, unexpected variable "$this"
+[Method: GET, Route: ops/cancellation/new]
+in APPPATH\Controllers\CancellationController.php on line 100.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CancellationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CancellationController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\CancellationController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/cancellation/new')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-27 14:28:56 --> ErrorException: Undefined variable $endorsedDate
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 217.
+ 1 APPPATH\Models\Misreport\MisModel.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $endorsedDate', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php', 217)
+ 2 APPPATH\Controllers\OperationsController.php(418): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-28', '2026-10-08')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -279,7 +279,7 @@
 
 										<div class="col-md-4">
 											<label for="pincode" class="form-label">Zip</label>
-											<input type="text" class="form-control" id="pincode" name="pincode">
+											<input type="text" class="form-control" id="pincode" name="pincode" maxlength="6">
 											<div class="invalid-feedback">
 												Please provide a valid Pincode.
 											</div>

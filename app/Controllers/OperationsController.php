@@ -380,11 +380,23 @@ class OperationsController extends BaseController
 
 		if (session('login_type') == 1)
 		{
-			$data['misreports'] = $misModel->where('download_by', session('dealer_id'))->findAll();
+			//$data['misreports'] = $misModel->where('download_by', session('dealer_id'))->findAll();
+			$data['misreports'] = $misModel
+		    ->select('mr.*, d.name')
+		    ->from('mis_report mr')
+		    ->join('dealers d', 'd.id = mr.download_by', 'left')
+		    ->where('mr.download_by', session('dealer_id'))
+		    ->findAll();
 
 		} else 
 		{
-		    $data['misreports'] = $misModel->findAll();
+		    //$data['misreports'] = $misModel->findAll();
+		    	$data['misreports'] = $misModel
+		    ->select('mr.*, u.user as name')
+		    ->from('mis_report mr')
+		    ->join('users u', 'u.id = mr.download_by', 'left')
+		    //->where('mr.download_by', session('login_id'))
+		    ->findAll();
 
 		}
 
@@ -398,7 +410,14 @@ class OperationsController extends BaseController
 		$misModel = new \App\Models\Misreport\MisModel();
 		$toDate = $this->request->getPost('to_date');
 		$fromDate = $this->request->getPost('from_date');
-		$misModel->exportPoliciesCsv($toDate, $fromDate);
+		if (session('login_type') == 1)
+		{
+			$misModel->exportPoliciesCsvDealer($toDate, $fromDate);
+		} else
+		{
+			$misModel->exportPoliciesCsv($toDate, $fromDate);
+
+		}
 	}
 
 	public function viewdealer($dealerId) 

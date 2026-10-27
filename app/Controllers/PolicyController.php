@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\ProductModel;
 use App\Models\VehicleModel;
-
+use App\Models\ApiModel;
 use App\Models\VehicleMakeModel;
 use App\Models\VehicleModelModel;
 use App\Models\VehicleVariantModel;
@@ -171,39 +171,58 @@ class PolicyController extends BaseController
 		
 		$policyModel = new \App\Models\Policy\PolicyModel();
 		$payload = [
-   	 'certificates' => [
-        [
-            'title' => 'Mr.',
-            'member_relationship' => 'husband',
-            'master_policy_number' => 'MA9387',
-            'transaction_date' => '2026-10-22',
-            'transaction_number' => '123123123123',
-            'ghi_sum_insured' => '50000',
-            'state' => 'Uttar Pradesh',
-            'good_health_declaration' => 'Y',
-            'subscriber_number' => 'SUB1001',
-            'subscription_start_date' => '2026-10-22',
-            'tenure' => '1 Year',
-            'subscriber_rsa_number' => 'RSA-2026-00010',
-            'subscriber_first_name' => 'Rohit',
-            'subscriber_middle_name' => 'Kumar',
-            'subscriber_last_name' => 'Singh',
-            'subscriber_gender' => 'Male',
-            'subscriber_age' => 28,
-            'subscriber_dob' => '1998-05-15'
-        ]
+   			 'certificates' => [
+	        [
+	            'title' => 'Mr.',
+	            'member_relationship' => 'husband',
+	            'master_policy_number' => 'MA76448',
+	            'transaction_date' => '2026-10-22',
+	            'transaction_number' => '123123123123',
+	            'ghi_sum_insured' => '50000',
+	            'state' => 'Uttar Pradesh',
+	            'good_health_declaration' => 'Y',
+	            'subscriber_number' => 'SUB1001',
+	            'subscription_start_date' => '2026-10-22',
+	            'tenure' => '1 Year',
+	            'subscriber_rsa_number' => 'RSA-2026-00011',
+	            'subscriber_first_name' => 'Rohit',
+	            'subscriber_middle_name' => 'Kumar',
+	            'subscriber_last_name' => 'Singh',
+	            'subscriber_gender' => 'Male',
+	            'subscriber_age' => 28,
+	            'subscriber_dob' => '1998-05-15',
+	            'insured_address": "123, Gomti Nagar',
+			      'city'=> 'Lucknow',
+			      'subscriber_state'=>  'Uttar Pradesh',
+			      'pin_code'=>  '226010',
+			      'insured_mobile'=>  "9876543210",
+			      'occupation'=>  "Software Developer",
+			      'nominee_first_name'=>  "Anita",
+			      'nominee_middle_name'=>  "",
+			      'nominee_last_name'=>  "Singh",
+			      'nominee_gender'=>  "Female",
+			      'nominee_age'=>  55,
+			      'nominee_dob'=>  "1971-03-10",
+			      'nominee_mobile'=>  "9123456780",
+			      'nominee_relationship'=>  "Mother",
+			      'dealer_code'=>  "DLR001",
+			      'package_name'=>  "RSA",
+			      'cargo_value'=>  "1000"
+
+	        ]
     ]
 ];
 		$result = $policyModel->sendCOIApi($payload);
-
+		echo '<pre>';
 		print_r($result); die;
 
 	}
 
 	public function generatepolicy()
 	{
-
+		$apiModel = new \App\Models\ApiModel();
 		$policyModel = new \App\Models\Policy\PolicyModel();
+
 		$policyModel->insert([
 		    'plan_category' => $this->request->getPost('plan_category'),
 		    'plan_name' => $this->request->getPost('product_name'),
@@ -219,11 +238,15 @@ class PolicyController extends BaseController
 		]);
 
      	$dealerId = session('dealer_id');
+
+     	$insertId = $policyModel->getInsertID();
+
+     	
 		
 		if ($policyModel) 
 		{
 
-			$insertId = $policyModel->getInsertID();
+			
 			//$id = $policyModel->getInsertID();
 
 			$policyNo = 'GAA/' . date('Y') . '/' . str_pad($insertId, 6, '0', STR_PAD_LEFT);
@@ -232,8 +255,7 @@ class PolicyController extends BaseController
 			    'policy_no' => $policyNo
 			]); 		
 
-			// update wallet transaction based on Plans
-			$this->updateWalletTransaction($policyNo, $dealerId, $insertId);
+			
 
 			
 			$errors = [];
@@ -251,12 +273,27 @@ class PolicyController extends BaseController
 			}
 			if (empty($errors)) {
 
-			    $this->downloadPolicyPdf($insertId); // pdf download
+				$return = $apiModel->getApiCall($this->request->getPost('plan_category'), $this->request->getPost('product_name'), $insertId);
 
-			    return redirect()->back()->with(
-			        'success',
-			        'Policy created successfully.'
-			    );
+				if (!empty($return)) 
+				{
+					 return redirect()->back()->with(
+				        'success',
+				         implode(",",$return)
+				    );
+				} else 
+				{
+					// update wallet transaction based on Plans
+					$this->updateWalletTransaction($policyNo, $dealerId, $insertId);
+					$this->downloadPolicyPdf($insertId); // pdf download
+
+				    return redirect()->back()->with(
+				        'success',
+				        'Policy created successfully.'
+				    );
+				}
+
+				
 
 			} else {
 
@@ -316,7 +353,8 @@ class PolicyController extends BaseController
      	}	
 
      	// for customized plan and cut and pay payment structure.
-     	if ($dealerDetails['dealer_payment'] == 'cut_n_pay' & $planCategory == 3) 
+     	//if ($dealerDetails['dealer_payment'] == 'cut_n_pay' & $planCategory == 3) 
+     	if ($planCategory == 3) 
      	{
      		$tdsModel = new \App\Models\TdsModel();
      		$premium_hidden = $this->request->getPost('premium_hidden'); // 500
@@ -327,6 +365,8 @@ class PolicyController extends BaseController
 			$premiumExGST = $this->request->getPost('premium_ex_gst');
      		//$commission_amount = $amount - $premiumExGST;	
      		$commission_amount = $premiumExGST - $premium_hidden;	
+     		if ($dealerDetails['dealer_payment'] == 'cut_n_pay')
+     		{
      		$walletModel->insert([
 	        	'amount' => ($commission_amount - ($commission_amount * 0.02)),
 	        	'transaction_type' => 'credit',
@@ -336,6 +376,7 @@ class PolicyController extends BaseController
 	        	'login_type' => session('login_type'),
 	        	'wallet_category' => 3
         	 ]);
+     		}
         	 $tdsModel->insert([
         	 	'dealer_id' => session('dealer_id'),
         	 	'policy_id' => $policyId,
@@ -488,6 +529,11 @@ public function downloadpolicypdf($policyId)
     }
     $stateCityDetails = $cityModel->getCityDetails($policy['city']);
     //print_r($stateCityDetails); die;
+    $planCode = $planDetails['product_code'];
+    $explodes = explode("+", $planCode);
+    $planRemarks = $gAAProductPlanModel->whereIn('master_product_code', $explodes)
+    ->findAll();	
+    //print_r($planRemarks); die;
     $data = [
     	'dealer_code' => session('dealer_id'),
     	'dealer_name' => session('name'),
@@ -529,7 +575,9 @@ public function downloadpolicypdf($policyId)
         'nominee_dob' =>  $policy['nominee_dob'],
         'nominee_mobile' =>  $policy['nominee_mobile'],
         'relationship' =>  $policy['relationship'],
-        'logo' => $logo
+        'logo' => $logo,
+        'certificate_name' => 'Certificate',
+        'remarks' => $planRemarks
 
     ];
    //echo "<pre>";

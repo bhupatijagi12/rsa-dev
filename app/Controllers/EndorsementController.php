@@ -22,6 +22,7 @@ use App\Models\TdsModel;
 use App\Models\CityModel;
 use App\Models\Misreport\OpsHistoryModel;
 use App\Libraries\Mailer;
+use App\Models\CancelEndorseModel;
 
 
 
@@ -110,6 +111,7 @@ class EndorsementController extends BaseController
 			
 		$policyModel = new \App\Models\Policy\PolicyModel();
 		$opsHistoryModel = new \App\Models\Misreport\OpsHistoryModel();
+		$cancelEndorseModel = new \App\Models\CancelEndorseModel();
 		
 		$policy = $policyModel->getPolicy($endorse_policy_id);
 
@@ -192,6 +194,14 @@ class EndorsementController extends BaseController
 
 			if ($returnStatus)
 			{
+				$cancelEndorseModel->insert([
+					'dealer_id' => $policy['login_id'],
+					'policy_id' => $endorse_policy_id,
+					'updated_by' => session('user_id'),
+					'type' => 'endorsement',
+					'details' => json_encode($post)
+				]);
+
 				$this->downloadpolicypdf($insertId);
 				return redirect('ops/endorsement/new')->with('error', 'Certificate has been endorsed successfully.');
 			} else 
@@ -397,6 +407,10 @@ class EndorsementController extends BaseController
     	$planDetails = $customizedDealerPlanModel->getPlanDetails($policy['plan_name']);
 
     }
+     $planCode = $planDetails['product_code'];
+    $explodes = explode("+", $planCode);
+    $planRemarks = $gAAProductPlanModel->whereIn('master_product_code', $explodes)
+    ->findAll();	
     $stateCityDetails = $cityModel->getCityDetails($policy['city']);
     $data = [
     	//'dealer_code' => session('dealer_id'),
@@ -439,7 +453,9 @@ class EndorsementController extends BaseController
         'nominee_dob' =>  $policy['nominee_dob'],
         'nominee_mobile' =>  $policy['nominee_mobile'],
         'relationship' =>  $policy['relationship'],
-        'logo' => $logo
+        'logo' => $logo,
+        'certificate_name' => 'Endorsed Certificate',
+        'remarks' => $planRemarks
 
     ];
   

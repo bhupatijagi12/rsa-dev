@@ -126,7 +126,7 @@
 										<tbody>
 											<?php foreach ($misreports as $report) : ?>
 											<tr>
-												<td><?= esc($report['download_by']) ?></td>
+												<td><?= esc($report['name']) ?></td>
 												<td><?= esc($report['created']) ?></td>
 												
 											</tr>

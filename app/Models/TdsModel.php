@@ -11,6 +11,7 @@ class TdsModel extends Model
 
      protected $allowedFields = [
         'dealer_id',
+        'policy_id',
         'tds_amount',
         'gst_amount',
         'plan_premium_exc_gst',

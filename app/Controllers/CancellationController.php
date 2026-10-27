@@ -22,6 +22,8 @@ use App\Models\TdsModel;
 use App\Models\CityModel;
 use App\Models\Misreport\OpsHistoryModel;
 use App\Libraries\Mailer;
+use App\Models\CancelEndorseModel;
+
 
 use Dompdf\Dompdf;
 use Dompdf\Options;
@@ -51,6 +53,7 @@ class CancellationController extends BaseController
 	{
 		$policyModel = new \App\Models\Policy\PolicyModel();
 		$walletModel = new \App\Models\Policy\WalletModel();
+		$cancelEndorseModel = new \App\Models\CancelEndorseModel();
 		$opsHistoryModel = new \App\Models\Misreport\OpsHistoryModel();
 		$cancel_policy_id = $this->request->getPost('cancel_policy_id');
 		$policyDetails = $policyModel->where('id', $cancel_policy_id)->first();
@@ -86,7 +89,14 @@ class CancellationController extends BaseController
 			]);
 			$returnStatus = $this->mailToDealerAboutCancellation($policyDetails['policy_no'], $policyDetails['id'], $policyDetails['login_id']);
 			if ($returnStatus)
-			{
+			{	
+				$cancelEndorseModel->insert([
+					'dealer_id' => $policyDetails['login_id'],
+					'policy_id' => $cancel_policy_id,
+					'updated_by' => session('user_id'),
+					'type' => 'cancellation',
+					'details' => $cancel_policy_id
+				]);
 				$this->downloadpolicypdf($insertId);
 				return redirect('ops/cancellation/new')->with('error', 'Certificate has been cancelled successfully.');
 			} else 
@@ -348,6 +358,10 @@ class CancellationController extends BaseController
 
     }
     $stateCityDetails = $cityModel->getCityDetails($policy['city']);
+    $planCode = $planDetails['product_code'];
+    $explodes = explode("+", $planCode);
+    $planRemarks = $gAAProductPlanModel->whereIn('master_product_code', $explodes)
+    ->findAll();	
     $data = [
     	//'dealer_code' => session('dealer_id'),
     	//'dealer_name' => session('name'),
@@ -389,7 +403,9 @@ class CancellationController extends BaseController
         'nominee_dob' =>  $policy['nominee_dob'],
         'nominee_mobile' =>  $policy['nominee_mobile'],
         'relationship' =>  $policy['relationship'],
-        'logo' => $logo
+        'logo' => $logo,
+        'certificate_name' => 'Cancel Certificate',
+        'remarks' => $planRemarks
 
     ];
     $html = view('pdf/certificate-pdf',$data);

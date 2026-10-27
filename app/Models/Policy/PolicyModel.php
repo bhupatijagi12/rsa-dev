@@ -89,7 +89,7 @@ class PolicyModel extends Model
   public function sendCOIApi(array $payload)
 {
    
-    $url = 'http://127.0.0.1:8000/api/getcoidata';
+    $url = 'https://novelembedd.hyperx.cloud/api/getcoidata';
 
     $options = [
         'http' => [

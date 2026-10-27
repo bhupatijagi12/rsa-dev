@@ -111,7 +111,7 @@ td,th{
      <center><img src="<?= $logo; ?>" width="190"></center>
      
 <div class="header">
-   <center> <h1>CERTIFICATE</h1>
+   <center> <h1><?= $certificate_name; ?></h1>
     <!-- <p>Medical Assistance + Complimentary Personal Accident Cover</p> -->
     <p>Assistance / Queries : 8510085600</p></center>
 </div>
@@ -268,9 +268,33 @@ Nominee Details
 <table>
 
 <tr>
-<td><?= $nominee_firstname; ?> <?= $nominee_middlename; ?> <?= $nominee_lastname; ?></td>
-<td><?= $relationship; ?></td>
-<td><?php $gender; ?></td>
+<td>
+<span class="label">First Name</span>
+<?= $nominee_firstname; ?>
+</td>
+<td>
+<span class="label">Middle Name</span>
+<?= $nominee_middlename ?? "-"; ?>
+</td>
+<td>
+<span class="label">Last Name</span>
+<?= $nominee_lastname ?? "-"; ?>
+</td>
+</tr>
+
+<tr>
+<td>
+<span class="label">Relationship</span>
+<?= $relationship; ?>
+</td>
+<td>
+<span class="label">Gender</span>
+<?= $nominee_gender ?? "-"; ?>
+</td>
+<td>
+<span class="label">Age</span>
+<?= $nominee_dob ?? "-"; ?>
+</td>
 </tr>
 
 </table>
@@ -283,14 +307,14 @@ Plan Features & Benefits
 </div>
 
 <table class="feature-table">
-
+<?php foreach ($remarks as $remark) : ?>
 <tr>
-<td>Emergency Message Transmission</td>
+<td><?= $remark['product_name']?></td>
 <td class="yes">YES</td>
-<td>Scope of Services: Covers emergency on-spot minor repairs, tire changes, fuel delivery, or towing to the nearest authorized garage upon mechanical, electrical, or accidental breakdown.</td>
+<td><?= $remark['remarks']?></td>
 </tr>
-
-<tr>
+<?php endforeach; ?>
+<!--tr>
 <td>Doctor on Call (Family of 6)</td>
 <td class="yes">YES</td>
 <td>Usage Caps: Free or included services are usually restricted to a maximum number of events per year (e.g., up to 4 services annually for standard two-wheeler or car add-ons).</td>
@@ -324,7 +348,7 @@ Plan Features & Benefits
 <td>Road Side Legal Assistance</td>
 <td class="yes">YES</td>
 <td>Scope of Services: Covers emergency on-spot minor repairs, tire changes, fuel delivery, or towing to the nearest authorized garage upon mechanical, electrical, or accidental breakdown.</td>
-</tr>
+</tr-->
 
 </table>
 
@@ -394,9 +418,8 @@ Coverage Details
 Enrolled Member will be covered in case of accidental Death or permanentTotal Disability while the insured is driving or
 accompanied the vehicle, covered under the Roadside Assistance oranyassistance plan offered by Across Assist or
 accompanied the vehicle covered under the plan mentioned above asa passenger or drivingthe vehicle.This master policy has
-been booked in the name of Across Assist Pvt Ltd. And insurance is provided by Manipal Cigna Health Insurance Company
-Limited.This benefit will be offered subject to termsand conditions of Manipal Cigna Health Insurance Company limited
-applicable to this product..
+been booked in the name of Global Aid Assurance Pvt Ltd. And insurance is provided by Niva Bupa Insurance Company
+Limited.
 </div>
 <p>For detailed policy wordings, please refer to the link <a target="_blank" href="https://globalaidassurance.com/policies.html#terms">click here</a></p>
 </div>
