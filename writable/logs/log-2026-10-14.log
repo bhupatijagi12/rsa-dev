@@ -1,0 +1,315 @@
+CRITICAL - 2026-10-14 05:12:12 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\xampp\htdocs\rsa-dev\app\Config\Events.php on line 35)
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\\xampp\\htdocs\\rsa-dev\\app\\Config\\Events.php on line 35)', 'C:\\xampp\\htdocs\\rsa-dev\\system\\Session\\Handlers\\FileHandler.php', 73)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(73): ini_set('session.save_path', 'C:\\xampp\\htdocs\\rsa-dev\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(701): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(1096): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\Common.php(1069): service('session')
+11 APPPATH\Filters\AuthFilter.php(16): session()
+12 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+14 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('onboarding/upload-documents', 'before')
+15 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 05:14:13 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\xampp\htdocs\rsa-dev\app\Config\Events.php on line 35)
+[Method: POST, Route: onboarding/upload-documents]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\\xampp\\htdocs\\rsa-dev\\app\\Config\\Events.php on line 35)', 'C:\\xampp\\htdocs\\rsa-dev\\system\\Session\\Handlers\\FileHandler.php', 73)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(73): ini_set('session.save_path', 'C:\\xampp\\htdocs\\rsa-dev\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(701): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(1096): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\Common.php(1069): service('session')
+11 APPPATH\Filters\AuthFilter.php(16): session()
+12 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+14 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('onboarding/upload-documents', 'before')
+15 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 05:52:07 --> TypeError: Unsupported operand types: array - array
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 05:52:14 --> TypeError: Unsupported operand types: array - array
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 05:52:15 --> TypeError: Unsupported operand types: array - array
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 05:52:15 --> TypeError: Unsupported operand types: array - array
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 06:46:29 --> ErrorException: Undefined variable $walletModel
+[Method: GET, Route: check-premium]
+in APPPATH\Controllers\PolicyController.php on line 375.
+ 1 APPPATH\Controllers\PolicyController.php(375): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $walletModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 375)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->checkpremium()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 06:46:53 --> ErrorException: Trying to access array offset on int
+[Method: GET, Route: check-premium]
+in APPPATH\Controllers\PolicyController.php on line 380.
+ 1 APPPATH\Controllers\PolicyController.php(380): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on int', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 380)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->checkpremium()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 06:48:33 --> ErrorException: Trying to access array offset on int
+[Method: GET, Route: check-premium]
+in APPPATH\Controllers\PolicyController.php on line 380.
+ 1 APPPATH\Controllers\PolicyController.php(380): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on int', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 380)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->checkpremium()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 06:50:18 --> ErrorException: Trying to access array offset on int
+[Method: GET, Route: check-premium]
+in APPPATH\Controllers\PolicyController.php on line 381.
+ 1 APPPATH\Controllers\PolicyController.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on int', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 381)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->checkpremium()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 18:23:56 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: update-planamount]
+in SYSTEMPATH\BaseModel.php on line 885.
+ 1 SYSTEMPATH\BaseModel.php(885): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\OperationsController.php(304): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->updateplanamount()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 18:27:31 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: update-planamount]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\OperationsController.php(304): CodeIgniter\Model->update('12', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->updateplanamount()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 18:31:03 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: update-planamount]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\OperationsController.php(303): CodeIgniter\Model->update('12', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->updateplanamount()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 18:33:10 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: update-planamount]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\OperationsController.php(303): CodeIgniter\Model->update('12', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->updateplanamount()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 18:37:44 --> ErrorException: Undefined array key "amount"
+[Method: GET, Route: ops/view-plan/3]
+in APPPATH\Views\operations\view-plan.php on line 136.
+ 1 APPPATH\Views\operations\view-plan.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amount"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-plan.php', 136)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-plan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-plan', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(205): view('operations/view-plan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewplan('3')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 18:38:14 --> ErrorException: Undefined array key "amount"
+[Method: GET, Route: ops/view-plan/3]
+in APPPATH\Views\operations\view-plan.php on line 136.
+ 1 APPPATH\Views\operations\view-plan.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amount"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-plan.php', 136)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-plan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-plan', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(205): view('operations/view-plan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->viewplan('3')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:16:35 --> ErrorException: Undefined array key "plan_amount"
+[Method: GET, Route: policy/2]
+in APPPATH\Views\dealer\policy.php on line 309.
+ 1 APPPATH\Views\dealer\policy.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_amount"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php', 309)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/policy', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(62): view('dealer/policy', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy('2')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:16:39 --> ErrorException: Undefined array key "plan_amount"
+[Method: GET, Route: policy/4]
+in APPPATH\Views\dealer\policy.php on line 309.
+ 1 APPPATH\Views\dealer\policy.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_amount"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php', 309)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/policy', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(62): view('dealer/policy', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy('4')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:16:42 --> ErrorException: Undefined array key "plan_amount"
+[Method: GET, Route: policy/1]
+in APPPATH\Views\dealer\policy.php on line 309.
+ 1 APPPATH\Views\dealer\policy.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_amount"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php', 309)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\policy.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/policy', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(62): view('dealer/policy', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy('1')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:18:43 --> TypeError: CodeIgniter\Database\BaseBuilder::select(): Argument #2 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\rsa-dev\system\Model.php on line 756
+[Method: GET, Route: policy/1]
+in SYSTEMPATH\Database\BaseBuilder.php on line 401.
+ 1 SYSTEMPATH\Model.php(756): CodeIgniter\Database\BaseBuilder->select('*', 'premium_inc_gst as plan_amount')
+ 2 APPPATH\Controllers\PolicyController.php(56): CodeIgniter\Model->__call('select', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy('1')
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:34:52 --> ErrorException: Undefined variable $dealers
+[Method: GET, Route: sold-policies]
+in APPPATH\Views\dealer\sold-policies.php on line 88.
+ 1 APPPATH\Views\dealer\sold-policies.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealers', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php', 88)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/sold-policies', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(86): view('dealer/sold-policies')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:35:32 --> ErrorException: Undefined variable $dealers
+[Method: GET, Route: sold-policies]
+in APPPATH\Views\dealer\sold-policies.php on line 88.
+ 1 APPPATH\Views\dealer\sold-policies.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealers', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php', 88)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/sold-policies', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(86): view('dealer/sold-policies')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:35:38 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: sold-policies]
+in APPPATH\Views\dealer\sold-policies.php on line 283.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/sold-policies', [], true)
+ 3 APPPATH\Controllers\PolicyController.php(86): view('dealer/sold-policies')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 19:35:44 --> ErrorException: Undefined variable $dealer
+[Method: GET, Route: sold-policies]
+in APPPATH\Views\dealer\sold-policies.php on line 90.
+ 1 APPPATH\Views\dealer\sold-policies.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dealer', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php', 90)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/sold-policies', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(86): view('dealer/sold-policies')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 20:00:22 --> ErrorException: Undefined array key ""
+[Method: GET, Route: sold-policies]
+in APPPATH\Views\dealer\sold-policies.php on line 91.
+ 1 APPPATH\Views\dealer\sold-policies.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php', 91)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\sold-policies.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/sold-policies', [], true)
+ 5 APPPATH\Controllers\PolicyController.php(89): view('dealer/sold-policies', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

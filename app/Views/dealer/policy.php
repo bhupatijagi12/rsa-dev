@@ -28,7 +28,10 @@
 	<!-- Remove this after purchasing -->
 	<link  href="<?= base_url('public/admin-assets/css/light.css') ?>" rel="stylesheet">
 	<script src="<?= base_url('public/admin-assets/js/settings.js') ?>"></script>
-	<style>
+	<style> 
+		.form-control {
+			text-transform: uppercase;
+		}
 		body {
 			opacity: 0;
 		}
@@ -62,8 +65,8 @@
 					
 					<div class="mb-3">
 						<h1 class="h3 d-inline align-middle"><?php echo $plan['product_name'];?></h1><a class="badge bg-primary ms-2" href="<?= base_url('products')?>"
-							>Go to Products<i class="fas fa-fw fa-external-link-alt"></i></a>
-							<h3 style="float: right;">Available Balance : <b>Rs <?= $totalWallet['amount']; ?></b></h3>
+							>Issue Certificate<i class="fas fa-fw fa-external-link-alt"></i></a>
+							<h3 style="float: right;">Available Balance : <b>Rs <?= $totalWallet ?? 0; ?></b></h3>
 					</div>
 
 	 		<?php if (session()->getFlashdata('success')) : ?>
@@ -81,20 +84,7 @@
  -->								</div>
 								<div class="card-body">
 									<form class="row needs-validation" novalidate method="post" id="policyForm" action="<?= base_url('generate-policy') ?>" >
-										<div class="col-md-4">
-											<label for="engine_no" class="form-label">Engine number*</label>
-											<input type="text" class="form-control" id="engine_no" name="engine_no" value="" required>
-											<div class="valid-feedback">
-												Looks good!
-											</div>
-										</div>
-										<div class="col-md-4">
-											<label for="chassis_no" class="form-label">Chassis number*</label>
-											<input type="text" class="form-control" id="chassis_no" name="chassis_no" value="" required>
-											<div class="valid-feedback">
-												Looks good!
-											</div>
-										</div>
+
 										<div class="col-md-4">
 											<label for="vehicle_type" class="form-label">Vehicle type*</label>
 											<select class="form-select" id="vehicle_type"  name="vehicle_type" required>
@@ -107,7 +97,88 @@
 											<input type="hidden" name="plan_category" value="<?= $plancategory; ?>">	
 
 										</div>
+
 										<div class="col-md-4">
+											<label for="engine_no" class="form-label">Engine number*</label>
+											<input type="text" class="form-control" id="engine_no" name="engine_no" value="" required maxlength="17">
+											<div class="valid-feedback">
+												Looks good!
+											</div>
+										</div>
+										<div class="col-md-4">
+											<label for="chassis_no" class="form-label">Chassis number*</label>
+											<input type="text" max-length="17" class="form-control" id="chassis_no" name="chassis_no" value="" required maxlength="17">
+											<div class="valid-feedback">
+												Looks good!
+											</div>
+										</div>
+										
+
+
+										<div class="col-md-4">
+											<label for="engine_no" class="form-label">Vehicle Reg No</label>
+											<input type="text" class="form-control" id="veh_reg_no" name="veh_reg_no" value="" >
+											<p id="veh_reg_error" style="color:red"></p>
+										</div>
+
+
+
+											<div class="col-md-4">
+											<label for="vehicle_category" class="form-label">Vehicle Category*</label>
+											<select class="form-select" id="vehicle_category"  name="vehicle_category" required>
+												<option value="">Select</option>
+												<?php foreach ($vehicle_categories as $category) : ?>
+												<option value="<?= $category['vehicle_type'] ?>"><?= $category['vehicle_type'] ?></option>
+												<?php endforeach; ?>
+               			 </select>
+											<div class="invalid-feedback">
+												Please select Vehicle Category.
+											</div>
+											<input type="hidden" name="plan_category" value="<?= $plancategory; ?>">	
+
+										</div>
+
+										<div class="col-md-4">
+											<label for="make" class="form-label">Select Make*</label>
+											 <select class="form-select" id="make"  name="make" required>
+		                 <option selected disabled value="">Choose...</option>
+		                  <!--  <?php foreach ($makes as $make) : ?>
+		                  <option value="<?= $make['id'] ?>"><?= $make['make_name'] ?> </option>
+		                  <?php endforeach; ?> -->
+               			 </select>
+											<div class="invalid-feedback">
+												Please select Make.
+											</div>
+											<br>
+										</div>
+										<div class="col-md-4">
+											<label for="model" class="form-label">Select Model*</label>
+											 <select class="form-select" id="model"  name="model" required>
+		                 <option selected disabled value="">Choose...</option>
+		                  
+               			 </select>
+											<div class="invalid-feedback">
+												Please select Model.
+											</div>
+											<br>
+											<input type="text" class="form-control" id="other_model" name="other_model" placeholder="Enter Model">
+
+											<br>
+										</div>
+										<div class="col-md-4">
+											<label for="variant" class="form-label">Select Variant*</label>
+											 <select class="form-select" id="variant"  name="variant" required>
+		                 <option selected disabled value="">Choose...</option>
+		                  
+               			 </select>
+											<div class="invalid-feedback">
+												Please select Variant.
+											</div>
+											<br>
+											<input type="text" class="form-control" id="other_variant" name="other_variant" placeholder="Enter Variant">
+											<br>
+										</div>
+										<!-- <div class="col-md-4">
 											<label for="vehicle_variant" class="form-label">Select Vehicle Model*</label>
 											 <select class="form-select" id="vehicle_variant"  name="vehicle_variant" required>
 		                 <option selected disabled value="">Choose...</option>
@@ -119,7 +190,7 @@
 												Please select Model.
 											</div>
 											<br>
-										</div>
+										</div> -->
 
 										<div class="btn btn-primary">
 
@@ -161,21 +232,21 @@
 											</div>
 										</div>
 											<div class="col-md-4">
-											<label for="email" class="form-label">Email Address</label>
+											<label for="email" class="form-label">Email Address*</label>
 											<input type="text" class="form-control" id="email" name="email" required>
 											<div class="invalid-feedback">
 												Please provide email address.
 											</div>
 										</div>
 										<div class="col-md-4">
-											<label for="mobile" class="form-label">Mobile Number</label>
-											<input type="text" class="form-control" id="mobile" name="mobile" required>
+											<label for="mobile" class="form-label">Mobile Number*</label>
+											<input type="text" class="form-control" id="mobile" maxlength="10" name="mobile" required>
 											<div class="invalid-feedback">
 												Please provide Mobile number.
 											</div>
 										</div>
 											<div class="col-md-4">
-											<label for="city" class="form-label">Address</label>
+											<label for="city" class="form-label">Address*</label>
 											<input type="text" class="form-control" id="address" name="address" required>
 											<div class="invalid-feedback">
 												Please provide address.
@@ -183,27 +254,32 @@
 										</div>
 								
 										<div class="col-md-4">
-											<label for="city" class="form-label">City</label>
-											<input type="text" class="form-control" id="city" name="city" required>
-											<div class="invalid-feedback">
-												Please provide a valid city.
-											</div>
-										</div>
-										<div class="col-md-4">
-											<label for="state_name" class="form-label">State</label>
+											<label for="state_name" class="form-label">State*</label>
 											<select class="form-select" id="state_name" required name="state">
 												<option selected disabled value="">Choose...</option>
 												 <?php foreach ($states as $state) : ?>
-												 	 <option value="<?= $state['state_name']; ?>"><?= $state['state_name']; ?></option>
+												 	 <option value="<?= $state['id']; ?>"><?= $state['state_name']; ?></option>
                    <?php endforeach; ?>
 											</select>
 											<div class="invalid-feedback">
 												Please select a valid state.
 											</div>
 										</div>
+
+										<div class="col-md-4">
+											<label for="city" class="form-label">City*</label>
+<!-- 											<input type="text" class="form-control" id="city" name="city" required>-->
+							<select class="form-select" id="city" name="city" required>
+							    <option value="">Choose City</option>
+							</select>
+											<div class="invalid-feedback">
+												Please provide a valid city.
+											</div>
+										</div>
+
 										<div class="col-md-4">
 											<label for="pincode" class="form-label">Zip</label>
-											<input type="text" class="form-control" id="pincode" required name="pincode">
+											<input type="text" class="form-control" id="pincode" name="pincode">
 											<div class="invalid-feedback">
 												Please provide a valid Pincode.
 											</div>
@@ -211,15 +287,27 @@
 											<div class="col-md-4">
 											<label for="dob" class="form-label">Date of Birth*</label>
 											<input type="date" class="form-control " id="dob" name="dob" required>
-
+											<p id="dob_error" style="color:red"></p>
 											<div class="invalid-feedback">
 												Please provide your dob.
 											</div>
 										</div>
+										
 										<div class="col-md-4">
 											<label for="occupation" class="form-label">Occupation *</label>
-											<input type="text" class="form-control" name="occupation" id="occupation" required>
-											<div class="invalid-feedback">
+<!-- 											<input type="text" class="form-control" name="occupation" id="occupation" required>
+ -->		
+ 								<select class="form-control" name="occupation" id="occupation" required>
+ 									<option value="">Select Occupation</option>
+ 									<option value="Salaried">Salaried</option>
+ 									<option value="Business">Business</option>
+ 									<option value="Retired">Retired</option>
+ 									<option value="Student">Student</option>
+ 									<option value="Homemaker">Homemaker</option>
+
+ 								</select>
+
+ 									<div class="invalid-feedback">
 												Please provide a Occupation.
 											</div>
 											<br>
@@ -239,8 +327,8 @@
 											</div>
 										</div>
 											<div class="col-md-4">
-											<label for="middle_lname" class="form-label">Middlename *</label>
-											<input type="text" class="form-control" id="middle_lname" name="nominee_middle_name" required>
+											<label for="middle_lname" class="form-label">Middlename </label>
+											<input type="text" class="form-control" id="middle_lname" name="nominee_middle_name" >
 											<div class="invalid-feedback">
 												Please provide a Nominee Middlename.
 											</div>
@@ -262,17 +350,25 @@
 												Please select Gender.
 											</div>
 										</div>
-										<div class="col-md-4">
+										<!-- <div class="col-md-4">
 											<label for="nominee_dob" class="form-label">Date of Birth*</label>
 											<input type="date" class="form-control " id="nominee_dob" name="nominee_dob" required>
 
 											<div class="invalid-feedback">
 												Please provide Nominee dob.
 											</div>
+										</div> -->
+										<div class="col-md-4">
+											<label for="nominee_dob" class="form-label">Age</label>
+											<input type="text" class="form-control " id="nominee_dob" name="nominee_dob" required>
+
+											<div class="invalid-feedback">
+												Please provide your Age.
+											</div>
 										</div>
 										<div class="col-md-4">
-											<label for="nominee_mobile" class="form-label">Mobile Number*</label>
-											<input type="text" class="form-control " id="nominee_mobile" name="nominee_mobile" required>
+											<label for="nominee_mobile" class="form-label">Mobile Number</label>
+											<input type="text" class="form-control" maxlength="10" id="nominee_mobile" name="nominee_mobile">
 
 											<div class="invalid-feedback">
 												Please provide Nominee Mobile.
@@ -280,15 +376,21 @@
 										</div>
 										<div class="col-md-4">
 											<label for="relationship" class="form-label">Relationship*</label>
-											<input type="text" class="form-control " id="relationship" name="relationship" required>
+											<select name="relationship" id="relationship" required class="form-control">
+												<option value="">Select Relationship</option>
+												<?php foreach ($relations as $relation) : ?>
+												<option value="<?php echo $relation['relationship_name']?>"><?php echo $relation['relationship_name']?></option>
+											<?php endforeach; ?>
+											</select>
+											<!-- <input type="text" class="form-control " id="relationship" name="relationship" required> -->
 
 											<div class="invalid-feedback">
 												Please provide Relationship.
 											</div>
 										</div>
 										<div class="col-md-4">
-											<label for="emergency_contact" class="form-label">Emergency Contact*</label>
-											<input type="text" class="form-control " id="emergency_contact" name="emergency_contact" required>
+											<label for="emergency_contact" class="form-label">Emergency Contact</label>
+											<input type="text" class="form-control" maxlength="10" id="emergency_contact" name="emergency_contact">
 
 											<div class="invalid-feedback">
 												Please provide Emergency Contact.
@@ -298,16 +400,15 @@
 										<div class="btn btn-primary">
 
 									<h5 class="card-title heading-line">Plan Details</h5>
-<!-- 									<h5 class="card-subtitle text-muted">Please select plan details properly</h5>
- -->									</div>
- <br>
+								</div>
+ 								<br>
 									<div class="col-md-4">
 
-											<label for="validationCustom04" class="form-label">Select Plan</label>
-											<select class="form-select" id="validationCustom04" required name="product_name">
+											<label for="select_plan" class="form-label">Select Plan*</label>
+											<select class="form-select select-plan" id="select_plan" required name="product_name">
 												<option selected disabled value="">Choose...</option>
 												 <?php foreach ($plan_products as $plan_product) : ?>
-												 	 <option value="<?= $plan_product['id']; ?>"><?= $plan_product['product_name']; ?></option>
+												 	 <option data-id="<?= $plan_product['plan_amount']?>" value="<?= $plan_product['id']; ?>"><?= $plan_product['product_name']; ?></option>
                  				  <?php endforeach; ?>
 											</select>
 											<div class="invalid-feedback">
@@ -317,7 +418,8 @@
 										<div class="col-md-4">
 											<label for="premium" class="form-label">Premium*</label>
 											<input type="text" class="form-control" id="premium" name="premium" required>
-											<input type="hidden" name="limited_amount" id="limited_amount">		
+											<input type="hidden" name="limited_amount" id="limited_amount">	
+											<input type="hidden" name="premium_hidden" id="premium_hidden" />	
 											<div class="invalid-feedback">
 												Please enter Premium amount.
 											</div>
@@ -347,7 +449,7 @@
 										</div> -->
 											<div class="col-md-4">
 											<label for="start_date" class="form-label">Start Certificate Date</label>
-											<input type="text" class="form-control " id="start_date" name="start_date" readonly value="<?= date('Y-m-d');?>">
+											<input type="date" class="form-control " id="start_date" name="start_date" value="<?= date('Y-m-d');?>">
 
 										
 										</div>
@@ -368,11 +470,17 @@
 												</div>
 											</div>
 										</div>
-
+										<?php if ($totalWallet <= 0) { ?>
+											<div class="col-12">
+												<br>
+											<a class="btn btn-secondary" >Please Recharge your wallet</a>
+										</div>
+									<?php } else {  ?>
 										<div class="col-12">
 												<br>
 											<button class="btn btn-primary btn-generate" type="submit">Generate</button>
 										</div>
+									<?php } ?>
 									</form>
 								</div>
 							</div>
@@ -435,9 +543,12 @@
 				.forEach(function(form) {
 					form.addEventListener('submit', function(event) {
 						if (!form.checkValidity()) {
-							
-							event.preventDefault()
-							event.stopPropagation()
+								if ($("#vehicle_type").val() == "old" && $("#veh_reg_no").val() == "")
+								{
+									$("#veh_reg_error").text("Please enter Vehicle registration no.");									
+								}
+								event.preventDefault()
+									event.stopPropagation()
 						} else {
 						//updateSummary();
 						}
@@ -448,7 +559,6 @@
 
 		function updateSummary()
 		{
-			alert("sdsd");
 			 $.ajax({
             url: "<?= base_url('generate-policy') ?>",
             type: "POST",
@@ -505,8 +615,33 @@
 		 
 
 		$('#premium').on('blur', function () {
-    var premiumIncGST = parseFloat($(this).val());
+    var premiumIncGST = parseFloat($(this).val()); // earlier this logic was there, but while changing premium without GET in OPS this changed.
+    var premiumEcxGST = premiumIncGST / (1 + (18 / 100));
+    
     //var tenure = parseFloat($("#tenure").val());
+    var plan_amount = parseFloat($("#select_plan").find(':selected').attr('data-id'));
+    if (isNaN(plan_amount))
+    {
+    	$("#policyModal").modal("show");
+
+                $('#responseText').text(
+                    'Please select Plan'
+                );
+
+                $('#premium').val('').focus();
+    }
+   // if (plan_amount > premiumIncGST) 
+     if (plan_amount > premiumEcxGST) 
+ 		{
+ 			$("#policyModal").modal("show");
+
+                $('#responseText').text(
+                    'Premium cannot be less than plan amount'
+                );
+
+                $('#premium').val('').focus();
+ 		}
+
     var tenure = parseFloat(1);
     var gstPercentage = 18;
     var premiumIncGSTWithTenure = premiumIncGST * tenure;
@@ -516,6 +651,26 @@
         dataType: "json",
         success: function(response) {
 
+        		if (response.limited_premium == null)
+        		{
+        			   $("#policyModal").modal("show");
+        			    $('#responseText').text(
+                    'Limited amount not set for this dealer.'
+                );
+        			   $('#premium').val('').focus();
+        			   return;
+
+        		}
+        		else if (response.wallet_amount == 0)
+        		{
+        			   $("#policyModal").modal("show");
+        			    $('#responseText').text(
+                    'Wallet amount is 0.'
+                );
+        			   $('#premium').val('').focus();
+        			   return;
+
+        		}
             if ((premiumIncGSTWithTenure) > parseFloat(response.limited_premium)) {
             	 $("#policyModal").modal("show");
 
@@ -537,16 +692,225 @@
 					        $('#gst_amount').val(gstAmount.toFixed(2));
 					        var date = new Date(); // Current date
 									date.setFullYear(date.getFullYear() + 1);
-									let newDate = date.toISOString().split('T')[0];
-					        $("#expiry_date").val(newDate);
+									let day = String(date.getDate()).padStart(2, '0')-1;
+									let month = String(date.getMonth() + 1).padStart(2, '0');
+									let year = date.getFullYear();
+									//let newDate = date.toISOString().split('T')[0];
+									let newDate = day + '-' + month + '-' + year;
+									$("#expiry_date").val(newDate);
+									//$("#start_date").val(date.setFullYear(date.getFullYear()));
+					        //$("#expiry_date").val(newDate);
 					    }
             }
         }
     });
 
 });
-``
+
+		$('.select-plan').on('change', function () {
+
+    var plan_amount = $(this).find(':selected').attr('data-id');
+   // $("#premium").val(plan_amount);
+     $("#premium_hidden").val(plan_amount);
+		});	
+
+
+		$('#start_date').on('change', function () {
+
+    let startDate = new Date($(this).val());
+
+    if (!isNaN(startDate)) {
+
+        startDate.setFullYear(startDate.getFullYear() + 1);
+
+        let day = String(startDate.getDate()).padStart(2, '0')-1;
+        let month = String(startDate.getMonth() + 1).padStart(2, '0');
+        let year = startDate.getFullYear();
+
+        $('#expiry_date').val(day + '-' + month + '-' + year);
+    }
+});
+
+
+
+		$('#state_name').on('change', function () {
+
+    var state_id = $(this).val();
+
+    $.ajax({
+        url: "<?= base_url('get-cities') ?>",
+        type: "POST",
+        data: {
+            state_id: state_id
+        },
+        dataType: "json",
+        success: function(response) {
+
+            $('#city').html('<option value="">Choose City</option>');
+
+            $.each(response, function(index, city) {
+
+                $('#city').append(
+                    '<option value="' + city.id + '">' +
+                    city.city_name +
+                    '</option>'
+                );
+
+            });
+        }
+    });
+
+});
+
+
+		$('#dob').on('change', function () {
+
+    var dob = new Date($(this).val());
+    var today = new Date();
+
+    var age = today.getFullYear() - dob.getFullYear();
+
+    var monthDiff = today.getMonth() - dob.getMonth();
+
+    if (
+        monthDiff < 0 ||
+        (monthDiff === 0 && today.getDate() < dob.getDate())
+    ) {
+        age--;
+    }
+
+    if (age < 18) {
+        $('#dob_error').html('Age must be 18 years or above.');
+        $('#dob').val('');
+    } else {
+        $('#dob_error').html('');
+    }
+
+});
+
+
+
+		$('#vehicle_category').change(function () {
+
+    var vehicle_category = $(this).val();
+
+    $.ajax({
+        url: "<?= base_url('get-makes') ?>",
+        type: "POST",
+        data: {
+            vehicle_category: vehicle_category
+        },
+        dataType: "json",
+        success: function (response) {
+
+            $('#make').html('<option value="">Select Make</option>');
+            $('#model').html('<option value="">Select Model</option>');
+            $('#variant').html('<option value="">Select Variant</option>');
+
+            $.each(response, function (i, item) {
+                $('#make').append(
+                    '<option value="' + item.id + '">' +
+                    item.make_name +
+                    '</option>'
+                );
+            });
+        }
+    });
+
+});
+
+
+$('#make').change(function () {
+
+    var make_id = $(this).val();
+
+    $.ajax({
+        url: "<?= base_url('get-models') ?>",
+        type: "POST",
+        data: {
+            make_id: make_id
+        },
+        dataType: "json",
+        success: function (response) {
+
+            $('#model').html('<option value="">Select Model</option>');
+
+            $.each(response, function (i, item) {
+                $('#model').append(
+                    '<option value="' + item.id + '">' +
+                    item.model_name +
+                    '</option>'
+                );
+            });
+
+            $('#model').append(
+                '<option value="other">Other</option>'
+            );
+        }
+    });
+
+});
+
+$('#other_model').hide().prop('required', false);
+$('#other_variant').hide().prop('required', false);
+
+
+$('#model').change(function () {
+
+    if ($(this).val() == 'other') {
+
+        $('#other_model').show().prop('required', true);
+        $('#variant').html('<option value="other">Other</option>');
+        $('#other_variant').show().prop('required', true);
+
+        return;
+    }
+
+    $('#other_model').hide().prop('required', false);
+
+    var model_id = $(this).val();
+
+    $.ajax({
+        url: "<?= base_url('get-variants') ?>",
+        type: "POST",
+        data: {
+            model_id: model_id
+        },
+        dataType: "json",
+        success: function (response) {
+
+            $('#variant').html('<option value="">Select Variant</option>');
+
+            $.each(response, function (i, item) {
+                $('#variant').append(
+                    '<option value="' + item.id + '">' +
+                    item.variant_name +
+                    '</option>'
+                );
+            });
+
+            $('#variant').append(
+                '<option value="other">Other</option>'
+            );
+        }
+    });
+
+});
+
+$('#variant').change(function () {
+
+    if ($(this).val() == 'other') {
+        $('#other_variant').show().prop('required', true);
+    } else {
+        $('#other_variant').hide().val('').prop('required', false);
+    }
+
+});
+
 	</script>
+	<script>
+document.getElementById('start_date').min = new Date().toISOString().split('T')[0];
+</script>
 </body>
 
 </html>

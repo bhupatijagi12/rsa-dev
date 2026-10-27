@@ -1,0 +1,880 @@
+CRITICAL - 2026-10-15 04:37:14 --> Error: Class "App\Models\Misreport\MisModel" not found
+[Method: GET, Route: ops/mis]
+in APPPATH\Controllers\OperationsController.php on line 351.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 04:38:09 --> Error: Class "App\Models\Misreport\MisModel" not found
+[Method: GET, Route: ops/mis]
+in APPPATH\Controllers\OperationsController.php on line 351.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 04:40:51 --> Error: Class "App\Models\Misreport\MisModel" not found
+[Method: GET, Route: ops/mis]
+in APPPATH\Controllers\OperationsController.php on line 351.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 04:44:21 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: update-wallet-transaction]
+in APPPATH\Controllers\WalletController.php on line 54.
+ 1 APPPATH\Controllers\WalletController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\WalletController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\WalletController->updatewallettransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WalletController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 04:46:13 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: update-wallet-transaction]
+in APPPATH\Controllers\WalletController.php on line 54.
+ 1 APPPATH\Controllers\WalletController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\WalletController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\WalletController->updatewallettransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WalletController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 04:57:31 --> ParseError: syntax error, unexpected token "public", expecting "]"
+[Method: GET, Route: ops/mis]
+in APPPATH\Models\Misreport\MisModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(351): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:02:01 --> ParseError: syntax error, unexpected token "public", expecting "]"
+[Method: GET, Route: ops/mis]
+in APPPATH\Models\Misreport\MisModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(351): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:02:54 --> ParseError: syntax error, unexpected token "public", expecting "]"
+[Method: GET, Route: ops/mis]
+in APPPATH\Models\Misreport\MisModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(351): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:03:25 --> ParseError: syntax error, unexpected token "public", expecting "," or ";"
+[Method: GET, Route: ops/mis]
+in APPPATH\Models\Misreport\MisModel.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(351): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-15 05:04:11 --> Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= :DATE(pd.created):
+AND DATE(pd.created) <= :DATE(pd.created).1:', [...], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-16', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:04:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+[Method: POST, Route: download-mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= :DATE(pd.created):
+AND DATE(pd.created) <= :DATE(pd.created).1:', [...], false)
+ 2 APPPATH\Models\Misreport\MisModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-16', '2026-10-01')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:04:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= :DATE(pd.created):
+AND DATE(pd.created) <= :DATE(pd.created).1:', [...], false)
+ 4 APPPATH\Models\Misreport\MisModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-16', '2026-10-01')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:04:11 --> [Caused by] mysqli_sql_exception: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= \'2026-10-01\'
+AND DATE(pd.created) <= \'2026-10-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.`policy_no`, `pd`.`policy_type`, `pd`.`policy_start_date`, `pd`.`policy_end_date`, `po`.`owner_name`, `po`.`mobile_no`, `po`.`email`, `pn`.`nominee_name`, `pn`.`nominee_relation`, `pv`.`registration_no`, `pv`.`chassis_no`, `pv`.`engine_no`, `pv`.`vehicle_make`, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) >= :DATE(pd.created):
+AND DATE(pd.created) <= :DATE(pd.created).1:', [...], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-16', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:11:04 --> ErrorException: Undefined variable $db
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 26.
+ 1 APPPATH\Models\Misreport\MisModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php', 26)
+ 2 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-16', '2026-10-01')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:11:16 --> ErrorException: Undefined variable $db
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 26.
+ 1 APPPATH\Models\Misreport\MisModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php', 26)
+ 2 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-15 05:11:37 --> Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:11:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+[Method: POST, Route: download-mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 2 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:11:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 4 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:11:37 --> [Caused by] mysqli_sql_exception: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created_at) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-15 05:12:04 --> Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:12:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+[Method: POST, Route: download-mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 2 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:12:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 4 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:12:04 --> [Caused by] mysqli_sql_exception: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`vehicle_variant`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-15 05:14:23 --> Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:14:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+[Method: POST, Route: download-mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 2 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:14:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 4 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:14:23 --> [Caused by] mysqli_sql_exception: Table 'rsa_portal.vehicle_variant' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.*, `po`.*, `pn`.*, `pv`.*, `vv`.`variant_name` as `vehicle_model`
+FROM `policy_detail` `pd`
+LEFT JOIN `policy_owner_details` `po` ON `po`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_nominee_details` `pn` ON `pn`.`policy_id` = `pd`.`id`
+LEFT JOIN `policy_vehicle_details` `pv` ON `pv`.`policy_id` = `pd`.`id`
+LEFT JOIN `vehicle_variant` `vv` ON `vv`.`id` = `pv`.`variant_id`
+WHERE DATE(pd.created) BETWEEN \'2026-10-01\' AND \'2026-10-15\'', [], false)
+ 5 APPPATH\Models\Misreport\MisModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:14:30 --> ErrorException: Undefined array key "policy_type"
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 73.
+ 1 APPPATH\Models\Misreport\MisModel.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "policy_type"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php', 73)
+ 2 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:14:42 --> ErrorException: Undefined array key "policy_type"
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 73.
+ 1 APPPATH\Models\Misreport\MisModel.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "policy_type"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php', 73)
+ 2 APPPATH\Controllers\OperationsController.php(373): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-15', '2026-10-01')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:18:37 --> ParseError: syntax error, unexpected variable "$result"
+[Method: GET, Route: ops/mis]
+in APPPATH\Models\Misreport\MisModel.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(351): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:18:48 --> ParseError: syntax error, unexpected variable "$result"
+[Method: GET, Route: ops/mis]
+in APPPATH\Models\Misreport\MisModel.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(351): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:19:56 --> ParseError: syntax error, unexpected variable "$result"
+[Method: GET, Route: ops/mis]
+in APPPATH\Models\Misreport\MisModel.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(351): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-15 05:22:17 --> Unknown column 'login_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mis_report`
+WHERE `login_id` = :login_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\OperationsController.php(355): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:22:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'login_id' in 'where clause'
+[Method: GET, Route: mis]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mis_report`
+WHERE `login_id` = :login_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\OperationsController.php(355): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:22:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'login_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mis_report`
+WHERE `login_id` = :login_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\OperationsController.php(355): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:22:17 --> [Caused by] mysqli_sql_exception: Unknown column 'login_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mis_report`
+WHERE `login_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mis_report`
+WHERE `login_id` = :login_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\OperationsController.php(355): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:30:36 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:30:59 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:31:25 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:31:30 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:32:01 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:32:08 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:33:13 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-15 05:33:20 --> ErrorException: Undefined array key "download_by"
+[Method: GET, Route: mis]
+in APPPATH\Views\operations\mis.php on line 129.
+ 1 APPPATH\Views\operations\mis.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "download_by"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php', 129)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\mis.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/mis', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(365): view('operations/mis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->mis()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

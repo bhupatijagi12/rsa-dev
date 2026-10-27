@@ -29,7 +29,9 @@ class DealerModel extends Model
         'bank_name',
         'contact_person',
         'payment_mode',
-        'dealer_payment'
+        'dealer_payment',
+        'discount_rate',
+        'limited_amount'
 
     ];
 }

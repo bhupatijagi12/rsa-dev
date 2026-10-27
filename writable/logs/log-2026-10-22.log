@@ -1,0 +1,64 @@
+CRITICAL - 2026-10-22 15:52:39 --> ParseError: syntax error, unexpected token ":"
+[Method: POST, Route: ops/cancellation/view]
+in APPPATH\Views\operations\view-cancellation.php on line 78.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-cancellation', [], true)
+ 3 APPPATH\Controllers\CancellationController.php(43): view('operations/view-cancellation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->viewcancellation()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-22 15:53:03 --> ParseError: syntax error, unexpected token ":", expecting "," or ";"
+[Method: POST, Route: ops/cancellation/view]
+in APPPATH\Views\operations\view-cancellation.php on line 78.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-cancellation', [], true)
+ 3 APPPATH\Controllers\CancellationController.php(43): view('operations/view-cancellation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->viewcancellation()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-22 15:54:12 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: ops/cancellation/view]
+in APPPATH\Views\operations\view-cancellation.php on line 78.
+ 1 APPPATH\Views\operations\view-cancellation.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-cancellation.php', 78)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-cancellation.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-cancellation', [], true)
+ 5 APPPATH\Controllers\CancellationController.php(43): view('operations/view-cancellation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->viewcancellation()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-22 15:54:18 --> ErrorException: Undefined variable $policy_no
+[Method: POST, Route: ops/cancellation/view]
+in APPPATH\Views\operations\view-cancellation.php on line 78.
+ 1 APPPATH\Views\operations\view-cancellation.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policy_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-cancellation.php', 78)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\view-cancellation.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-cancellation', [], true)
+ 5 APPPATH\Controllers\CancellationController.php(43): view('operations/view-cancellation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->viewcancellation()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-22 15:54:58 --> ParseError: syntax error, unexpected token "echo"
+[Method: POST, Route: ops/cancellation/view]
+in APPPATH\Views\operations\view-cancellation.php on line 78.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-cancellation', [], true)
+ 3 APPPATH\Controllers\CancellationController.php(43): view('operations/view-cancellation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->viewcancellation()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

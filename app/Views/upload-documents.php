@@ -83,7 +83,7 @@
 <div style="color: red;" id="msg"></div>
 
         <div style="display:flex;gap:10px;">
-          <button class="btn btn-ghost" id="resetDocs">Reset</button>
+          <a href="<?= base_url('onboarding')?>" class="btn btn-ghost" id="resetDocs">Back</a>
           <button class="btn btn-nav" id="uploadAll" type="submit">Upload all documents</button>
         </div>
       </div>
@@ -117,7 +117,7 @@ $("#documentForm").submit(function(e){
     e.preventDefault();
 
     let formData = new FormData(this);
-
+  
     $.ajax({
         url: "<?= base_url('onboarding/upload-documents') ?>",
         type: "POST",

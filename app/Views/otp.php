@@ -16,14 +16,14 @@
     <div class="auth-hero" style="height:auto;padding:22px;">
       <div>
         <h2 style="color:#fff;font-size:19px;">OTP Verification</h2>
-        <span style="display:block;margin-top:4px;">Enter the code sent to your mobile and email to verify your identity</span>
+        <span style="display:block;margin-top:4px;">Enter the code sent to your email to verify your identity</span>
       </div>
     </div>
     <div class="auth-body">
       <div style="color: red;" id="msg"></div>
       <form id="otpForm" method="post">
         <div class="otp-block">
-          <h4>Mobile</h4>
+          <h4>Email</h4>
           <span class="sub">Enter OTP sent to <?= $email?></span>
           <div class="otp-inputs">
             <input maxlength="1" inputmode="numeric" value="" required class="otp">

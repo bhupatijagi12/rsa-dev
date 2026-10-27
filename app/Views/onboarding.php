@@ -42,10 +42,10 @@
             </div>
             <div class="form-field" style="margin-bottom:16px;"><label>Registered address <span class="req"></span></label><input name="address" placeholder="Street, city, state, pincode" value="<?= $address;?>"></div>
             <div class="form-row two">
-              <div class="form-field"><label>Contact person <span class="req"></span></label><input name="contact_person" placeholder="Full name" value="<?= $contact_person;?>"></div>
-              <div class="form-field"><label>Mobile number <span class="req"></span></label><input name="mobile" placeholder="10-digit mobile number" value="<?= $mobile;?>"></div>
- <div class="form-field"><label>RM Name <span class="req"></span></label><input name="rm_name" placeholder="Representative Name" value="<?= $rm_name;?>"></div>
-               <div class="form-field"><label>Referred By <span class="req"></span></label><input name="referred_by" placeholder="Referred by" value="<?= $referred_by;?>"></div>
+              <div class="form-field"><label>Contact person <span class="req"></span></label><input name="contact_person" id="contact_person" placeholder="Full name" value="<?= $contact_person;?>"></div>
+              <div class="form-field"><label>Mobile number <span class="req"></span></label><input name="mobile" placeholder="10-digit mobile number" value="<?= $mobile;?>" maxlength="10"></div>
+ <div class="form-field"><label>RM Name <span class="req"></span></label><input name="rm_name" id="rm_name" placeholder="Representative Name" value="<?= $rm_name;?>"></div>
+               <div class="form-field"><label>Referred By <span class="req"></span></label><input name="referred_by" id="referred_by" placeholder="Referred by" value="<?= $referred_by;?>"></div>
 
             </div>
           </div>
@@ -68,12 +68,15 @@ Cut &amp; Pay
            </div>
                
               <div class="form-field"><label>Payment Mode <span class="req"></span></label>
- <select name="payment_mode">
+                <select name="payment_mode">
                    <option value="">Select</option>
                    <option value="Advance" <?= ($payment_mode == 'Advance') ? 'selected' : ''; ?>>Advance</option>
-                   <option value="credit" <?= ($payment_mode == 'credit') ? 'selected' : ''; ?>>Credit</option>
+                  <!--  <option value="credit" <?= ($payment_mode == 'credit') ? 'selected' : ''; ?>>Credit</option> -->
                </select>          
-           </div>
+             </div>
+               <div class="form-field"><label>Payment Limit per policy <span class="req"></span></label>
+                <input name="limited_amount" value="<?= $limited_amount;?>">          
+             </div>
           </div>
 
       </div>
@@ -84,12 +87,12 @@ Cut &amp; Pay
           </div>
           <div class="step-body">
             <div class="form-row two">
-              <div class="form-field"><label>Account holder name <span class="req"></span></label><input name="account_holder_name" placeholder="As per bank records" value="<?= $account_holder_name;?>"></div>
-              <div class="form-field"><label>Account number <span class="req"></span></label><input name="account_number" placeholder="Bank account number" value="<?= $account_number;?>"></div>
+              <div class="form-field"><label>Account holder name <span class="req"></span></label><input name="account_holder_name" placeholder="As per bank records" value="<?= $account_holder_name;?>" readonly></div>
+              <div class="form-field"><label>Account number <span class="req"></span></label><input name="account_number" placeholder="Bank account number" value="<?= $account_number;?>" readonly></div>
             </div>
             <div class="form-row two">
-              <div class="form-field"><label>IFSC code <span class="req"></span></label><input name="ifsc_code" placeholder="e.g. SBIN0018143" value="<?= $ifsc_code;?>"></div>
-              <div class="form-field"><label>Bank &amp; branch</label><input name="bank_name" placeholder="Auto-filled from IFSC" value="<?= $bank_name;?>"></div>
+              <div class="form-field"><label>IFSC code <span class="req"></span></label><input name="ifsc_code" placeholder="e.g. SBIN0018143" value="<?= $ifsc_code;?>" readonly></div>
+              <div class="form-field"><label>Bank &amp; branch</label><input name="bank_name" placeholder="Auto-filled from IFSC" value="<?= $bank_name;?>" readonly></div>
             </div>
           </div>
 
@@ -244,6 +247,18 @@ $(document).ready(function () {
     });
     });  
 
+});
+</script>
+
+<script>
+$('#referred_by').on('input', function() {
+    $(this).val($(this).val().replace(/[^a-zA-Z ]/g, ''));
+});
+$('#contact_person').on('input', function() {
+    $(this).val($(this).val().replace(/[^a-zA-Z ]/g, ''));
+});
+$('#rm_name').on('input', function() {
+    $(this).val($(this).val().replace(/[^a-zA-Z ]/g, ''));
 });
 </script>
 </body>

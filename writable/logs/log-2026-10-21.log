@@ -1,0 +1,500 @@
+CRITICAL - 2026-10-21 12:59:52 --> TypeError: Unsupported operand types: string * int
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 260.
+ 1 APPPATH\Controllers\PolicyController.php(175): App\Controllers\PolicyController->updateWalletTransaction('GAA/2026/000038', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 13:08:00 --> TypeError: Unsupported operand types: string * int
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 260.
+ 1 APPPATH\Controllers\PolicyController.php(175): App\Controllers\PolicyController->updateWalletTransaction('GAA/2026/000039', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 13:08:15 --> TypeError: Unsupported operand types: string * int
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 260.
+ 1 APPPATH\Controllers\PolicyController.php(175): App\Controllers\PolicyController->updateWalletTransaction('GAA/2026/000040', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 13:09:01 --> TypeError: Unsupported operand types: string * int
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 260.
+ 1 APPPATH\Controllers\PolicyController.php(175): App\Controllers\PolicyController->updateWalletTransaction('GAA/2026/000041', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 13:10:59 --> TypeError: Unsupported operand types: string * int
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 260.
+ 1 APPPATH\Controllers\PolicyController.php(175): App\Controllers\PolicyController->updateWalletTransaction('GAA/2026/000042', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 13:48:47 --> Error: Class "App\Controllers\App\Models\vehicleVariantModel" not found
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 293.
+ 1 APPPATH\Controllers\PolicyController.php(180): App\Controllers\PolicyController->insertVehicleDetails(43)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 13:52:08 --> ErrorException: Undefined variable $model_no
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 320.
+ 1 APPPATH\Controllers\PolicyController.php(320): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 320)
+ 2 APPPATH\Controllers\PolicyController.php(180): App\Controllers\PolicyController->insertVehicleDetails(44)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 13:52:46 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: generate-policy]
+in APPPATH\Controllers\PolicyController.php on line 472.
+ 1 APPPATH\Controllers\PolicyController.php(472): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 472)
+ 2 APPPATH\Controllers\PolicyController.php(193): App\Controllers\PolicyController->downloadpolicypdf(45)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 14:01:59 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\VehicleModel"
+[Method: POST, Route: generate-policy]
+in SYSTEMPATH\Model.php on line 680.
+ 1 SYSTEMPATH\Model.php(680): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\VehicleModel')
+ 2 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\PolicyController.php(300): CodeIgniter\Model->insert([...])
+ 5 APPPATH\Controllers\PolicyController.php(180): App\Controllers\PolicyController->insertVehicleDetails(47)
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->generatepolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 14:29:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dealer/otp.php"
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dealer/otp.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/otp', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(25): view('dealer/otp', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 14:30:23 --> ErrorException: Undefined variable $email
+[Method: GET, Route: dashboard]
+in APPPATH\Views\otp.php on line 27.
+ 1 APPPATH\Views\otp.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\otp.php', 27)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\otp.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('otp', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(25): view('otp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 14:32:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dealer/otp.php"
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dealer/otp.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/otp', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(26): view('dealer/otp', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 15:31:20 --> ErrorException: Undefined variable $email
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 626.
+ 1 APPPATH\Views\dealer\index.php(626): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 626)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(22): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 15:31:20 --> ErrorException: Undefined variable $email
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 626.
+ 1 APPPATH\Views\dealer\index.php(626): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 626)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(22): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 15:35:03 --> ErrorException: Undefined variable $detail
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 625.
+ 1 APPPATH\Views\dealer\index.php(625): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detail', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 625)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(22): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:03:09 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: wallet-transaction]
+in APPPATH\Config\Routes.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:04:16 --> Error: Class "App\Controllers\Mailer" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 37.
+ 1 APPPATH\Controllers\DashboardController.php(24): App\Controllers\DashboardController->sendMailForDashboardOtp()
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:04:17 --> Error: Class "App\Controllers\Mailer" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 37.
+ 1 APPPATH\Controllers\DashboardController.php(24): App\Controllers\DashboardController->sendMailForDashboardOtp()
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:05:01 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Email\Email.php on line 760.
+ 1 SYSTEMPATH\Email\Email.php(760): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(563): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Libraries\Mailer.php(22): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\DashboardController.php(38): App\Libraries\Mailer::send(null, 'Dealer Dashboard OTP', 'emails/otp', [...], [...])
+ 5 APPPATH\Controllers\DashboardController.php(25): App\Controllers\DashboardController->sendMailForDashboardOtp()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:14:16 --> ParseError: Unmatched '}'
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 637.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(27): view('dealer/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:52:08 --> ErrorException: Undefined variable $verifyOTP
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 939.
+ 1 APPPATH\Views\dealer\index.php(939): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verifyOTP', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 939)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(27): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:52:18 --> ErrorException: Undefined variable $verifyOTP
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 939.
+ 1 APPPATH\Views\dealer\index.php(939): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verifyOTP', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 939)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(27): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:53:29 --> ErrorException: Undefined variable $verifyOTP
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 939.
+ 1 APPPATH\Views\dealer\index.php(939): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verifyOTP', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 939)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:56:03 --> ErrorException: Undefined variable $not_verified
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 937.
+ 1 APPPATH\Views\dealer\index.php(937): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $not_verified', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 937)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 16:56:31 --> ErrorException: Undefined variable $verifyOTP
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 939.
+ 1 APPPATH\Views\dealer\index.php(939): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verifyOTP', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 939)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:01:16 --> ErrorException: Undefined variable $verifyOTP
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 939.
+ 1 APPPATH\Views\dealer\index.php(939): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verifyOTP', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 939)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:03:20 --> ErrorException: Undefined variable $verifyOTP
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dealer\index.php on line 940.
+ 1 APPPATH\Views\dealer\index.php(940): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verifyOTP', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php', 940)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\dealer\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('dealer/index', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dealer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:14:26 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DealerAuth/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DealerAuth/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:17:44 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: logout]
+in APPPATH\Controllers\DealerAuth.php on line 134.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\DealerAuth.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DealerAuth')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DealerAuth')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\DealerAuth')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('logout')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:17:47 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: logout]
+in APPPATH\Controllers\DealerAuth.php on line 134.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\DealerAuth.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DealerAuth')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DealerAuth')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\DealerAuth')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('logout')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:17:59 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: logout]
+in APPPATH\Controllers\DealerAuth.php on line 134.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\DealerAuth.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DealerAuth')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DealerAuth')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\DealerAuth')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('logout')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:25:33 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DealerAuth/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DealerAuth/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:27:31 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DealerAuth/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DealerAuth/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:28:11 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DealerAuth/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DealerAuth/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:29:04 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DealerAuth/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DealerAuth/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:30:59 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DashboardController/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DashboardController/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:31:53 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DashboardController/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DashboardController/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:34:08 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DashboardController/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DashboardController/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 17:34:26 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\DashboardController/verifydashboardotp"
+[Method: POST, Route: verify-dashboard-otp]
+in SYSTEMPATH\Router\Router.php on line 521.
+ 1 SYSTEMPATH\Router\Router.php(521): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DashboardController/verifydashboardotp')
+ 2 SYSTEMPATH\Router\Router.php(223): CodeIgniter\Router\Router->checkRoutes('verify-dashboard-otp')
+ 3 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('verify-dashboard-otp')
+ 4 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 18:30:31 --> ErrorException: Cannot redeclare Config\Filters::$aliases
+[Method: GET, Route: /]
+in APPPATH\Config\Filters.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-21 18:30:32 --> ErrorException: Cannot redeclare Config\Filters::$aliases
+[Method: GET, Route: /]
+in APPPATH\Config\Filters.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-21 18:30:32 --> ErrorException: Cannot redeclare Config\Filters::$aliases
+[Method: GET, Route: /]
+in APPPATH\Config\Filters.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-21 18:30:47 --> ErrorException: Cannot redeclare Config\Filters::$aliases
+[Method: GET, Route: /]
+in APPPATH\Config\Filters.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-21 18:47:02 --> ErrorException: Undefined variable $misreports
+[Method: GET, Route: ops/cancellation/new]
+in APPPATH\Views\operations\new-cancellation.php on line 118.
+ 1 APPPATH\Views\operations\new-cancellation.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $misreports', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\new-cancellation.php', 118)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\new-cancellation.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/new-cancellation', [], true)
+ 5 APPPATH\Controllers\CancellationController.php(33): view('operations/new-cancellation')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->newcancellation()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

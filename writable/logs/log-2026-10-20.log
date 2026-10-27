@@ -1,0 +1,10 @@
+CRITICAL - 2026-10-20 10:37:14 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+[Method: GET, Route: policy/3]
+in APPPATH\Models\VehicleModel.php on line 80.
+ 1 APPPATH\Controllers\PolicyController.php(47): App\Models\VehicleModel->getVehicleCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->policy('3')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

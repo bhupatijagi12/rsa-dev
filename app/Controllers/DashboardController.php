@@ -5,22 +5,88 @@ namespace App\Controllers;
 use App\Models\DealerModel;
 use App\Models\GAAProductsModel;
 use App\Models\Policy\WalletModel;
+use App\Libraries\Mailer;
+use App\Models\TdsModel;
 
 class DashboardController extends BaseController
 {
     public function index() 
     {
-        $walletModel = new \App\Models\Policy\WalletModel();
-        $data['forcePasswordChange'] = true;
-        $wallet = $walletModel
-        ->where('dealer_id', session('dealer_id'))
-        ->where('status', 'Approved')
-        ->selectSum('amount')
-        ->first();
-        $data['totalWallet'] = $wallet ?? 0;
-        return view("dealer/index", $data);
+    $walletModel = new \App\Models\Policy\WalletModel();
+    $tdsModel = new \App\Models\TdsModel();
+    $data['forcePasswordChange'] = true;
+    $data['verifyOtp'] = "verified";
+    $data['totalWallet'] =  $walletModel->getWalletBalance(session('dealer_id'));
+    $data['commission'] =  $tdsModel->getCommissionAmount(session('dealer_id'));
+
+    if (session()->get('is_dealer_dashboard_otp_verified') == "no")
+    {
+        $data['verifyOtp'] = "not_verified";
+        $this->sendMailForDashboardOtp();
+    } 
+    //print_r($data); die;
+    return view("dealer/index", $data);
     }
-      public function indexold() 
+
+    private function sendMailForDashboardOtp()
+    {
+        $otp = rand(100000, 999999);
+         $data = [
+        'dealer_name' => session('name'),
+        'otp' => $otp
+        ];
+
+        $mailSent = Mailer::send(
+            session('dealer_email'),
+            'Dealer Dashboard OTP',
+            'emails/dashboard-otp',
+            $data,
+            [
+            'info@globalaidassurance.com',
+            'bhupati.jagi@globalaidassurance.com'
+            ]
+        );
+
+        if ($mailSent) {
+            //echo "successfully"; die;
+           
+            session()->set([
+                'dealer_dashboard_otp' => $otp
+            ]);
+
+        } else {
+
+            
+        }
+    }
+
+    public function verifydashboardotp()
+    {
+        if (!session()->has('logged_in')) {
+            return redirect()->to('/');
+        }
+        $otp = $this->request->getPost("otp");
+
+        if (session()->has('dealer_dashboard_otp') == $otp) 
+        {
+            session()->set([
+                'is_dealer_dashboard_otp_verified' => "yes"
+            ]);
+            return $this->response->setJSON([
+                    'status' => 'success',
+                    'message' => 'OTP successfully verified'
+                ]);
+        } 
+        else 
+        {
+            return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'OTP verification failed'
+                ]);
+        }
+    }
+
+    public function indexold() 
     {
         $data['forcePasswordChange'] = true;
         return view('dashboard', $data);
@@ -73,6 +139,7 @@ class DashboardController extends BaseController
         $loginType = session('login_type');
         $data['products'] = $gAAProductsModel->
         where("FIND_IN_SET($loginType, login_type) !=", 0)
+        ->where('active', 1)
         ->findAll();
 
         return view('products', $data);

@@ -38,7 +38,7 @@
               <td>PAN <span class="req" style="color:var(--red);">*</span></td>
               <td class="file-label" style="color:var(--ink-soft);"></td>
               <td style="text-align:right;">
-                <label class="btn btn-ghost" style="cursor:pointer;padding:6px 12px;"></a href="<?= base_url('ops/download/'.$dealer_id."/pan") ?>" target="_blank">⬇</a></label>
+                <label class="btn btn-ghost" style="cursor:pointer;padding:6px 12px;"><a href="<?= base_url('ops/download/'.$dealer_id."/pan") ?>" target="_blank">⬇</a></label>
               </td>
             </tr>
              <tr data-doc="MSME">

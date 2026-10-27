@@ -42,7 +42,9 @@ class WalletController extends BaseController
         	'file_upload' => $newName,
         	'transaction_type' => 'credit',
         	'status' => 'Pending',
-        	'dealer_id' => $dealerId
+        	'dealer_id' => $dealerId,
+        	'login_type' => session('login_type'),
+        	'wallet_category' => 6
         ]);
     }
     $dealerModel = new DealerModel();

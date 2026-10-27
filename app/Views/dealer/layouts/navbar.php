@@ -69,16 +69,37 @@
 						</a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('products');?>">Generate Policy</a></li>
-							<!-- <li class="sidebar-item"><a class="sidebar-link" href="pages-projects">Download Policy</a></li> -->
-							<!-- <li class="sidebar-item"><a class="sidebar-link" href="pages-clients">Clients <span
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('sold-policies');?>">Sold Policy</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('mis');?>">Mis <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-orders">Orders <span
+							<!--li class="sidebar-item"><a class="sidebar-link" href="pages-orders">Orders <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-pricing">Pricing <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-chat">Chat <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-blank">Blank Page</a></li> -->
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a data-bs-target="#cancellations" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Cancellations</span>
+						</a>
+						<ul id="cancellations" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('cancellation-list');?>">List</a></li>
+							
+							
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#endorsements" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Endorsements</span>
+						</a>
+						<ul id="endorsements" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('endorsement-list');?>">List</a></li>
+							
+							
 						</ul>
 					</li>
 					

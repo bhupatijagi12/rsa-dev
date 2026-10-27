@@ -3,6 +3,8 @@
 use CodeIgniter\Router\RouteCollection;
 
 /** @var RouteCollection $routes */
+$routes->group('', ['filter' => 'guest'], function($routes) {
+
 $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
 $routes->post('dealer/send-otp', 'DealerAuth::sendOtp');
@@ -15,6 +17,8 @@ $routes->post('dealer/change-password', 'DealerAuth::changePassword');
 $routes->get('/ops/login', 'OperationsAuth::opsLogin');
 $routes->post('/ops/validate-login', 'OperationsAuth::validateLogin');
 
+});
+
 $routes->group('', ['filter' => 'auth'], function($routes) {
 $routes->get('/ops/dashboard', 'OperationsController::dashboard');
 $routes->get('/ops/dealers', 'OperationsController::dealers');
@@ -23,6 +27,10 @@ $routes->get('/ops/download/(:num)/(:any)', 'OperationsController::download/$1/$
 $routes->post('/ops/verify-docs', 'OperationsController::verify');
 $routes->get('/ops/view-plan/(:num)', 'OperationsController::viewplan/$1');
 $routes->post('/ops/update-plan', 'OperationsController::updateplan');
+$routes->get('/ops/dealer/(:num)', 'OperationsController::viewdealer/$1');
+$routes->post('/get-makes', 'PolicyController::getmakes');
+$routes->post('/get-models', 'PolicyController::getmodels');
+$routes->post('/get-variants', 'PolicyController::getvariants');
 
 });
 
@@ -58,6 +66,31 @@ $routes->post('update-wallet-transaction', 'WalletController::updatewallettransa
 $routes->get('download-wallet-file/(:num)', 'WalletController::downloadwalletfile/$1');
 $routes->post('update-wallet-status', 'OperationsController::updatewalletstatus');
 $routes->get('policy', 'WalletController::downloadwalletfile/$1');
+$routes->post('update-planamount', 'OperationsController::updateplanamount');
+$routes->post('update-dealer', 'OperationsController::updatedealer');
+$routes->get('mis', 'OperationsController::mis');
+$routes->post('verify-dashboard-otp', 'DashboardController::verifydashboardotp');
+$routes->get('policy/view/(:any)', 'PolicyController::view/$1');
+$routes->post('/download-mis', 'OperationsController::downloadmis');
+$routes->post('/get-cities', 'PolicyController::getcities');
+$routes->get('callapi', 'PolicyController::callapi');
+
+
+$routes->get('/ops/cancellation/new', 'CancellationController::newcancellation');
+$routes->post('/ops/cancellation/view', 'CancellationController::viewcancellation');
+$routes->get('/ops/cancellation/list', 'CancellationController::cancellationlist');
+$routes->post('/ops/cancelcertificate', 'CancellationController::cancelcertificate');
+
+
+
+$routes->get('/ops/endorsement/new', 'EndorsementController::newendorsement');
+$routes->post('/ops/endorsement/view', 'EndorsementController::viewendorsement');
+$routes->get('/ops/endorsement/list', 'EndorsementController::endorsementlist');
+$routes->get('/ops/endorsecertificate', 'EndorsementController::endorsecertificate');
+$routes->post('/ops/endorsement/update', 'EndorsementController::updateendorsement');
+
+$routes->get('/cancellation-list', 'CancellationController::cancellationlist');
+$routes->get('/endorsement-list', 'EndorsementController::endorsementlist');
 
 
 $routes->get('policyold/(:num)', 'PolicyController::policyold/$1');
@@ -65,6 +98,8 @@ $routes->get('old', 'DashboardController::indexold');
 $routes->get('/ops/dashboardold', 'OperationsController::dashboardold');
 $routes->get('/ops/dealersold', 'OperationsController::dealersold');
 $routes->get('check-premium', 'PolicyController::checkpremium');
+$routes->get('/ops/sold-policies', 'OperationsController::soldpolicy');
+$routes->get('/ops/mis', 'OperationsController::mis');
 
 
 });

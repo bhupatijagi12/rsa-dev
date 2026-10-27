@@ -20,8 +20,22 @@ class GAAProductPlanModel extends Model
         'premium_inc_gst',
         'description',
         'plan_category',
-        'status'
+        'status',
+        'insurance_product',
+        'insurance_company',
+        'master_policy_no',
+        'start_date',
+        'end_date',
+        'plan_code',
+        'sum_insured',
+        'remarks'
     ];
+
+    public function getPlanDetails($planId)
+    {
+            return $this->where('id', $planId)
+            ->first();
+    }
 }
 
 ?>

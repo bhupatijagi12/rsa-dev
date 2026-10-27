@@ -1,0 +1,192 @@
+CRITICAL - 2026-10-24 11:34:42 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: ops/cancellation/new]
+in APPPATH\Controllers\CancellationController.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CancellationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CancellationController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\CancellationController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/cancellation/new')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 11:34:51 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: ops/cancellation/list]
+in APPPATH\Controllers\CancellationController.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CancellationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CancellationController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\CancellationController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/cancellation/list')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 11:34:55 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: ops/cancellation/new]
+in APPPATH\Controllers\CancellationController.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CancellationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CancellationController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\CancellationController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/cancellation/new')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 11:35:43 --> TypeError: view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\rsa-dev\app\Controllers\CancellationController.php on line 42
+[Method: POST, Route: ops/cancellation/view]
+in SYSTEMPATH\Common.php on line 1256.
+ 1 APPPATH\Controllers\CancellationController.php(42): view('operations/view-cancellation', null)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->viewcancellation()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 12:48:47 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: POST, Route: ops/cancellation/view]
+in APPPATH\Views\operations\view-cancellation.php on line 226.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/view-cancellation', [], true)
+ 3 APPPATH\Controllers\CancellationController.php(46): view('operations/view-cancellation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->viewcancellation()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:19:17 --> ParseError: syntax error, unexpected token ";", expecting "function"
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Models\Misreport\OpsHistoryModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\OpsHistoryModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\OpsHistoryModel')
+ 3 APPPATH\Controllers\CancellationController.php(53): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\OpsHistoryModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:19:47 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Policy\WalletModel::updateWalletTransaction
+[Method: POST, Route: ops/cancelcertificate]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\CancellationController.php(69): CodeIgniter\Model->__call('updateWalletTransaction', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:21:23 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Policy\WalletModel::updateWalletTransaction
+[Method: POST, Route: ops/cancelcertificate]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\CancellationController.php(70): CodeIgniter\Model->__call('updateWalletTransaction', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:22:02 --> ErrorException: Undefined variable $walletModel
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Models\Policy\WalletModel.php on line 47.
+ 1 APPPATH\Models\Policy\WalletModel.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $walletModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Policy\\WalletModel.php', 47)
+ 2 APPPATH\Controllers\CancellationController.php(70): App\Models\Policy\WalletModel->updateWalletTransaction('1', '500', '46', 'GAA/2026/000046')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:23:55 --> ErrorException: Undefined variable $walletModel
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Models\Policy\WalletModel.php on line 48.
+ 1 APPPATH\Models\Policy\WalletModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $walletModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Policy\\WalletModel.php', 48)
+ 2 APPPATH\Controllers\CancellationController.php(70): App\Models\Policy\WalletModel->updateWalletTransaction('1', '500', '46', 'GAA/2026/000046')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:24:34 --> ErrorException: Undefined array key "dealer_id"
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 79.
+ 1 APPPATH\Controllers\CancellationController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dealer_id"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:37:50 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 58.
+ 1 APPPATH\Controllers\CancellationController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:39:40 --> Error: Class "App\Controllers\Mailer" not found
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 103.
+ 1 APPPATH\Controllers\CancellationController.php(79): App\Controllers\CancellationController->mailToDealerAboutCancellation('GAA/2026/000045', '45', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:41:51 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 59.
+ 1 APPPATH\Controllers\CancellationController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:58:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "emails/cancellation_success.php"
+[Method: POST, Route: ops/cancelcertificate]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('emails/cancellation_success.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('emails/cancellation_success', [], true)
+ 3 APPPATH\Libraries\Mailer.php(33): view('emails/cancellation_success', [...])
+ 4 APPPATH\Controllers\CancellationController.php(108): App\Libraries\Mailer::send('bhupati.jagi@gmail1.com', 'Certificate No GAA/2026/000037 has been cancelled successfully', 'emails/cancellation_success', [...], [...])
+ 5 APPPATH\Controllers\CancellationController.php(84): App\Controllers\CancellationController->mailToDealerAboutCancellation('GAA/2026/000037', '37', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 17:21:35 --> ErrorException: Undefined variable $relationshipModel
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 53.
+ 1 APPPATH\Controllers\EndorsementController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $relationshipModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 17:22:38 --> ErrorException: Undefined variable $relationshipModel
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 54.
+ 1 APPPATH\Controllers\EndorsementController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $relationshipModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

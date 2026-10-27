@@ -30,6 +30,7 @@ class OnboardingController extends BaseController
 	    $data = [
 	        'dealer_payment' => $this->request->getPost('dealer_payment'),
 	        'payment_mode' => $this->request->getPost('payment_mode'),
+	        'limited_amount' => $this->request->getPost('limited_amount'),
 	        'address' => $this->request->getPost('address'),
 	        'contact_person' => $this->request->getPost('contact_person'),
 	        'mobile' => $this->request->getPost('mobile'),
@@ -87,7 +88,7 @@ class OnboardingController extends BaseController
 	        'gst',
 	        'cancelled_cheque'
 	    ];
-
+	    $isFileUploaded = 0;
 	    foreach ($fileFields as $field)
 	    {
 	        $file = $this->request->getFile($field);
@@ -103,9 +104,10 @@ class OnboardingController extends BaseController
 	        else
 	        {
 	            $documents[$field] = null;
+	            $isFileUploaded++;
 	        }
 	    }
-	    if (count($documents) == 0) {
+	    if ($isFileUploaded == 5) {
 	    	  return $this->response->setJSON([
 	        'status' => 'error',
 	        'message' => 'Please upload atlease any one image'

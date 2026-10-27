@@ -64,14 +64,14 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#policies" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Policies</span>
 						</a>
-						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('ops/policies');?>">Download  Policy</a></li>
-							<!-- <li class="sidebar-item"><a class="sidebar-link" href="pages-projects">Projects <span
-										class="sidebar-badge badge bg-primary">Pro</span></a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-clients">Clients <span
+						<ul id="policies" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('ops/sold-policies');?>">Sold  Policies</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('ops/mis');?>">Mis<!--  <span
+										class="sidebar-badge badge bg-primary">Pro</span> --></a></li>
+							<!--li class="sidebar-item"><a class="sidebar-link" href="pages-clients">Clients <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-orders">Orders <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
@@ -82,7 +82,25 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-blank">Blank Page</a></li> -->
 						</ul>
 					</li>
-					
+					<li class="sidebar-item">
+						<a data-bs-target="#cancellation" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Cancellation</span>
+						</a>
+						<ul id="cancellation" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('ops/cancellation/new');?>">New</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('ops/cancellation/list');?>">List</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a data-bs-target="#endorsement" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Endorsement</span>
+						</a>
+						<ul id="endorsement" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('ops/endorsement/new');?>">New</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="<?= base_url('ops/endorsement/list');?>">List</a></li>
+						</ul>
+					</li>					
 
 					
 				</ul>

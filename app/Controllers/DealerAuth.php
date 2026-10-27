@@ -51,11 +51,17 @@ class DealerAuth extends BaseController
             'dealer_status' => $dealer['status'],
             'dealer_code' => $dealer['dealer_code'],
             'name' => $dealer['name'],
-            'logged_in' => true
+            'logged_in' => false,
+            'is_dealer_dashboard_otp_verified' => "no"
         ]);
 
         if ($dealer['status'] == 1) 
         {
+             session()->set([
+           
+            'logged_in' => true
+            
+        ]);
              return $this->response->setJSON([
                 'status' => 'success',
                 'message' => 'Login successful.',
@@ -113,6 +119,8 @@ class DealerAuth extends BaseController
 
         return view('otp', $data);
     }
+
+    
 
     public function verifyOtp()
     {

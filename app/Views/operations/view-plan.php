@@ -56,6 +56,12 @@
 					<div class="mb-3">
 						<h1 class="h3 d-inline align-middle">View Plan</h1><a class="badge bg-primary ms-2" href="<?= base_url('ops/dealers'); ?>"
 							>Go to Dealers<i class="fas fa-fw fa-external-link-alt"></i></a>
+							<!--select name="select_plan" id="select_name" onchange="selectplan(this.value);">
+								<option value="">Select Plan</option>
+								<?php //foreach ($gaamasterproducts as $gaamasterproduct) : ?>
+								<option value="<?php //$gaamasterproduct['id']; ?>"><?php //$gaamasterproduct['product_name']; ?></option>
+							<?php //endforeach; ?>
+							</select-->
 					</div>
 
 					<div class="row">
@@ -73,24 +79,57 @@
 											<div class="table-responsive">
 											<input type="hidden" name="dealerId" value="<?php echo $dealer_id; ?>"/>
 
-									<table class="table mb-0">
+									<table id="datatables-multi11" class="table mb-0">
 										<thead>
 											<tr>
+												<th scope="col">Insurance Product</th>
+												<th scope="col">Insurance Company</th>
+												<th scope="col">Master Policy No</th>
+												<th scope="col">Start Date</th>
+												<th scope="col">End Date</th>
+												<th scope="col">Plan Code</th>
+												<th scope="col">Plan Type</th>
 												<th scope="col">Product Code</th>
-												<th scope="col">Choose</th>
 												<th scope="col">Plan Name</th>
+												<th scope="col">Coverage</th>
+												<th scope="col">Sum Insured</th>
+												<th scope="col">Base Price</th>
+												<th scope="col">GST</th>
+												<th scope="col">Premium</th>
+												<th scope="col">Remarks</th>
+												<th scope="col">Choose</th>
+												<!-- <th scope="col">Plan Name</th>
 												<th scope="col">Price (with GST)</th>
+												<th scope="col">Choose</th> -->
+												
 											</tr>
 										</thead>
 										<tbody>
 											 <?php foreach ($gaaproducts as $product) : ?>
 											<tr>
-												<th scope="row"><?= $product['product_code']; ?></th>
-												<td><input type="checkbox" class="form-check-input" name="planid[]" value="<?= $product['product_code']; ?>"></td>
-												<td>
-													<span class="form-check-label"><?= $product['product_name']; ?></span></td>
-														<td>
-													<span class="form-check-label"><?= $product['premium_inc_gst']; ?></span></td>
+												<td scope="row"><?= $product['insurance_product']; ?></td>
+												<td scope="row"><?= $product['insurance_company']; ?></td>
+												<td scope="row"><?= $product['master_policy_no']; ?></td>
+												<td scope="row"><?= $product['start_date']; ?></td>
+												<td scope="row"><?= $product['end_date']; ?></td>
+												
+												<td scope="row"><?= $product['plan_code']; ?></td>
+												<td scope="row"><?= $product['category_name']; ?></td>
+												<td scope="row"><?= $product['master_product_code']; ?></td>
+
+												<td scope="row"><?= $product['product_name']; ?></td>
+												<td scope="row"><?= $product['coverage']; ?></td>
+												<td scope="row"><?= $product['sum_insured']; ?></td>
+												<td scope="row"><?= $product['premium_ex_gst']; ?></td>
+												<td scope="row"><?= $product['gst_amount']; ?></td>
+												<td scope="row"><?= $product['premium_inc_gst']; ?></td>
+
+												<td scope="row"><?= $product['remarks']; ?></td>
+												
+														<!-- <td>
+													<span class="form-check-label"><?= $product['premium_inc_gst']; ?></span></td> -->
+													<td><input type="checkbox" class="form-check-input" name="planid[]" value="<?= $product['master_product_code']; ?>">
+												</td>
 												
 											</tr>
 											 <?php endforeach; ?>
@@ -124,7 +163,7 @@
 											<tr>
 												<th>Product Code</th>
 												<th>Plan Name</th>
-												
+												<th>Plan Cost (without GST)</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -132,6 +171,7 @@
 											<tr>
 												<td><?= esc($plan['product_code']) ?></td>
 												<td><?= esc($plan['product_name']) ?></td>
+												<td><input type="text" name="plan_amount" class="plan" onchange="updateplan(this.value)" placeholder="Enter Plan Amount" data-id = "<?= $plan['id']?>" value="<?= esc($plan['plan_amount']);?>"></td>
 
 											</tr>
 											 <?php endforeach; ?>
@@ -249,6 +289,89 @@
 
 		}
 	</script> -->
+
+	<script>
+		$('.plan').on('change', function() {
+
+			var plan_amount = $(this).val();
+			var plan_id = $(this).attr('data-id');
+			
+			$.ajax({
+            url: "<?= base_url('update-planamount')?>",
+            type: "POST",
+            data : {
+		            amount: plan_amount,
+		            plan_id: plan_id
+		        },
+            dataType: "json",
+			/*
+            beforeSend: function () {
+                			$("#btn-generate").text("Please wait..");
+
+            },*/
+
+            success: function (response) {
+
+                if(response.status == "success")
+                {
+                       $("#policyModal").modal("show");
+                		$("#responseText").text(response.message);
+
+                }
+                else
+                {
+                    $("#policyModal").modal("show");
+                		$("#responseText").text(response.message);
+                }
+
+            },
+
+            error: function () {
+               $("#policyModal").modal("show");
+                		$("#responseText").text("Something went wrong");
+            }
+        });
+		});
+
+		function selectplan(plan_id)
+		{
+			$.ajax({
+            url: "<?= base_url('ops/view-plan/')?>",
+            type: "POST",
+            data : {
+		            amount: plan_amount,
+		            plan_id: plan_id
+		        },
+            dataType: "json",
+			/*
+            beforeSend: function () {
+                			$("#btn-generate").text("Please wait..");
+
+            },*/
+
+            success: function (response) {
+
+                if(response.status == "success")
+                {
+                       $("#policyModal").modal("show");
+                		$("#responseText").text(response.message);
+
+                }
+                else
+                {
+                    $("#policyModal").modal("show");
+                		$("#responseText").text(response.message);
+                }
+
+            },
+
+            error: function () {
+               $("#policyModal").modal("show");
+                		$("#responseText").text("Something went wrong");
+            }
+        });
+		}
+	</script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
   <div class="picker-main">
     <div class="topbar-simple">
       <div class="left">
-        <img src="<?= base_url('public/assets/logo.png'); ?>" alt="GlobalAid Assurance" style="height:76px;">
+        <img src="<?= base_url('public/assets/logo.png'); ?>" alt="GlobalAid Assurance" style="height:120px;">
         <span class="datetime" data-clock-simple></span>
       </div>
             <div class="user">Welcome &middot; <?= session('dealer_code');?><div class="avatar">👤</div></div>

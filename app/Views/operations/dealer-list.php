@@ -77,7 +77,7 @@
 												<th>Referred By</th>
 												
 												<th>Payment Mode</th>
-												<th>Cost to Company</th>
+												<th>Commission</th>
 												<th>Status</th>
 												<th>Plan</th>
 												<th>Wallet</th>
@@ -87,7 +87,7 @@
 										<tbody>
 											 <?php foreach ($dealers as $dealer) : ?>
 											<tr>
-												<td><?= esc($dealer['dealer_code']) ?></td>
+												<td><a href="<?= base_url('ops/dealer/'.$dealer['id'])?>"><?= esc($dealer['dealer_code']) ?></a></td>
 												<td><?= esc($dealer['name']) ?></td>
 												<td><?= esc($dealer['mobile']) ?></td>
 												<td><?= esc($dealer['contact_person']) ?></td>

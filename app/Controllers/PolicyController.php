@@ -3,6 +3,11 @@
 namespace App\Controllers;
 use App\Models\ProductModel;
 use App\Models\VehicleModel;
+
+use App\Models\VehicleMakeModel;
+use App\Models\VehicleModelModel;
+use App\Models\VehicleVariantModel;
+
 use App\Models\StateModel;
 use App\Models\Policy\PolicyModel;
 use App\Models\Policy\PolicyOwnerModel;
@@ -13,6 +18,8 @@ use App\Models\GAAProductPlanModel;
 use App\Models\CustomizedDealerPlanModel;
 use App\Models\DealerModel;
 use App\Models\Policy\WalletModel;
+use App\Models\TdsModel;
+use App\Models\CityModel;
 
 
 use Dompdf\Dompdf;
@@ -30,18 +37,20 @@ class PolicyController extends BaseController
 		$gAAProductPlanModel = new \App\Models\GAAProductPlanModel();
 		$customizedDealerPlanModel = new \App\Models\CustomizedDealerPlanModel();
         $walletModel = new \App\Models\Policy\WalletModel();
-        $wallet = $walletModel
-        ->where('dealer_id', session('dealer_id'))
-        ->where('status', 'Approved')
-        ->selectSum('amount')
-        ->first();
-        $data['totalWallet'] = $wallet ?? 0;
+        $relationshipModel = new \App\Models\RelationshipModel();
+        
+    	$data['totalWallet'] =  $walletModel->getWalletBalance(session('dealer_id'));
+
+    	$data['relations'] = $relationshipModel->where('status', 1)->findAll();
 
 		$data['products'] = $productModel
 					->where('status', 1)
 					->findAll();	
 
 		$data['vehicles'] = $vehicleModel->getAllVehicles();
+		$data['makes'] = $vehicleModel->getMakes();
+		$data['vehicle_categories'] = $vehicleModel->getVehicleCategory();
+
 		$data['states'] = $stateModel->where('status', 1)
 					->findAll();
 		$loginType = session('login_type');
@@ -56,6 +65,7 @@ class PolicyController extends BaseController
 		}  else {  
 
     	$data['plan_products'] = $gAAProductPlanModel
+    		->select(" *, premium_inc_gst as plan_amount")
 		    ->where('plan_category', $planCategory)
 		    ->findAll();
 		}
@@ -84,7 +94,49 @@ class PolicyController extends BaseController
 
 	public function soldpolicy()
 	{
-		return view('sold-policies');
+		$policyModel = new \App\Models\Policy\PolicyModel();
+		if (session('login_type') == 1)
+		{
+			/*$data['policies'] = $policyModel
+			->where('login_id', session('dealer_id'))
+			//->where('status', 1)
+			->where('certificate_status', 'Active')
+			->findAll();*/
+			$data['policies'] = $policyModel
+		    ->select('policy_detail.*, certificate_status.status_name')
+		    ->join(
+		        'certificate_status',
+		        'certificate_status.id = policy_detail.status',
+		        'left'
+		    )
+		    ->where('policy_detail.login_id', session('dealer_id'))
+		    ->where('policy_detail.certificate_status', 'Active')
+		    ->findAll();
+
+		} else 
+		{
+		   /* $data['policies'] = $policyModel
+		    //->where('status', 1)
+		    ->where('certificate_status', 'Active')
+		    ->findAll();
+*/
+
+		    $data['policies'] = $policyModel
+		    ->select('policy_detail.*, certificate_status.status_name')
+		    ->join(
+		        'certificate_status',
+		        'certificate_status.id = policy_detail.status',
+		        'left'
+		    )
+		   // ->where('policy_detail.login_id', session('dealer_id'))
+		    ->where('policy_detail.certificate_status', 'Active')
+		    ->findAll();
+		    
+		}
+
+		//return view('sold-policies');
+
+		return view('dealer/sold-policies', $data);
 	}
 
 	public function cancellation()
@@ -114,7 +166,39 @@ class PolicyController extends BaseController
 		return view('generate-invoice');
 	}
 
+	public function callapi()
+	{
+		
+		$policyModel = new \App\Models\Policy\PolicyModel();
+		$payload = [
+   	 'certificates' => [
+        [
+            'title' => 'Mr.',
+            'member_relationship' => 'husband',
+            'master_policy_number' => 'MA9387',
+            'transaction_date' => '2026-10-22',
+            'transaction_number' => '123123123123',
+            'ghi_sum_insured' => '50000',
+            'state' => 'Uttar Pradesh',
+            'good_health_declaration' => 'Y',
+            'subscriber_number' => 'SUB1001',
+            'subscription_start_date' => '2026-10-22',
+            'tenure' => '1 Year',
+            'subscriber_rsa_number' => 'RSA-2026-00010',
+            'subscriber_first_name' => 'Rohit',
+            'subscriber_middle_name' => 'Kumar',
+            'subscriber_last_name' => 'Singh',
+            'subscriber_gender' => 'Male',
+            'subscriber_age' => 28,
+            'subscriber_dob' => '1998-05-15'
+        ]
+    ]
+];
+		$result = $policyModel->sendCOIApi($payload);
 
+		print_r($result); die;
+
+	}
 
 	public function generatepolicy()
 	{
@@ -128,72 +212,182 @@ class PolicyController extends BaseController
 		    'premium_ex_gst' => $this->request->getPost('premium_ex_gst'),
 		    'certificate_start_date' => $this->request->getPost('start_date'),
 		    'certificate_end_date' => $this->request->getPost('expiry_date'),
-		    'login_type_id' => session('expiry_date'),
-		    'login_id' => session('login_id'),
+		    'login_type_id' => session('login_type'),
+		    'login_id' => session('dealer_id'),
 		    'limited_amount' => $this->request->getPost('limited_amount'),
 		    'status' => 1
 		]);
 
-
+     	$dealerId = session('dealer_id');
 		
 		if ($policyModel) 
 		{
+
 			$insertId = $policyModel->getInsertID();
-		//$id = $policyModel->getInsertID();
+			//$id = $policyModel->getInsertID();
 
-		$policyNo = 'GAA/' . date('Y') . '/' . str_pad($insertId, 6, '0', STR_PAD_LEFT);
+			$policyNo = 'GAA/' . date('Y') . '/' . str_pad($insertId, 6, '0', STR_PAD_LEFT);
 
-		$policyModel->update($insertId, [
-		    'policy_no' => $policyNo
-		]); 		
+			$policyModel->update($insertId, [
+			    'policy_no' => $policyNo
+			]); 		
 
-		/*$msg = $this->insertVehicleDetails($insertId);
-		$msg .= $this->insertOwnerDetails($insertId);
-		$msg .= $this->insertNomineeDetails($insertId);
-		die("sdsd");*/
-		$errors = [];
+			// update wallet transaction based on Plans
+			$this->updateWalletTransaction($policyNo, $dealerId, $insertId);
 
-		if ($this->insertVehicleDetails($insertId) !== true) {
-		    $errors[] = 'Vehicle Details';
-		}
+			
+			$errors = [];
 
-		if ($this->insertOwnerDetails($insertId) !== true) {
-		    $errors[] = 'Owner Details';
-		}
+			if ($this->insertVehicleDetails($insertId) !== true) {
+			    $errors[] = 'Vehicle Details';
+			}
 
-		if ($this->insertNomineeDetails($insertId) !== true) {
-		    $errors[] = 'Nominee Details';
-		}
-		if (empty($errors)) {
+			if ($this->insertOwnerDetails($insertId) !== true) {
+			    $errors[] = 'Owner Details';
+			}
 
-		    $this->downloadPolicyPdf($insertId); // pdf download
+			if ($this->insertNomineeDetails($insertId) !== true) {
+			    $errors[] = 'Nominee Details';
+			}
+			if (empty($errors)) {
 
-		    return redirect()->back()->with(
-		        'success',
-		        'Policy created successfully.'
-		    );
+			    $this->downloadPolicyPdf($insertId); // pdf download
 
-		} else {
+			    return redirect()->back()->with(
+			        'success',
+			        'Policy created successfully.'
+			    );
 
-		    return redirect()->back()->with(
-		        'error',
-		        'Error in: ' . implode(', ', $errors)
-		    );
-		}
+			} else {
+
+			    return redirect()->back()->with(
+			        'error',
+			        'Error in: ' . implode(', ', $errors)
+			    );
+			}
 		
 	}
 }
 
 
+	private function updateWalletTransaction($policyNo, $dealerId, $policyId) 
+	{
+		$planCategory = $this->request->getPost('plan_category');
+		$dealerModel = new \App\Models\DealerModel();
+     	$dealerDetails = $dealerModel
+     					->where('id', $dealerId)
+     					->where('status', 1)
+     					->first();
+
+     	if ($dealerDetails == null) 
+     	{
+     		 return redirect()->back()->with(
+		        'error',
+		        'Dealer not Active'
+		    );
+     	}
+		$walletModel = new \App\Models\Policy\WalletModel();
+		$amount   = $this->request->getPost('premium');
+        
+        // Save to database
+        $walletModel->insert([
+        	'amount' => $amount,
+        	'transaction_type' => 'debit',
+        	'status' => 'Approved',
+        	'dealer_id' => $dealerId,
+        	'login_type' => session('login_type'),
+        	'wallet_category' => 1
+        ]);
+
+        // for all plan cut and pay module. pause for now
+        if ($dealerDetails['dealer_payment'] == 'cut_n_pay' & $planCategory != 3) 
+     	{
+     		$commission = $dealerDetails['discount_rate'];
+     		$commission_amount = ($commission * $amount) / 100;
+     		$walletModel->insert([
+        	'amount' => $commission_amount,
+        	'transaction_type' => 'credit',
+        	'status' => 'Approved',
+        	'remarks' => 'Cut and Pay amount credited for Certificate issuance no: '.$policyNo,
+        	'dealer_id' => $dealerId,
+        	'login_type' => session('login_type'),
+        	'wallet_category' => 3
+        ]);
+     	}	
+
+     	// for customized plan and cut and pay payment structure.
+     	if ($dealerDetails['dealer_payment'] == 'cut_n_pay' & $planCategory == 3) 
+     	{
+     		$tdsModel = new \App\Models\TdsModel();
+     		$premium_hidden = $this->request->getPost('premium_hidden'); // 500
+     		$gstDeduct = $premium_hidden * 18 / 118;
+
+			// Premium excluding GST
+			//$premiumExGST = $premium_hidden - $gstDeduct;
+			$premiumExGST = $this->request->getPost('premium_ex_gst');
+     		//$commission_amount = $amount - $premiumExGST;	
+     		$commission_amount = $premiumExGST - $premium_hidden;	
+     		$walletModel->insert([
+	        	'amount' => ($commission_amount - ($commission_amount * 0.02)),
+	        	'transaction_type' => 'credit',
+	        	'remarks' => 'Cut and Pay amount credited for Certificate issuance no: '.$policyNo,
+	        	'status' => 'Approved',
+	        	'dealer_id' => $dealerId,
+	        	'login_type' => session('login_type'),
+	        	'wallet_category' => 3
+        	 ]);
+        	 $tdsModel->insert([
+        	 	'dealer_id' => session('dealer_id'),
+        	 	'policy_id' => $policyId,
+        	 	'tds_amount' => ($commission_amount * 0.02),
+        	 	'gst_amount' => $this->request->getPost('gst_amount'),
+        	 	'plan_premium_exc_gst' => $premium_hidden,
+        	 	'premium_ex_gst' =>  $premiumExGST,
+        	 	'commission_amount' => ($commission_amount - ($commission_amount * 0.02))
+        	 ]);
+
+
+     	}
+	}
+
+
 	private function insertVehicleDetails($policyId)
 	{
 		$policyVehicleModel = new \App\Models\Policy\PolicyVehicleModel();
+		$vehicleModelModel = new \App\Models\VehicleModelModel();
+		$vehicleVariantModel = new \App\Models\VehicleVariantModel();
+		$model_id = $this->request->getPost('model');
+		$make_id = $this->request->getPost('make');
+		$variant_id = $this->request->getPost('variant');
+
+		if ($model_id == "other") 
+		{
+			$vehicleModelModel->insert([
+				'make_id' => $make_id,
+				'model_name' => $this->request->getPost('other_model')
+			]);
+			$model_id = $vehicleModelModel->getInsertID();
+		}
+		
+		if ($variant_id == "other") 
+		{
+			$vehicleVariantModel->insert([
+				'model_id' => $model_id,
+				'variant_name' => $this->request->getPost('other_variant')
+			]);
+			$variant_id = $vehicleVariantModel->getInsertID();
+		}
+
 		$policyVehicleModel->insert([
+			'veh_reg_no' => $this->request->getPost('veh_reg_no'),
 		    'policy_id' => $policyId,
 		    'engine_no' => $this->request->getPost('engine_no'),
+		    'model_id' => $model_id,
+		    'make_id' => $make_id,
 		    'chassis_no' => $this->request->getPost('chassis_no'),
-		    'variant_id' => $this->request->getPost('vehicle_variant'),
-		    'vehicle_type' => $this->request->getPost('vehicle_type')
+		    'variant_id' => $variant_id,
+		    'vehicle_type' => $this->request->getPost('vehicle_type'),
+		    'vehicle_category' => $this->request->getPost('vehicle_category')
 		]);
 		if ($policyVehicleModel) 
 		{
@@ -265,35 +459,35 @@ class PolicyController extends BaseController
 
 public function downloadpolicypdf($policyId)
 {
+		$vehicleModel = new \App\Models\VehicleModel();
+		$cityModel = new \App\Models\CityModel();
+		$stateModel = new \App\Models\StateModel();
+		$gAAProductsModel = new \App\Models\GAAProductsModel();
+		$gAAProductPlanModel = new \App\Models\GAAProductPlanModel();
+		$customizedDealerPlanModel = new \App\Models\CustomizedDealerPlanModel();
 	
 	$policy = $this->getPolicyDetails($policyId);
 
-	//print_r($policy); die;
-	/*
-    $data = [
-    	'dealer_id' => session('dealer_id'),
-        'customer_name' => $this->request->getPost('customer_name'),
-        'mobile' => $this->request->getPost('mobile'),
-        'engine_no' => $this->request->getPost('engine_no'),
-        'chassis_no' => $this->request->getPost('chassis_no'),
-        'vehicle_model' => $this->request->getPost('vehicle_model'),
-        'plan' => $this->request->getPost('plan'),
-        'tenure' => $this->request->getPost('tenure'),
-        'premium' => $this->request->getPost('premium'),
-        'expiry_date' => $this->request->getPost('expiry_date'),
-        'email' => $this->request->getPost('email'),
-        'pincode' =>  $this->request->getPost('pincode'),
-        'vehicle_type' => $this->request->getPost('vehicle_type'),
+	$imagePath = FCPATH . 'public/assets/images/logo.jpg';
+	$imageData = base64_encode(file_get_contents($imagePath));
+	$imageType = pathinfo($imagePath, PATHINFO_EXTENSION);
 
-    ];
+	$logo = 'data:image/' . $imageType . ';base64,' . $imageData;
 
+    $vehicleDetails = $vehicleModel->getVehicleDetails($policy['variant_id']);
+    //echo '<pre>';
+   // print_r($vehicleDetails);
+    if ($policy['plan_category'] != 3 )
+    {
+   	    $planDetails = $gAAProductPlanModel->getPlanDetails($policy['plan_name']);
+    }
+    else 
+    {
+    	$planDetails = $customizedDealerPlanModel->getPlanDetails($policy['plan_name']);
 
-
-    $data['certificate_no'] = time();
-    $data['dealer_name'] = session('name');
-    $data['dealer_code'] = session('dealer_code');
-    $data['dealer_logo'] = "https://www.hyundai.com/etc/designs/hyundai/ww/en/images/common/logo.png";*/
-
+    }
+    $stateCityDetails = $cityModel->getCityDetails($policy['city']);
+    //print_r($stateCityDetails); die;
     $data = [
     	'dealer_code' => session('dealer_id'),
     	'dealer_name' => session('name'),
@@ -304,14 +498,21 @@ public function downloadpolicypdf($policyId)
         'gender' =>  $policy['gender'],
         'mobile' =>  $policy['mobile'],
         'address' =>  $policy['address'],
-        'state' =>  $policy['state'],
-        'city' =>  $policy['city'],
+        'state' =>  $stateCityDetails['state_name'],
+        'city' =>  $stateCityDetails['city_name'],
         'pincode' =>  $policy['pincode'],
         'mobile' =>  $policy['mobile'],
         'engine_no' => $policy['engine_no'],
         'chassis_no' =>  $policy['chassis_no'],
         'vehicle_model' =>  $policy['variant_id'],
-        'plan' => $policy['plan_name'],
+        'veh_reg_no' => $policy['veh_reg_no'],
+        'dob' =>$policy['dob'],
+        'make' => $vehicleDetails['make_name'],
+        'model' => $vehicleDetails['model_name'],
+        'variant' => $vehicleDetails['variant_name'],
+        'plan' => $planDetails['product_name'],
+        'code' => $planDetails['product_code'],
+        //'product_code' => $planDetails['master_product_code'],
         'tenure' =>  1,
         'premium' =>  $policy['premium_payable'],
         'gst' =>  $policy['gst'],
@@ -327,14 +528,16 @@ public function downloadpolicypdf($policyId)
         'nominee_gender' =>  $policy['nominee_gender'],
         'nominee_dob' =>  $policy['nominee_dob'],
         'nominee_mobile' =>  $policy['nominee_mobile'],
-        'relationship' =>  $policy['relationship']
+        'relationship' =>  $policy['relationship'],
+        'logo' => $logo
 
     ];
-   /* echo "<pre>";
-   print_r($data); die;*/
-   // view('pdf/policy_pdf',$data); 
-    $html = view('pdf/policy_pdf',$data);
+   //echo "<pre>";
+   //print_r($data); die;
+// //   $html = view('pdf/policy_pdf',$data);
+       $html = view('pdf/certificate-pdf',$data);
     $dompdf = new Dompdf();
+
     //$dompdf->loadHtml('<h1>Hello World</h1>');
 
 
@@ -361,12 +564,18 @@ $policyNo = str_replace('/', '-', $policy['policy_no']);
  public function checkpremium()
  {
  	$dealerModel = new \App\Models\DealerModel();
+    $walletModel = new \App\Models\Policy\WalletModel();
+
  	$dealer = $dealerModel
         //->select('dealers')
         ->where('id', session('dealer_id'))
         ->first();
+
+    $wallet = $walletModel->getWalletBalance(session('dealer_id')); 
+     
     return $this->response->setJSON([
-        'limited_premium' => $dealer['limited_amount']
+        'limited_premium' => $dealer['limited_amount'],
+        'wallet_amount' => $wallet
     ]);
  }
 
@@ -377,6 +586,77 @@ $policyNo = str_replace('/', '-', $policy['policy_no']);
 
  	return $policyModel->getPolicy($policyId);
  }
+
+ public function getcities()
+{
+    $stateId = $this->request->getPost('state_id');
+
+    $cityModel = new \App\Models\CityModel();
+
+    $cities = $cityModel
+                ->where('state_id', $stateId)
+                ->orderBy('city_name', 'ASC')
+                ->findAll();
+    return $this->response->setJSON($cities);
+}
+
+
+public function getmakes()
+{
+	$vehicleMakeModel = new \App\Models\VehicleMakeModel();
+    $vehicleType = $this->request->getPost('vehicle_category');
+
+    $makes = $vehicleMakeModel
+        ->where('vehicle_type', $vehicleType)
+        ->findAll();
+
+    return $this->response->setJSON($makes);
+}
+
+
+public function getmodels()
+{
+	$vehicleModelModel = new \App\Models\VehicleModelModel();
+    $makeId = $this->request->getPost('make_id');
+
+    $models = $vehicleModelModel
+        ->where('make_id', $makeId)
+        ->findAll();
+
+    return $this->response->setJSON($models);
+}
+
+
+public function getvariants()
+{
+	$vehicleVariantModel = new \App\Models\VehicleVariantModel();
+    $modelId = $this->request->getPost('model_id');
+
+    $variants = $vehicleVariantModel
+        ->where('model_id', $modelId)
+        ->findAll();
+
+    return $this->response->setJSON($variants);
+}
+
+
+public function view($fileName)
+{
+    if (!session()->has('logged_in')) {
+        return redirect()->to('/login');
+    }
+
+    $filePath = FCPATH . 'uploads/policies/' . $fileName;
+
+    if (!file_exists($filePath)) {
+        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+    }
+
+    return $this->response
+        ->setHeader('Content-Type', 'application/pdf')
+        ->setBody(file_get_contents($filePath));
+}
+
 
 }
 

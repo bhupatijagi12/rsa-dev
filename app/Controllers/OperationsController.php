@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Models\DealerModel;
 use App\Models\DealerDocsModel;
 use App\Models\CustomizedDealerPlanModel;
+use App\Models\Policy\PolicyModel;
+use App\Models\Misreport\MisModel;
 
 use App\Libraries\Mailer;
 
@@ -102,6 +104,7 @@ class OperationsController extends BaseController
     			->first();
     	$data['dealer_id'] = $dealerId;
 
+
     	return view('ops/view-documents', $data);
     }
 
@@ -112,7 +115,9 @@ class OperationsController extends BaseController
 
 	    $dealerDocsModel = new \App\Models\DealerDocsModel();
 
-	    $dealer = $dealerDocsModel->find($dealerId);
+	    $dealer = $dealerDocsModel->where("dealer_id", $dealerId)
+    			->first();
+	   
 	    if ($file == "agreement") {
 	    	$fileName = $dealer['agreement'];
 	    } else if ($file == "pan") {
@@ -191,11 +196,18 @@ class OperationsController extends BaseController
     {
     	$dealerDocModel = new \App\Models\DealerDocsModel();
     	$gAAProductPlanModel = new \App\Models\GAAProductPlanModel();
+    	$gAAProductModel = new \App\Models\GAAProductsModel();
     	$customizedDealerPlanModel = new \App\Models\CustomizedDealerPlanModel();
 
-    	$data['gaaproducts'] = $gAAProductPlanModel
+    	$data['gaamasterproducts'] = $gAAProductModel->where('active', 1)->findAll();
+    	/*$data['gaaproducts'] = $gAAProductPlanModel
     			->where("status", 1)
-    			->findAll();
+    			->findAll();*/
+    	$data['gaaproducts'] = $gAAProductPlanModel
+    ->select('gaa_product_plans.*, gaa_products.product_name as category_name')
+    ->join('gaa_products', 'gaa_products.id = gaa_product_plans.plan_category', 'left')
+    ->where('gaa_product_plans.status', 1)
+    ->findAll();
     	$data['dealer_id'] = $dealerId;
     	//print_r($data); die;
     	$data['dealerCustomizedPlans'] = $customizedDealerPlanModel
@@ -218,6 +230,7 @@ class OperationsController extends BaseController
     	   $dealerId = $this->request->getPost("dealerId");
 
     	   $productString = implode('+', $planid);
+
     	   $customizedDealerPlanModel->insert([
 			    
 			    'product_code'  => $productString,
@@ -292,6 +305,133 @@ class OperationsController extends BaseController
 	}
 		
 
+	}
+
+	public function updateplanamount()
+	{
+		$customizedDealerPlanModel = new \App\Models\CustomizedDealerPlanModel();
+		$amount =  $this->request->getPost('amount');
+	    $plan_id =  $this->request->getPost('plan_id');
+
+		$customizedDealerPlanModel->update($plan_id, [
+			    'plan_amount'  => $amount,
+			    'login_type' => session('user_type'),
+			    'updated_by' => session('user_id')
+			]);
+
+
+
+		if ($customizedDealerPlanModel) 
+		{
+			return $this->response->setJSON([
+                'status' => 'success',
+                'message' => "Plan amount updated successfully"
+            ]);
+		} else 
+		{
+			return $this->response->setJSON([
+                'status' => 'success',
+                'message' => "Error in update. please try again.."
+            ]);
+		}
+
+
+	}
+
+	public function soldpolicy()
+	{
+		$policyModel = new \App\Models\Policy\PolicyModel();
+
+		if (session('login_type') == 1)
+		{
+			$data['policies'] = $policyModel
+		    ->select('policy_detail.*, certificate_status.status_name')
+		    ->join(
+		        'certificate_status',
+		        'certificate_status.id = policy_detail.status',
+		        'left'
+		    )
+		    ->where('policy_detail.login_id', session('dealer_id'))
+		    ->where('policy_detail.certificate_status', 'Active')
+		    ->findAll();
+
+		} else 
+		{
+		    $data['policies'] = $policyModel
+		    ->select('policy_detail.*, certificate_status.status_name')
+		    ->join(
+		        'certificate_status',
+		        'certificate_status.id = policy_detail.status',
+		        'left'
+		    )
+		   // ->where('policy_detail.login_id', session('dealer_id'))
+		    ->where('policy_detail.certificate_status', 'Active')
+		    ->findAll();
+		}
+
+		//return view('sold-policies');
+
+		return view('operations/sold-policies', $data);
+	}
+
+	public function mis()
+	{
+		$misModel = new \App\Models\Misreport\MisModel();
+
+		if (session('login_type') == 1)
+		{
+			$data['misreports'] = $misModel->where('download_by', session('dealer_id'))->findAll();
+
+		} else 
+		{
+		    $data['misreports'] = $misModel->findAll();
+
+		}
+
+		//return view('sold-policies');
+
+		return view('operations/mis', $data);
+	}
+
+	public function downloadmis()
+	{
+		$misModel = new \App\Models\Misreport\MisModel();
+		$toDate = $this->request->getPost('to_date');
+		$fromDate = $this->request->getPost('from_date');
+		$misModel->exportPoliciesCsv($toDate, $fromDate);
+	}
+
+	public function viewdealer($dealerId) 
+	{
+		$dealerModel = new \App\Models\DealerModel();
+		$dealerDetails = $dealerModel->where('id', $dealerId)->first();
+		$data['detail'] = $dealerDetails;
+		return view('operations/dealer', $data);
+
+	}
+
+	public function updatedealer()
+	{
+		$dealerModel = new \App\Models\DealerModel();
+		$dealerId = $this->request->getPost('dealerId');
+		$dealerModel->update($dealerId, [
+			    'account_holder_name' => $this->request->getPost('account_holder_name'),
+			    'account_number' => $this->request->getPost('account_number'),
+			    'ifsc_code' => $this->request->getPost('ifsc_code'),
+			    'bank_name' => $this->request->getPost('bank_name'),
+			    'dealer_payment' => $this->request->getPost('dealer_payment'),
+			    'payment_mode' => $this->request->getPost('payment_mode'),
+			    'discount_rate' => $this->request->getPost('discount_rate'),
+			    'limited_amount' => $this->request->getPost('limited_amount')
+			]);
+		if ($dealerModel)
+		{
+			 return redirect()->back()->with('success', 'Dealer details updated successfully.');
+		} else 
+		{
+			 return redirect()->back()->with('error', 'Error in updating dealer details.');
+
+		}
 	}
 
 }

@@ -14,7 +14,16 @@ class CustomizedDealerPlanModel extends Model
         'product_code',
         'product_name',
         'status',
-        'dealer_id'
+        'dealer_id',
+        'plan_amount',
+        'login_type',
+        'updated_by'
 
     ];
+
+      public function getPlanDetails($planId)
+    {
+            return $this->where('id', $planId)
+            ->first();
+    }
 }

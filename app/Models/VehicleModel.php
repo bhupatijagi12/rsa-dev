@@ -71,4 +71,13 @@ class VehicleModel extends Model
             ->get()
             ->getRowArray();
     }
+
+    public function getVehicleCategory()
+    {
+         return $this->db->table('vehicle_makes')
+            ->distinct('vehicle_type')
+            ->groupBy('vehicle_type')
+            ->get()
+            ->getResultArray();
+    }
 }

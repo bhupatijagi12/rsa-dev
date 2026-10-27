@@ -7,8 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description"
-		content="">
+	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 
@@ -27,8 +26,8 @@
 	<!-- BEGIN SETTINGS -->
 	<!-- Remove this after purchasing -->
 	<link  href="<?= base_url('public/admin-assets/css/light.css') ?>" rel="stylesheet">
-	<script src="<?= base_url('public/admin-assets/js/settings.js') ?>"></script>
-	<style>
+<!-- 	<script src="<?= base_url('public/admin-assets/js/settings.js') ?>"></script>
+ --> 	<style>
 		body {
 			opacity: 0;
 		}
@@ -44,7 +43,14 @@
 -->
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+	<?php if ($totalWallet <=0 ) : ?>
+
+	<marquee class="btn btn-primary">Your wallet amount is low. Please maintain a sufficient balance for policy creation.</marquee>
+
+	
+	<?php else : ?>
 	<marquee class="btn btn-primary">Dear Dealers, please note our RSA portal URL has been updated. Bookmark <b>rsa-portal.globalaidassurance.com</b> going forward.</marquee>
+	<?php endif; ?>
 	<div class="wrapper">
 		 <?= $this->include('dealer/layouts/navbar'); ?>
 
@@ -83,7 +89,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="h1 mt-1 mb-3">Rs <?= $totalWallet['amount'] ?? 0; ?></div>
+												<div class="h1 mt-1 mb-3">Rs <?= $totalWallet ?? 0; ?></div>
 												<!-- <div class="mb-0">
 													<span class="badge badge-primary-light">-3.65%</span>
 													<span class="text-muted">Since last week</span>
@@ -121,11 +127,11 @@
 
 													<div class="col-auto">
 														<div class="stat text-primary">
-															<i class="align-middle" data-feather="dollar-sign"></i>
+															<i class="align-middle" data-feather="rupee-sign"></i>
 														</div>
 													</div>
 												</div>
-												<div class="h1 mt-1 mb-3">$21.300</div>
+												<div class="h1 mt-1 mb-3">Rs <?= $commission; ?></div>
 												<!-- <div class="mb-0">
 													<span class="badge badge-success-light">6.65%</span>
 													<span class="text-muted">Since last week</span>
@@ -602,14 +608,89 @@
 
 				</div>
 			</main>
-
+			
+			<div class="modal fade" id="policyModal" tabindex="-1" role="dialog" aria-hidden="true" style="background:rgb(0 0 0 / 86%);">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title">Verify with OTP to view Dashboard</h5>
+												<!-- 	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+												</div>
+												<div class="modal-body m-3">
+												<p class="mb-0" id="responseText">Enter OTP received in your registered email</p>
+ 											<div class="row">
+											<div class="col-md-4">
+												<p style="color:green" id="successText"></p>
+											<label for="from_date" class="form-label">OTP</label>
+											<input type="number" class="form-control" id="otp" name="otp" maxlength="6">
+											<p style="color:red" id="otp_error"></p>
+											</div>
+											</div>
+												</div>
+												<div class="modal-footer">
+												<a href="<?= base_url('sold-policies')?>" class="btn btn-secondary">Back</a>
+													<button type="button" id="btnSubmit" onclick="verifyOtp()" class="btn btn-primary">Verify OTP</button>
+												</div>
+											</div>
+										</div>
+									</div>
+							
 							 <?= $this->include('dealer/layouts/footer'); ?>
 
 		</div>
 	</div>
 
 	<script src="<?= base_url('public/admin-assets/js/app.js') ?>"></script>
+			<script src="<?= base_url('public/admin-assets/js/datatables.js') ?>"></script>
+<!-- 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"/></script>
+ -->
+ <script>
+ 	function verifyOtp()
+ 	{
+ 		var otp = $("#otp").val();
+ 		if (otp == "") 
+ 		{
+ 			$("#otp_error").text("Please enter OTP");
+ 		} else {
 
+ 				$.ajax({
+            url: "<?= base_url('verify-dashboard-otp')?>",
+            type: "POST",
+            data : {
+		            otp: otp
+		        },
+            dataType: "json",
+			/*
+            beforeSend: function () {
+                			$("#btn-generate").text("Please wait..");
+
+            },*/
+
+            success: function (response) {
+
+                if(response.status == "success")
+                {
+                       //$("#policyModal").modal("show");
+                		$("#successText").text(response.message);
+                		window.location.reload();
+
+                }
+                else
+                {
+                    //$("#policyModal").modal("show");
+                		$("#otp_error").text(response.message);
+                }
+
+            },
+
+            error: function () {
+               //$("#policyModal").modal("show");
+                		$("#otp_error").text("Something went wrong");
+            }
+        });
+ 		}
+ 	}
+ </script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
@@ -684,7 +765,7 @@
 			});
 		});
 	</script>
-	<script>
+	<!-- <script>
 		document.addEventListener("DOMContentLoaded", function() {
 			// Pie chart
 			new Chart(document.getElementById("chartjs-dashboard-pie"), {
@@ -845,7 +926,19 @@
 				defaultDate: defaultDate
 			});
 		});
-	</script>
+	</script> -->
+	<script>
+		var policyModal = new bootstrap.Modal(document.getElementById('policyModal'), {
+    backdrop: 'static',
+    keyboard: false
+});
 
+
+</script>
+<?php if ($verifyOtp == "not_verified") { ?>
+<script>
+policyModal.show();
+</script>
+<?php } ?>
 </body>
 </html>

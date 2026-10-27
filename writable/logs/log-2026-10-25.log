@@ -1,0 +1,474 @@
+CRITICAL - 2026-10-25 07:10:36 --> ErrorException: Undefined variable $veh_reg_no
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Views\operations\endorsement-plan.php on line 85.
+ 1 APPPATH\Views\operations\endorsement-plan.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $veh_reg_no', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\endorsement-plan.php', 85)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\endorsement-plan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/endorsement-plan', [], true)
+ 5 APPPATH\Controllers\EndorsementController.php(59): view('operations/endorsement-plan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 07:10:52 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Views\operations\endorsement-plan.php on line 85.
+ 1 APPPATH\Views\operations\endorsement-plan.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\endorsement-plan.php', 85)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\endorsement-plan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/endorsement-plan', [], true)
+ 5 APPPATH\Controllers\EndorsementController.php(59): view('operations/endorsement-plan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 07:16:08 --> ParseError: syntax error, unexpected token "<", expecting variable or "{" or "$"
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Views\operations\endorsement-plan.php on line 252.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/endorsement-plan', [], true)
+ 3 APPPATH\Controllers\EndorsementController.php(61): view('operations/endorsement-plan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 07:16:18 --> ParseError: syntax error, unexpected token "<", expecting variable or "{" or "$"
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Views\operations\endorsement-plan.php on line 252.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/endorsement-plan', [], true)
+ 3 APPPATH\Controllers\EndorsementController.php(61): view('operations/endorsement-plan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 07:23:56 --> ParseError: syntax error, unexpected variable "$data"
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EndorsementController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EndorsementController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\EndorsementController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/endorsecertificate')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 07:24:19 --> ErrorException: Undefined variable $cityModel
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 55.
+ 1 APPPATH\Controllers\EndorsementController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cityModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 10:31:42 --> ParseError: syntax error, unexpected variable "$policyModel"
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EndorsementController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EndorsementController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\EndorsementController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/endorsecertificate')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 10:42:07 --> ParseError: syntax error, unexpected variable "$policyModel"
+[Method: POST, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 85.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EndorsementController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EndorsementController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\EndorsementController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('ops/endorsecertificate')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 10:45:57 --> ErrorException: Undefined array key "product_name"
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 87.
+ 1 APPPATH\Controllers\EndorsementController.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:33:41 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 70.
+ 1 APPPATH\Controllers\EndorsementController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:35:57 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+[Method: GET, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:36:42 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+[Method: GET, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:36:51 --> Error: Array callback must have exactly two elements
+[Method: GET, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:39:14 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 73.
+ 1 APPPATH\Controllers\EndorsementController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:41:11 --> ErrorException: Undefined array key "product_name"
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 139.
+ 1 APPPATH\Controllers\EndorsementController.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:42:11 --> ErrorException: Undefined array key "premium"
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 140.
+ 1 APPPATH\Controllers\EndorsementController.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "premium"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:43:52 --> ErrorException: Undefined property: App\Controllers\EndorsementController::$db
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 197.
+ 1 APPPATH\Controllers\EndorsementController.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\EndorsementController::$db', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 197)
+ 2 APPPATH\Controllers\EndorsementController.php(158): App\Controllers\EndorsementController->getEndorsedPolicyNo('GAA/2026/000032')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:47:56 --> ErrorException: Undefined variable $policyId
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 282.
+ 1 APPPATH\Controllers\EndorsementController.php(282): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policyId', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 282)
+ 2 APPPATH\Controllers\EndorsementController.php(178): App\Controllers\EndorsementController->insertEndorsedNewNomineeDetails(50, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:48:34 --> ErrorException: Undefined array key "nominee_middle_name"
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 284.
+ 1 APPPATH\Controllers\EndorsementController.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominee_middle_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 284)
+ 2 APPPATH\Controllers\EndorsementController.php(178): App\Controllers\EndorsementController->insertEndorsedNewNomineeDetails(51, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 11:49:26 --> Error: Class "App\Controllers\Mailer" not found
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 314.
+ 1 APPPATH\Controllers\EndorsementController.php(189): App\Controllers\EndorsementController->mailToDealerAboutEndorsement('GAA/2026/000032', '23', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 13:15:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "operations/endorsed-policies.php"
+[Method: GET, Route: ops/endorsement/list]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('operations/endorsed-policies.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/endorsed-policies', [], true)
+ 3 APPPATH\Controllers\EndorsementController.php(368): view('operations/endorsed-policies', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsementlist()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 14:17:00 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 75.
+ 1 APPPATH\Controllers\EndorsementController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 14:23:19 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: ops/endorsecertificate]
+in APPPATH\Controllers\EndorsementController.php on line 75.
+ 1 APPPATH\Controllers\EndorsementController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->endorsecertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 14:25:41 --> Error: Call to undefined method App\Controllers\EndorsementController::getPolicyDetails()
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 383.
+ 1 APPPATH\Controllers\EndorsementController.php(195): App\Controllers\EndorsementController->downloadpolicypdf(56)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 14:27:23 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 392.
+ 1 APPPATH\Controllers\EndorsementController.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 392)
+ 2 APPPATH\Controllers\EndorsementController.php(195): App\Controllers\EndorsementController->downloadpolicypdf(57)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 14:33:52 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 392.
+ 1 APPPATH\Controllers\EndorsementController.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 392)
+ 2 APPPATH\Controllers\EndorsementController.php(195): App\Controllers\EndorsementController->downloadpolicypdf(58)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:06:42 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 414.
+ 1 APPPATH\Controllers\EndorsementController.php(414): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 414)
+ 2 APPPATH\Controllers\EndorsementController.php(195): App\Controllers\EndorsementController->downloadpolicypdf(65)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:42:44 --> Error: Call to undefined method App\Controllers\CancellationController::getCancelledPolicyNo()
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 186.
+ 1 APPPATH\Controllers\CancellationController.php(74): App\Controllers\CancellationController->insertNewPolicyForCancellation([...])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:44:13 --> ErrorException: Undefined array key "policy_id"
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 243.
+ 1 APPPATH\Controllers\CancellationController.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "policy_id"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php', 243)
+ 2 APPPATH\Controllers\CancellationController.php(198): App\Controllers\CancellationController->insertCancelledNewVehicleDetails(6, [...])
+ 3 APPPATH\Controllers\CancellationController.php(74): App\Controllers\CancellationController->insertNewPolicyForCancellation([...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:50:00 --> ErrorException: Undefined variable $policyId
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 302.
+ 1 APPPATH\Controllers\CancellationController.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $policyId', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php', 302)
+ 2 APPPATH\Controllers\CancellationController.php(206): App\Controllers\CancellationController->insertCancelledNewNomineeDetails(8, [...])
+ 3 APPPATH\Controllers\CancellationController.php(74): App\Controllers\CancellationController->insertNewPolicyForCancellation([...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:50:28 --> ErrorException: Undefined array key "nominee_middle_name"
+[Method: POST, Route: ops/cancelcertificate]
+in APPPATH\Controllers\CancellationController.php on line 304.
+ 1 APPPATH\Controllers\CancellationController.php(304): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominee_middle_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\CancellationController.php', 304)
+ 2 APPPATH\Controllers\CancellationController.php(206): App\Controllers\CancellationController->insertCancelledNewNomineeDetails(9, [...])
+ 3 APPPATH\Controllers\CancellationController.php(74): App\Controllers\CancellationController->insertNewPolicyForCancellation([...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CancellationController->cancelcertificate()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CancellationController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-25 15:59:33 --> Unknown column 'certificate_status.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = :policy_detail.login_id:
+AND `policy_detail`.`certificate_status` = :policy_detail.certificate_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PolicyController.php(114): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:59:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'certificate_status.name' in 'field list'
+[Method: GET, Route: sold-policies]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = :policy_detail.login_id:
+AND `policy_detail`.`certificate_status` = :policy_detail.certificate_status:', [...], false)
+ 2 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PolicyController.php(114): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:59:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'certificate_status.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = :policy_detail.login_id:
+AND `policy_detail`.`certificate_status` = :policy_detail.certificate_status:', [...], false)
+ 4 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PolicyController.php(114): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 15:59:33 --> [Caused by] mysqli_sql_exception: Unknown column 'certificate_status.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = \'1\'
+AND `policy_detail`.`certificate_status` = \'Active\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `policy_detail`.*, `certificate_status`.`name`
+FROM `policy_detail`
+LEFT JOIN `certificate_status` ON `certificate_status`.`id` = `policy_detail`.`status`
+WHERE `policy_detail`.`login_id` = :policy_detail.login_id:
+AND `policy_detail`.`certificate_status` = :policy_detail.certificate_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PolicyController.php(114): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->soldpolicy()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 16:01:34 --> ErrorException: Undefined array key "status_name"
+[Method: GET, Route: ops/sold-policies]
+in APPPATH\Views\operations\sold-policies.php on line 91.
+ 1 APPPATH\Views\operations\sold-policies.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_name"', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\sold-policies.php', 91)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\rsa-dev\\app\\Views\\operations\\sold-policies.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('operations/sold-policies', [], true)
+ 5 APPPATH\Controllers\OperationsController.php(364): view('operations/sold-policies', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->soldpolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 16:05:53 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: download-policy/36]
+in APPPATH\Controllers\PolicyController.php on line 444.
+ 1 APPPATH\Controllers\PolicyController.php(444): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\PolicyController.php', 444)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PolicyController->downloadpolicypdf('36')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PolicyController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -14,7 +14,11 @@ class PolicyVehicleModel extends Model
         'engine_no',
         'chassis_no',
         'variant_id',
-        'vehicle_type'
+        'vehicle_type',
+        'veh_reg_no',
+        'make_id',
+        'vehicle_category',
+        'model_id'
     ];
 }
 ?>

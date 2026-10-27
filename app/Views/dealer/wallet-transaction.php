@@ -59,7 +59,7 @@
 					</div>
 							<?php if (session()->getFlashdata('success')) : ?>
 	 		<p style="color:white" class="btn btn-primary"><?= session()->getFlashdata('success'); ?></p>
-	 		<?php endif; ?>
+	 						<?php endif; ?>
 					<div class="row">
 						<div class="col-8">
 							<div class="card">
