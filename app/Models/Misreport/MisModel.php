@@ -96,12 +96,12 @@ public function exportPoliciesCsv($toDate, $fromDate)
 
     $policies = $db->table('policy_detail pd')
     ->select('
-        pd.*, pd.created as policy_issue_date,pd.premium_ex_gst as premium_exclusive_gst, pd.status as statusid,
+        pd.*, pd.created as policy_issue_date,pd.premium_ex_gst as premium_exclusive_gst, pd.status as statusid, po.mobile as customer_mobile, po.email as customer_email,
         po.*,
         pn.*,
         pv.*,
         d.*, d.mobile as dealer_mobile, d.email as dealer_email, d.name as dealername, d.id as dealer_ids
-        ,vv.variant_name, vm.*, vmo.*, cm.*, s.*, cs.*, tds.*, ecd.*, ecd.updated_date as endorse_cancel_date, u.user
+        ,vv.variant_name, vm.*, vmo.*, cm.*, s.*, cs.*, tds.*, ecd.*, ecd.updated_date as endorse_cancel_date, ecd.type as updated_type, u.user, w.amount as debited_commission_amount
     ')
     ->join('policy_owner_details po', 'po.policy_id = pd.id', 'left')
     ->join('policy_nominee_details pn', 'pn.policy_id = pd.id', 'left')
@@ -116,6 +116,7 @@ public function exportPoliciesCsv($toDate, $fromDate)
      ->join('tds_calculation tds', 'pd.id = tds.policy_id', 'left')
      ->join('endorse_cancel_details ecd', 'pd.id = ecd.policy_id', 'left')
       ->join('users u', 'ecd.updated_by = u.id', 'left')
+      ->join('wallet_transaction w', 'pd.id = w.policy_id', 'left')
     ->where("DATE(pd.created) BETWEEN '{$fromDate}' AND '{$toDate}'");
 
  /*  echo $policies->getCompiledSelect();
@@ -196,28 +197,30 @@ die;
                 $planAmount = $row['premium_payable'];
                 $gst = $row['gst'];
                 $premium_ex_gst = $row['premium_exclusive_gst'];
+                $commission_amount = $row['commission_amount'];
                 if ($row['statusid'] == 4 || $row['statusid'] == 5)
                 {
                     $planAmount = "-".$row['premium_payable'];
-                $gst = "-".$row['gst'];
-                $premium_ex_gst = "-".$row['premium_exclusive_gst'];
+                    $gst = "-".$row['gst'];
+                    $premium_ex_gst = "-".$row['premium_exclusive_gst'];
+                    $commission_amount = "-".$row['debited_commission_amount'];
                 }
                 $cancelledDate = "";
                 $cancelledBy = "";
                 $endorsedDate = "";
                 $endorsedBy = "";
-                if($row['type'] == "cancellation")
+                if($row['updated_type'] == "cancellation")
                 {
                     $cancelledDate = $row['endorse_cancel_date'];
                     $cancelledBy = $row['user'];
                 }
-                 if($row['type'] == "endorsement")
+                 if($row['updated_type'] == "endorsement")
                 {
                     $endorsedDate = $row['endorse_cancel_date'];
                     $endorsedBy = $row['user'];
                 }
             fputcsv($output, [ '',
-                $row['policy_no'], '', '', $row['engine_no'], $row['chassis_no'], $row['veh_reg_no'], '', $row['vehicle_category'], $row['make_name'], $row['model_name'], $row['variant_name'], $planDetails['product_name'], $premium_ex_gst, $gst, $planAmount, $row['firstname'], $row['middlename'], $row['lastname'], $row['policy_issue_date'], $row['certificate_start_date'], $row['certificate_end_date'], $row['mobile'], $row['email'], $row['address'], '', '', '', $row['city_name'], $row['state_name'], $row['pincode'], 'Wallet', '', '', '', $row['dealer_payment'], $row['dealer_code'], $row['name'], '', '', '', '', $row['dealer_mobile'],'', $row['policy_issue_date'], '', '', 'GAID', '', '', '', 'Wallet-Paid', $row['status_name'], $row['gender'], $row['dob'], $row['nominee_firstname']." ".$row['nominee_middlename']." ".$row['nominee_lastname'], $row['nominee_gender'], $row['nominee_dob'], $row['relationship'], '', '', $row['dealer_email'], $row['dealername'], '', '', '', '', '', '', '', 'NO', '', '', $row['commission_amount'],  $row['dob'], $row['nominee_dob'], '', $walletDetails, '', $row['dealer_payment'], $row['payment_mode'], 'Wallet', $row['dealer_id'], $endorsedDate, $endorsedBy, $cancelledDate, $cancelledBy, '', '', $row['gender'], $row['dob'], $row['pincode'], $premium_ex_gst, $gst, $planAmount  
+                $row['policy_no'], '', '', $row['engine_no'], $row['chassis_no'], $row['veh_reg_no'], '', $row['vehicle_category'], $row['make_name'], $row['model_name'], $row['variant_name'], $planDetails['product_name'], $premium_ex_gst, $gst, $planAmount, $row['firstname'], $row['middlename'], $row['lastname'], $row['policy_issue_date'], $row['certificate_start_date'], $row['certificate_end_date'], $row['customer_mobile'], $row['customer_email'], $row['address'], '', '', '', $row['city_name'], $row['state_name'], $row['pincode'], 'Wallet', '', '', '', $row['dealer_payment'], $row['dealer_code'], $row['name'], '', '', '', '', $row['dealer_mobile'],'', $row['policy_issue_date'], '', '', 'GAID', '', '', '', 'Wallet-Paid', $row['status_name'], $row['gender'], $row['dob'], $row['nominee_firstname']." ".$row['nominee_middlename']." ".$row['nominee_lastname'], $row['nominee_gender'], $row['nominee_dob'], $row['relationship'], '', '', $row['dealer_email'], $row['dealername'], '', '', '', '', '', '', '', 'NO', '', '', $commission_amount,  $row['dob'], $row['nominee_dob'], '', $walletDetails, '', $row['dealer_payment'], $row['payment_mode'], 'Wallet', $row['dealer_id'], $endorsedDate, $endorsedBy, $cancelledDate, $cancelledBy, '', '', $row['gender'], $row['dob'], $row['pincode'], $premium_ex_gst, $gst, $planAmount  
 ,                
             ]);
         }
@@ -241,12 +244,12 @@ public function exportPoliciesCsvDealer($toDate, $fromDate)
 
     $policies = $db->table('policy_detail pd')
     ->select('
-        pd.*, pd.created as policy_issue_date,pd.premium_ex_gst as premium_exclusive_gst, pd.status as statusid,
+        pd.*, pd.created as policy_issue_date,pd.premium_ex_gst as premium_exclusive_gst, pd.status as statusid, po.mobile as customer_mobile, po.email as customer_email,
         po.*,
         pn.*,
         pv.*,
         d.*, d.mobile as dealer_mobile, d.email as dealer_email, d.name as dealername, d.id as dealer_ids
-        ,vv.variant_name, vm.*, vmo.*, cm.*, s.*, cs.*, tds.*, u.user, ecd.updated_date as endorse_cancel_date, ecd.*
+        ,vv.variant_name, vm.*, vmo.*, cm.*, s.*, cs.*, tds.*, u.user, ecd.updated_date as endorse_cancel_date, ecd.*, ecd.type as updated_type, w.amount as debited_commission_amount
     ')
     ->join('policy_owner_details po', 'po.policy_id = pd.id', 'left')
     ->join('policy_nominee_details pn', 'pn.policy_id = pd.id', 'left')
@@ -261,6 +264,7 @@ public function exportPoliciesCsvDealer($toDate, $fromDate)
      ->join('tds_calculation tds', 'pd.id = tds.policy_id', 'left')
      ->join('endorse_cancel_details ecd', 'pd.id = ecd.policy_id', 'left')
      ->join('users u', 'ecd.updated_by = u.id', 'left')
+      ->join('wallet_transaction w', 'pd.id = w.policy_id', 'left')
     ->where("DATE(pd.created) BETWEEN '{$fromDate}' AND '{$toDate}'")
     ->where('pd.login_id', session('dealer_id'));
 
@@ -337,24 +341,30 @@ die;
                 $planAmount = $row['premium_payable'];
                 $gst = $row['gst'];
                 $premium_ex_gst = $row['premium_exclusive_gst'];
+                $commission_amount = $row['commission_amount'];
                 if ($row['statusid'] == 4 || $row['statusid'] == 5)
                 {
                     $planAmount = "-".$row['premium_payable'];
-                $gst = "-".$row['gst'];
-                $premium_ex_gst = "-".$row['premium_exclusive_gst'];
+                    $commission_amount = "-".$row['debited_commission_amount'];
+                    $gst = "-".$row['gst'];
+                    $premium_ex_gst = "-".$row['premium_exclusive_gst'];
                 }
-                if($row['type'] == "cancellation")
+                $cancelledDate = "";
+                $cancelledBy = "";
+                $endorsedDate = "";
+                $endorsedBy = "";
+                if($row['updated_type'] == "cancellation")
                 {
                     $cancelledDate = $row['endorse_cancel_date'];
                     $cancelledBy = $row['user'];
                 }
-                 if($row['type'] == "endorsement")
+                 if($row['updated_type'] == "endorsement")
                 {
                     $endorsedDate = $row['endorse_cancel_date'];
                     $endorsedBy = $row['user'];
                 }
             fputcsv($output, [ '',
-                $row['policy_no'], '', '', $row['engine_no'], $row['chassis_no'], $row['veh_reg_no'], '', $row['vehicle_category'], $row['make_name'], $row['model_name'], $row['variant_name'], $planDetails['product_name'], $premium_ex_gst, $gst, $planAmount, $row['firstname'], $row['middlename'], $row['lastname'], $row['policy_issue_date'], $row['certificate_start_date'], $row['certificate_end_date'], $row['mobile'], $row['email'], $row['address'], '', '', '', $row['city_name'], $row['state_name'], $row['pincode'], 'Wallet', '', '', '', $row['dealer_payment'], $row['dealer_code'], $row['name'], $row['dealer_mobile'],'', $row['policy_issue_date'], '', '', 'GAID', 'Wallet-Paid', $row['status_name'], $row['gender'], $row['dob'], $row['nominee_firstname']." ".$row['nominee_middlename']." ".$row['nominee_lastname'], $row['nominee_gender'], $row['nominee_dob'], $row['relationship'], '', $row['dealer_email'], $row['dealername'], '', $row['commission_amount'],  $row['dob'], $row['nominee_dob'], '', $walletDetails, '', $row['dealer_payment'], $row['payment_mode'], 'Wallet', $row['dealer_id'], $endorsedDate, $endorsedBy, $cancelledDate, $cancelledBy, '', ''
+                $row['policy_no'], '', '', $row['engine_no'], $row['chassis_no'], $row['veh_reg_no'], '', $row['vehicle_category'], $row['make_name'], $row['model_name'], $row['variant_name'], $planDetails['product_name'], $premium_ex_gst, $gst, $planAmount, $row['firstname'], $row['middlename'], $row['lastname'], $row['policy_issue_date'], $row['certificate_start_date'], $row['certificate_end_date'], $row['customer_mobile'], $row['customer_email'], $row['address'], '', '', '', $row['city_name'], $row['state_name'], $row['pincode'], 'Wallet', '', '', '', $row['dealer_payment'], $row['dealer_code'], $row['name'], $row['dealer_mobile'],'', $row['policy_issue_date'], '', '', 'GAID', 'Wallet-Paid', $row['status_name'], $row['gender'], $row['dob'], $row['nominee_firstname']." ".$row['nominee_middlename']." ".$row['nominee_lastname'], $row['nominee_gender'], $row['nominee_dob'], $row['relationship'], '', $row['dealer_email'], $row['dealername'], '', $commission_amount,  $row['dob'], $row['nominee_dob'], '', $walletDetails, '', $row['dealer_payment'], $row['payment_mode'], 'Wallet', $row['dealer_id'], $endorsedDate, $endorsedBy, $cancelledDate, $cancelledBy, '', ''
 ,                
             ]);
         }

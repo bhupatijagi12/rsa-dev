@@ -46,12 +46,19 @@
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
 	<div class="wrapper">
-				 <?= $this->include('dealer/layouts/navbar'); ?>
+		<?php if (session('login_type') == 1) { ?>
+			<?= $this->include('dealer/layouts/navbar'); ?>
+		<?php } else { ?>
+			<?= $this->include('operations/layouts/navbar'); ?>
+		<?php } ?>	
 
 
 		<div class="main">
+			<?php if (session('login_type') == 1) { ?>
 							 <?= $this->include('dealer/layouts/top-bar'); ?>
-
+      	<?php } else { ?>
+ 		<?= $this->include('operations/layouts/top-bar'); ?>
+      		<?php } ?>	
 
 			<main class="content">
 				<div class="container-fluid p-0">

@@ -112,7 +112,8 @@ class EndorsementController extends BaseController
 		$policyModel = new \App\Models\Policy\PolicyModel();
 		$opsHistoryModel = new \App\Models\Misreport\OpsHistoryModel();
 		$cancelEndorseModel = new \App\Models\CancelEndorseModel();
-		
+		$tdsModel = new \App\Models\TdsModel();
+
 		$policy = $policyModel->getPolicy($endorse_policy_id);
 
 		if ($policy['status'] == 4)
@@ -201,6 +202,28 @@ class EndorsementController extends BaseController
 					'type' => 'endorsement',
 					'details' => json_encode($post)
 				]);
+
+				$tdsDetails = $tdsModel->where('policy_id', $endorse_policy_id)->first();
+				$insertTds = $tdsModel->insert([
+					'dealer_id' => $tdsDetails['dealer_id'],
+					'policy_id' => $insertId,
+					'tds_amount' => $tdsDetails['tds_amount'],
+					'gst_amount' => $tdsDetails['gst_amount'],
+					'plan_premium_exc_gst' => $tdsDetails['plan_premium_exc_gst'],
+					'premium_ex_gst' => $tdsDetails['premium_ex_gst'],
+					'commission_amount' => $tdsDetails['commission_amount']
+
+				]);
+				
+					$tdsModel->where('policy_id', $endorse_policy_id)
+			         ->set([
+			             'tds_amount' => 0,
+			             'gst_amount' => 0,
+			             'plan_premium_exc_gst' => 0,
+			             'premium_ex_gst' => 0,
+			             'commission_amount' => 0
+			         ])
+			         ->update();
 
 				$this->downloadpolicypdf($insertId);
 				return redirect('ops/endorsement/new')->with('error', 'Certificate has been endorsed successfully.');

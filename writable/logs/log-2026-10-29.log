@@ -1,0 +1,23 @@
+CRITICAL - 2026-10-29 09:57:29 --> ErrorException: Undefined variable $customer_mobile
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 223.
+ 1 APPPATH\Models\Misreport\MisModel.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $customer_mobile', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php', 223)
+ 2 APPPATH\Controllers\OperationsController.php(418): App\Models\Misreport\MisModel->exportPoliciesCsv('2026-10-29', '2026-10-14')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-29 09:59:04 --> ParseError: syntax error, unexpected token ",", expecting "]"
+[Method: POST, Route: download-mis]
+in APPPATH\Models\Misreport\MisModel.php on line 223.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rsa-dev\\app\\Models\\Misreport\\MisModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Misreport\\MisModel')
+ 3 APPPATH\Controllers\OperationsController.php(410): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Misreport\\MisModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\OperationsController->downloadmis()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperationsController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

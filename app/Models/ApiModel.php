@@ -33,7 +33,7 @@ class ApiModel extends Model
     	foreach ($explodes as $plancode)
     	{
     		$gAAProductDetails = $gAAProductPlanModel->where('master_product_code', $plancode)->first();
-    		$result = $this->getApiCallFunc($policyId, $gAAProductDetails['sum_insured'], $gAAProductDetails['master_policy_no']);
+    		$result = $this->getApiCallFunc($policyId, $gAAProductDetails['sum_insured'], $gAAProductDetails['master_policy_no'], $gAAProductDetails['premium_inc_gst']);
     		if (empty($result['success']) && !empty($result['results']['failed']))
 			{
 			    foreach ($result['results']['failed'] as $failed)
@@ -47,7 +47,7 @@ class ApiModel extends Model
 
     }	
 
-    private function getApiCallFunc($policyId, $sumImsured, $masterPolicyNo)
+    private function getApiCallFunc($policyId, $sumImsured, $masterPolicyNo, $premium)
     {
     	$policyModel = new \App\Models\Policy\PolicyModel();
     	$cityModel = new \App\Models\CityModel();
@@ -64,11 +64,22 @@ class ApiModel extends Model
     	$insertId = $this->getInsertID();
     	
     	$rsaNumber = 'RSA-' . date('Y') . '-' . str_pad($insertId, 5, '0', STR_PAD_LEFT);
+
+    	if ($policyDetails['gender'] == 'male') {
+			$title = 'Mr.';
+		} elseif ($policyDetails['gender'] == 'female') {
+			$title = 'Ms.';
+		} else {
+			$title = '';
+		}
+
 		$payload = [
    			 'certificates' => [
 	        [
-	            'title' => '',
-	            'member_relationship' => '',
+              	"title"=> $title,
+		     	"insured_email"=> $policyDetails['email'],
+		      	"nominee_address"=> $policyDetails['address'],
+	            'member_relationship' => $policyDetails['relationship'],
 	            'master_policy_number' => $masterPolicyNo,
 	            'transaction_date' => date('Y-m-d'),
 	            'transaction_number' => 'TXN' . time(),
@@ -101,7 +112,8 @@ class ApiModel extends Model
 			      'nominee_relationship'=>  $policyDetails['relationship'],
 			      'dealer_code'=>  $dealerDetails['dealer_code'],
 			      'package_name'=>  "RSA",
-			      'cargo_value'=>  $policyDetails['premium_payable']
+			      'cargo_value'=>  $premium,
+			      "gpa_sum_assured"=> $sumImsured
 
 	        ]
     ]

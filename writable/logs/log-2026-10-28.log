@@ -1,0 +1,10 @@
+CRITICAL - 2026-10-28 05:20:21 --> ErrorException: Undefined variable $tdsModel
+[Method: POST, Route: ops/endorsement/update]
+in APPPATH\Controllers\EndorsementController.php on line 205.
+ 1 APPPATH\Controllers\EndorsementController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tdsModel', 'C:\\xampp\\htdocs\\rsa-dev\\app\\Controllers\\EndorsementController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EndorsementController->updateendorsement()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EndorsementController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

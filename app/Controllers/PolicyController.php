@@ -277,6 +277,10 @@ class PolicyController extends BaseController
 
 				if (!empty($return)) 
 				{
+
+					$policyModel->update($insertId, [
+					    'status' => 'Inactive'
+					]); 
 					 return redirect()->back()->with(
 				        'success',
 				         implode(",",$return)
@@ -341,6 +345,7 @@ class PolicyController extends BaseController
      	{
      		$commission = $dealerDetails['discount_rate'];
      		$commission_amount = ($commission * $amount) / 100;
+
      		$walletModel->insert([
         	'amount' => $commission_amount,
         	'transaction_type' => 'credit',
@@ -365,7 +370,7 @@ class PolicyController extends BaseController
 			$premiumExGST = $this->request->getPost('premium_ex_gst');
      		//$commission_amount = $amount - $premiumExGST;	
      		$commission_amount = $premiumExGST - $premium_hidden;	
-     		if ($dealerDetails['dealer_payment'] == 'cut_n_pay')
+     		if ($dealerDetails['dealer_payment'] == 'cut_n_pay' || $dealerDetails['dealer_payment'] == 'monthly')
      		{
      		$walletModel->insert([
 	        	'amount' => ($commission_amount - ($commission_amount * 0.02)),
@@ -596,7 +601,7 @@ $policyNo = str_replace('/', '-', $policy['policy_no']);
     $dompdf->render();
     $dompdf->stream(
         'Policy_'.$policyNo.'.pdf',
-        ['Attachment'=>true]
+        ['Attachment'=>false]
     );
 
     $pdfFile='uploads/policies/POL'.$policyNo.'.pdf';

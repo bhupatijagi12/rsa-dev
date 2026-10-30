@@ -104,6 +104,9 @@ td,th{
 .page-break{
     page-break-before:always;
 }
+p {
+    font-size: 10px;
+}
 </style>
 
 </head>
@@ -415,11 +418,33 @@ Coverage Details
 </div>
 
 <div style="border:1px solid #ddd;padding:10px;line-height:20px;">
-Enrolled Member will be covered in case of accidental Death or permanentTotal Disability while the insured is driving or
-accompanied the vehicle, covered under the Roadside Assistance oranyassistance plan offered by Across Assist or
-accompanied the vehicle covered under the plan mentioned above asa passenger or drivingthe vehicle.This master policy has
-been booked in the name of Global Aid Assurance Pvt Ltd. And insurance is provided by Niva Bupa Insurance Company
-Limited.
+<p><b>DISCLAIMER – INSURANCE COVERAGE AND ASSISTANCE SERVICES</b></p>
+<p>1. Insurance Coverage and Benefits</p>
+<p>Where applicable to the member’s selected plan, insurance benefits are underwritten by Niva Bupa Health Insurance Company Limited or the relevant insurer specified in the applicable insurance policy documents. Such benefits are subject to the terms and conditions of the relevant insurance policy, including eligibility criteria, coverage limits, exclusions, waiting periods, applicable deductibles, enrolment requirements and claims procedures.
+The benefits outlined in this cover letter are intended to provide a summary of the benefits applicable to the selected plan and should be read in conjunction with the relevant insurance policy documents. The actual scope of insurance coverage shall be determined by the applicable policy wording and the insurer-issued documentation.
+</p>
+<p>2. Role of Global Aid Assurance Services Pvt. Ltd.</p>
+<p>Global Aid Assurance Services Pvt. Ltd. (“Global Aid”) facilitates and coordinates the applicable roadside assistance, medical assistance and related member support services in accordance with the selected plan and its applicable terms. Where insurance benefits form part of the selected plan, such benefits shall be governed by the relevant insurance policy and the applicable insurance arrangements.
+Global Aid’s role in coordinating assistance services does not constitute a guarantee of insurance coverage or claim approval. The assessment, admissibility and settlement of insurance claims shall be subject to the applicable policy terms and the insurer’s determination in accordance with applicable law.
+</p>
+<p>3. Roadside Assistance and Medical Assistance Services</p>
+<p>Roadside Assistance (RSA), Medical Assistance and other non-insurance services, wherever included in the selected plan, are distinct from insurance benefits and shall be provided or coordinated, as applicable, in accordance with the relevant service terms, eligibility criteria, coverage limits, geographical availability and operational conditions.
+The availability and delivery of assistance services may depend on the nature of the request, the member’s location, service-provider availability and other conditions specified under the applicable plan. Any service-specific limits, exclusions or reimbursement conditions shall apply as communicated in the relevant plan documentation.
+</p>
+<div class="page-break"></div>
+<p>4. Enrolment and Claims</p>
+<p>Insurance benefits, where applicable, shall be available only to eligible members who have been enrolled in accordance with the applicable insurance arrangements and whose coverage is valid under the relevant policy. Submission of member details or receipt of this cover letter shall not, by itself, be construed as confirmation of insurance coverage unless the applicable enrolment and policy requirements have been fulfilled.
+Any insurance claim must be notified, documented and submitted in accordance with the applicable insurer’s prescribed procedures and timelines. The insurer shall assess the claim in accordance with the relevant policy terms and applicable law. Global Aid may facilitate communication or coordination, where applicable, but does not independently determine the admissibility or settlement of insurance claims.
+Requests for assistance services shall be handled separately in accordance with the applicable service terms and procedures.
+</p>
+<p>5. Accuracy of Member Information</p>
+<p>The member is responsible for providing complete and accurate information and documentation required for enrolment, verification, insurance claims and assistance services. Any incorrect, incomplete or misleading information may affect eligibility, coverage or the processing of a claim or service request, subject to the applicable policy terms and law.</p>
+<p>6. Important Disclaimers</p>
+<p>This cover letter is a summary of the benefits applicable to the member’s selected plan and is not, by itself, an insurance policy or a guarantee of any insurance benefit, claim approval, reimbursement or assistance outcome. No benefit shall be deemed to be covered unless it is expressly included in the applicable insurance policy or assistance service terms.
+In the event of any inconsistency relating to insurance coverage or insurance benefits, the relevant insurer-issued policy documents shall prevail, subject to applicable law. For roadside assistance, medical assistance and other non-insurance services, the applicable service terms and plan documentation shall govern.
+Nothing in this disclaimer shall be interpreted as excluding, limiting or overriding any right, obligation or liability that cannot lawfully be excluded, limited or overridden.
+For clarification regarding assistance services, members may contact Global Aid through the contact details provided in their plan documentation. For insurance coverage and claim-related matters, members should refer to the relevant insurer and the contact details specified in the applicable insurance policy documents.
+</p>
 </div>
 <p>For detailed policy wordings, please refer to the link <a target="_blank" href="https://globalaidassurance.com/policies.html#terms">click here</a></p>
 </div>

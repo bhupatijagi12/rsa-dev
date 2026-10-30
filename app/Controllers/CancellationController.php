@@ -55,6 +55,7 @@ class CancellationController extends BaseController
 		$walletModel = new \App\Models\Policy\WalletModel();
 		$cancelEndorseModel = new \App\Models\CancelEndorseModel();
 		$opsHistoryModel = new \App\Models\Misreport\OpsHistoryModel();
+		$tdsModel = new \App\Models\TdsModel();
 		$cancel_policy_id = $this->request->getPost('cancel_policy_id');
 		$policyDetails = $policyModel->where('id', $cancel_policy_id)->first();
 		//print_r($policyDetails); die;
@@ -97,6 +98,48 @@ class CancellationController extends BaseController
 					'type' => 'cancellation',
 					'details' => $cancel_policy_id
 				]);
+				$tdsDetails = $tdsModel->where('policy_id', $cancel_policy_id)->first();
+				/*$insertTds = $tdsModel->insert([
+					'dealer_id' => $tdsDetails['dealer_id'],
+					'policy_id' => $insertId,
+					'tds_amount' => $tdsDetails['tds_amount'],
+					'gst_amount' => $tdsDetails['gst_amount'],
+					'plan_premium_exc_gst' => $tdsDetails['plan_premium_exc_gst'],
+					'premium_ex_gst' => $tdsDetails['premium_ex_gst'],
+					'commission_amount' => $tdsDetails['commission_amount']
+
+				]);*/
+				$walletCategory = 2;
+				if ($policyDetails['status'] == 3)
+				{
+					$walletCategory = 2;
+				}
+				if ($policyDetails['status'] == 1)
+				{
+					$walletCategory = 5;
+				}
+				
+					$walletModel->insert([
+			        	'amount' => $tdsDetails['commission_amount'],
+			        	'transaction_type' => 'debit',
+			        	'remarks' => 'Debited amount for Certificate cancellation no: '.$policyDetails['policy_no'],
+			        	'status' => 'Approved',
+			        	'dealer_id' => $tdsDetails['dealer_id'],
+			        	'policy_id' => $insertId,
+			        	'login_type' => session('login_type'),
+			        	'wallet_category' => $walletCategory
+		        	 ]);
+				
+					$tdsModel->where('policy_id', $cancel_policy_id)
+			         ->set([
+			             'tds_amount' => 0,
+			             'gst_amount' => 0,
+			             'plan_premium_exc_gst' => 0,
+			             'premium_ex_gst' => 0,
+			            // 'commission_amount' => 0
+			         ])
+			         ->update();
+				
 				$this->downloadpolicypdf($insertId);
 				return redirect('ops/cancellation/new')->with('error', 'Certificate has been cancelled successfully.');
 			} else 
